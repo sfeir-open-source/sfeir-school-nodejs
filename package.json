@@ -1,0 +1,27 @@
+{
+  "name": "nodejs200",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "workshopper-adventure": "^5.0.3",
+    "workshopper-exercise": "^2.7.0"
+  },
+  "bin": {
+    "nodejs200": "./runner.js"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/SiegfriedEhret/nodejs200.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/SiegfriedEhret/nodejs200/issues"
+  },
+  "homepage": "https://gitlab.com/SiegfriedEhret/nodejs200#README"
+}
