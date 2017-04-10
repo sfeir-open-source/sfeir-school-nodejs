@@ -3,7 +3,11 @@ const path = require('path');
 
 const program = require('commander');
 
-const log = require('./logger')();
+const log = require('./logger')({
+  level: process.env.MONEXPRESS_LOG_LEVEL,
+  withConsole: process.env.MONEXPRESS_LOG_CONSOLE !== 'false',
+  withFile: process.env.MONEXPRESS_LOG_CONSOLE !== 'true',
+});
 
 const monexpress = require('./monexpress/monexpress');
 const pkg = require('./package.json');

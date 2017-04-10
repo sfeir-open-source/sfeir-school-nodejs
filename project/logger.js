@@ -8,7 +8,9 @@ const defaultConfig = {
 
 module.exports = logger;
 
-function logger(config = defaultConfig) {
+function logger(userConfig) {
+  const config = Object.assign({}, defaultConfig, userConfig);
+
   if (config.withFile) {
     winston.add(winston.transports.File, { filename: 'monexpress.log' });
   }
@@ -18,6 +20,8 @@ function logger(config = defaultConfig) {
   }
 
   winston.level = config.level;
+
+  winston.debug('Logging configuration', config);
 
   return winston;
 }
