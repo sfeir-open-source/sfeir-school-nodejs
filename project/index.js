@@ -1,21 +1,28 @@
 const fs = require('fs');
 const path = require('path');
 
+const program = require('commander');
+
 const log = require('./logger')();
 
 const monexpress = require('./monexpress/monexpress');
 const pkg = require('./package.json');
 
+program
+  .version(pkg.version)
+  .option('-p, --port <n>', 'Set port (default: 9000)')
+  .parse(process.argv);
+
 const app = monexpress();
-const port = process.env.MONEXPRESS_PORT || 9000;
+const port = program.port || 9000;
 
 module.exports = app;
 
 app.get('/', (req, res) => {
   log.debug('Called GET /');
-  res.writeHead(200, {"Content-Type": "application/json"});
+  res.writeHead(200, { 'Content-Type': 'application/json' });
   res.write(JSON.stringify({
-    message: 'coucou.js'
+    message: 'coucou.js',
   }));
   res.end();
 });
