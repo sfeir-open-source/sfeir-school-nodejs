@@ -1,0 +1,29 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "assert": "^1.4.1",
+    "debug": "^2.6.3",
+    "request": "^2.81.0",
+    "winston": "^2.3.1"
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb-base": "^11.1.2",
+    "eslint-plugin-import": "^2.2.0",
+    "mocha": "^3.2.0",
+    "nodemon": "^1.11.0"
+  },
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js",
+    "lint": "eslint index.js logger.js",
+    "debug": "DEBUG=monexpress node index.js",
+    "debugger": "node --inspect --debug-brk index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
