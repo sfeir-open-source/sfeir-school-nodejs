@@ -26,7 +26,7 @@ app.get('/tenacious', (req, res) => {
     .pipe(res);
 });
 
-app.get('/crash', (req, res) => {
+app.get('/crash', () => {
   throw new Error('Nope');
 });
 

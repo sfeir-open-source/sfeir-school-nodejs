@@ -20,4 +20,4 @@ function logger(config = defaultConfig) {
   winston.level = config.level;
 
   return winston;
-};
+}
