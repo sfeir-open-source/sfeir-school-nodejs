@@ -38,10 +38,24 @@ describe('GET /version', () => {
   });
 });
 
+// TODO: add test checking that an unknown URL returns a 404 status code
 describe('404 error for unknown routes', () => {
-  it('respond with 400 status', (done) => {
+  it('respond with 404 status', (done) => {
     supertest(server)
       .get('/yolo')
       .expect(404, done);
+  });
+});
+
+// TODO: add test checking that an unknown URL returns the text we want
+describe('"/" POST name', () => {
+  it('respond with good text', (done) => {
+    supertest(server)
+      .post('/')
+      .send({ name: "foo" })
+      .end((err, res) => {
+        assert.equal(res.text, 'Hello foo !');
+        done(err);
+      });
   });
 });
