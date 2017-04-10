@@ -13,6 +13,7 @@ module.exports = function monexpress() {
     listen,
     get,
     post,
+    getServer,
   };
 };
 
@@ -22,6 +23,10 @@ function getBody(body) {
   } catch (e) {
     return body;
   }
+}
+
+function getServer() {
+  return server;
 }
 
 function processRequest(req, res, callback) {
@@ -44,7 +49,7 @@ function processRequest(req, res, callback) {
 function listen(port = 9000, callback = () => {}) {
   if (server !== undefined) {
     debug('Only one server instance is supported !');
-    processRequest.exit(1);
+    process.exit(1);
   }
 
   server = http.createServer((req, res) => {

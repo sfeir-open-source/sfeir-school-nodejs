@@ -6,7 +6,7 @@
   "dependencies": {
     "assert": "^1.4.1",
     "debug": "^2.6.3",
-    "request": "^2.81.0",
+    "supertest": "^3.0.0",
     "winston": "^2.3.1"
   },
   "devDependencies": {
@@ -19,9 +19,10 @@
   "scripts": {
     "dev": "nodemon index.js",
     "start": "node index.js",
-    "lint": "eslint index.js logger.js",
+    "lint": "eslint index.js logger.js test/test.js",
     "debug": "DEBUG=monexpress node index.js",
-    "debugger": "node --inspect --debug-brk index.js"
+    "debugger": "node --inspect --debug-brk index.js",
+    "test": "mocha"
   },
   "keywords": [],
   "author": "",

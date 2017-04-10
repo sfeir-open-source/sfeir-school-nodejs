@@ -9,9 +9,15 @@ const pkg = require('./package.json');
 const app = monexpress();
 const port = process.env.MONEXPRESS_PORT || 9000;
 
+module.exports = app;
+
 app.get('/', (req, res) => {
   log.debug('Called GET /');
-  res.end('coucou.js');
+  res.writeHead(200, {"Content-Type": "application/json"});
+  res.write(JSON.stringify({
+    message: 'coucou.js'
+  }));
+  res.end();
 });
 
 app.get('/version', (req, res) => {
