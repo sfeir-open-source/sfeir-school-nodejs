@@ -1,6 +1,6 @@
 Écrivez un programme qui dit « Hello, [VAR] » dans la console, en décomposant votre programme en un module qui peut prendre n'importe quelle valeur en paramètre pour [VAR].
 
-----------------------------------------------------------------------
+---
 
 ## CONSEILS
 
@@ -20,14 +20,3 @@ Afin que le fichier soit possible à exporter, il doit contenir :
     // Code à exporter
   };
 ```
-
-Quand vous êtes prêt-e, vous n’avez plus qu’à exécuter :
-
-```sh
-$ {appname} verify program.js
-```
-
-pour avancer.  Votre programme sera testé, un rapport sera généré, et la
-leçon sera marquée comme faite, si vous avez réussi.
-
-----------------------------------------------------------------------
