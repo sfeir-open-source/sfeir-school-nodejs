@@ -4,11 +4,6 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "workshopper-adventure": "^5.0.3",
-    "workshopper-exercise": "^2.7.0"
-  },
-  "bin": {
-    "nodejs200": "./runner.js"
   },
   "devDependencies": {},
   "scripts": {
