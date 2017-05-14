@@ -47,9 +47,10 @@ app.get('/crash', () => {
   throw new Error('Nope');
 });
 
+// TODO: implement a POST http call that returns
+// "Hello {{name}} !" given in the body an object with a name property
 app.post('/', (req, res, body) => {
   log.debug('Called POST /');
-
   if (body.name) {
     res.end(`Hello ${body.name} !`);
   } else {
