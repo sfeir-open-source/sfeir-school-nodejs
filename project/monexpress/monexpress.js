@@ -48,27 +48,33 @@ function processRequest(req, res, callback) {
 
 function listen(port = 9000, callback = () => {}) {
   if (server !== undefined) {
-    debug('Only one server instance is supported !');
+    debug('Une seule instance de serveur est supportée !');
     process.exit(1);
   }
 
   server = http.createServer((req, res) => {
     const { method, url } = req;
-    debug(`[${method} ${url}] Trying to find a matching route...`);
+    debug(`[${method} ${url}] Recherche de la route correspondante...`);
 
     const matchRoute = routes.find(r => r.method === method && r.url === url);
 
     if (matchRoute) {
       processRequest(req, res, matchRoute.callback);
     } else {
-      debug(`[${method} ${url}] Not found ! 404 !`);
+      debug(`[${method} ${url}] Pas trouvé ! 404 !`);
 
       res.statusCode = 404;
       res.end('Pas trouvé !');
     }
   });
-
   server.listen(port, callback);
+  server.on('error', (e) => {
+    if (e.code === 'EADDRINUSE') {
+      debug('Ce port est déjà utilisé');
+    } else {
+      throw e;
+    }
+  });
 }
 
 function get(url, callback) {
