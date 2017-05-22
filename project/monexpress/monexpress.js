@@ -67,7 +67,7 @@ function listen(port = 9000, callback = () => {}) {
       res.end('Pas trouvé !');
     }
   });
-  server.listen(port, callback);
+
   server.on('error', (e) => {
     if (e.code === 'EADDRINUSE') {
       debug('Ce port est déjà utilisé');
@@ -75,6 +75,8 @@ function listen(port = 9000, callback = () => {}) {
       throw e;
     }
   });
+
+  return server.listen(port, callback);
 }
 
 function get(url, callback) {

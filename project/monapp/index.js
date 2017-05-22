@@ -9,7 +9,7 @@ const log = require('./logger')({
   withFile: process.env.MONEXPRESS_LOG_CONSOLE !== 'true',
 });
 
-const monexpress = require('./monexpress/monexpress');
+const monexpress = require('../monexpress/monexpress');
 const pkg = require('./package.json');
 
 program
