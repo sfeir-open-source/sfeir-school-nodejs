@@ -1,7 +1,7 @@
 const _ = require('underscore');
 const logger = require('winston');
 
-const PEOPLES = require('./data/persons').peoples.map(person => Object.assign({}, person, {
+const PEOPLES = require('../data/persons').peoples.map(person => Object.assign({}, person, {
   entryDate: parseDate(person.entryDate),
   birthDate: parseDate(person.birthDate),
 }));

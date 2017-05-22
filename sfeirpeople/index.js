@@ -9,7 +9,7 @@ const logger = require('./lib/logger')({
   withFile: process.env.MONEXPRESS_LOG_FILE === 'true',
 });
 
-const peopleRoutes = require('./lib/routes/people');
+const peopleRoutes = require('./lib/people');
 
 const app = express();
 
@@ -17,6 +17,11 @@ app.set('port', process.env.PORT || 9000);
 app.use(helmet());
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
+
+app.use(function (err, req, res, next) {
+  console.error(err.stack);
+  res.status(500).send('PAS BIEN')
+});
 
 app.use('/api/peoples', peopleRoutes);
 
