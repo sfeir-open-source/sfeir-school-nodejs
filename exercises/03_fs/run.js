@@ -9,7 +9,7 @@ const toPath = path.resolve(folder, 'coucou.txt');
 console.log(fromPath);
 
 fs.mkdir(folder, function(err) {
-  if (err) throw err;
+  if (err && err.code !== 'EEXIST') throw err;
 
   fs.readFile(fromPath, options, (err, data) => {
     if (err) throw err;
