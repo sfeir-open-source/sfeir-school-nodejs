@@ -3,7 +3,7 @@ const https = require('https');
 const url = require('url');
 
 const server = http.createServer((req, res) => {
-  if (req.url = '/sfeir') {
+  if (req.url === '/sfeir') {
     const logo = 'https://www.sfeir.com/content/themes/sfeir/img/logos/logo-sfeir-noir.svg';
     const options = url.parse(logo);
 
