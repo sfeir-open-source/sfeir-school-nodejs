@@ -1,0 +1,19 @@
+{
+  "name": "exercises",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha **/*test.js --watch --bail"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mocha": "3.4.1",
+    "mock-require": "2.0.2",
+    "rimraf": "^2.6.1",
+    "sinon": "2.3.1",
+    "stream-equal": "1.0.0"
+  }
+}
