@@ -17,7 +17,7 @@ describe('Exercice 2', () => {
         const hello = require('./hello.js');
         assert(getType(hello) === 'Function', '"module.exports" n\'exporte pas une fonction');
     });
-    it('La fonction exportée par "hello.js" doit emettre sur la console : "Hello, {nom} !"', () => {
+    it('La fonction exportée par "hello.js" doit emettre sur la console : "Hello, {nom}!"', () => {
         const stub = sinon.stub(console, 'log').callsFake(() => {});
         const string = 'testString'
         const hello = require('./hello.js');
@@ -28,7 +28,7 @@ describe('Exercice 2', () => {
     it('Créez un ficher "run.js"', () => {
         assert(fs.existsSync(path.join(__dirname, 'run.js')), 'Le fichier "run.js" est manquant');
     });
-    it('"run.js" doit exécuter la fonction exportée par "hello.js" avec l\'argument "sfeir"', () => {
+    it('"run.js" doit exécuter la fonction exportée par "hello.js" avec l\'argument "Sfeir"', () => {
         const spy = sinon.spy();
         mock('./hello', spy);
         mock.reRequire('./run.js');
