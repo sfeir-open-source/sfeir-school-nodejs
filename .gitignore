@@ -40,3 +40,6 @@ jspm_packages
 
 *.iml
 .idea/
+
+# Project artefacts
+03_fs/jtutu
