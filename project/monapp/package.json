@@ -5,7 +5,6 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "assert": "^1.4.1",
     "commander": "^2.9.0",
     "debug": "^2.6.3",
     "supertest": "^3.0.0",
