@@ -6,7 +6,7 @@ const program = require('commander');
 const log = require('./logger')({
   level: process.env.MONEXPRESS_LOG_LEVEL,
   withConsole: process.env.MONEXPRESS_LOG_CONSOLE !== 'false',
-  withFile: process.env.MONEXPRESS_LOG_CONSOLE !== 'true',
+  withFile: process.env.MONEXPRESS_LOG_FILE === 'true',
 });
 
 const monexpress = require('../monexpress/monexpress');
