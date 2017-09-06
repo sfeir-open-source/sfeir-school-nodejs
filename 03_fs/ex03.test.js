@@ -11,6 +11,10 @@ describe('Exercice 3', () => {
         rm(path.resolve(__dirname, 'jtutu'), done);
     });
 
+    after((done) => {
+        rm(path.resolve(__dirname, 'jtutu'), done);
+    });
+
     it('Créez un ficher "run.js"', () => {
         assert(fs.existsSync(path.join(__dirname, 'run.js')), 'Le fichier "run.js" est manquant');
     });

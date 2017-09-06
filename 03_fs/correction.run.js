@@ -16,6 +16,6 @@ fs.mkdir(folder, function(err) {
 
     fs.writeFile(toPath, data, options, (err) => {
       if (err) throw err;
-    })
+    });
   });
 });
