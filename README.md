@@ -1,11 +1,15 @@
-# Sfeir School Node.JS 200
+# Sfeir School Node.JS 200 jour 1
 
-To launch the workshop locally :
+Démarrer:
 
 ```sh
-$ npm i
-$ sudo npm link
-$ nodejs200
+npm i
+```
+
+Lancer les tests:
+
+```sh
+npm test
 ```
 
 ## Project
