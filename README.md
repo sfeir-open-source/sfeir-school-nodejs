@@ -9,7 +9,7 @@ npm i
 Lancer les tests:
 
 ```sh
-npm test
+npm test -- **/ex01.test.js
 ```
 
 ## Project
