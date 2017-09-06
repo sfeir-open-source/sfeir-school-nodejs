@@ -9,13 +9,13 @@ Pour importer un fichier situé dans le même répertoire, vous pouvez utiliser 
 
 ```js
   // program.js
-  const module = require('./module.js');
+  const monImport = require('./importFile.js');
 ```
 
 Afin que le fichier soit possible à exporter, il doit contenir :
 
 ```js
-  // module.js
+  // importFile.js
   module.exports = function() {
     // Code à exporter
   };
