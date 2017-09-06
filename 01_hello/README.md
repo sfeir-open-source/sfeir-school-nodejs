@@ -5,15 +5,15 @@
 ## CONSEILS
 
 Pour faire un programme Node.js, créez un nouveau fichier avec l’extension
-`.js`, par exemple `solution.js`, et tapez-y du JavaScript !  Exécutez-le
+`.js`, par exemple `solution.js`, et tapez-y du JavaScript ! Exécutez-le
 ensuite à l’aide de la commande `node`, par exemple :
 
 ```sh
-$ node solution.js
+node solution.js
 ```
 
 Vous pouvez écrire sur la console de la même façon que dans un navigateur :
 
-```js
-console.log("text")
+```javascript
+console.log("text");
 ```
