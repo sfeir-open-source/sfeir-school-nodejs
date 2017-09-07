@@ -12,8 +12,7 @@ Lancer les tests:
 npm test -- **/ex01.test.js
 ```
 
-## Project
-
-The demo project !
-
-The mp3 file to stream is from [here](https://archive.org/details/tend2001-10-21.shnf).
+[exercice 1](./01_hello/README.md)  
+[exercice 2](./02_module/README.md)  
+[exercice 3](./03_fs/README.md)  
+[exercice 4](./04_http/README.md)
