@@ -24,7 +24,7 @@ Tips:
 
 ## Exercice 4.4
 
-Créer un fichier `run-04.js` pour renvoyer [le logo sfeir](https://www.sfeir.com/content/themes/sfeir/img/logos/logo-sfeir-noir.svg) en réponse à une requête `GET` sur `/sfeir`
+Créer un fichier `run-04.js` pour renvoyer [le logo google](https://www.google.fr/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png) en réponse à une requête `GET` sur `/google`
 
 Tips:
 
