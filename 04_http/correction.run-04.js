@@ -10,8 +10,8 @@ const server = http.createServer((req, res) => {
 
     res.setHeader('Content-Type', 'image/png');
 
-    https.get(options, res2 => {
-      res2
+    https.get(options, logoResponse => {
+      logoResponse
         .on('data', function(chunk) {
           res.write(chunk);
         })
