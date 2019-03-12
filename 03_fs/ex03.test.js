@@ -1,30 +1,33 @@
 const fs = require('fs');
 const path = require('path');
 const assert = require('assert');
-const sinon = require('sinon');
 const rm = require('rimraf');
 const streamEqual = require('stream-equal');
 
 describe('Exercice 3', () => {
 
-    before((done) => {
+    let stubConsoleLog
+    beforeAll((done) => {
         rm(path.resolve(__dirname, 'jtutu'), done);
+        stubConsoleLog = jest.spyOn(console, 'log').mockReturnThis();
     });
 
-    after((done) => {
+    afterAll((done) => {
         rm(path.resolve(__dirname, 'jtutu'), done);
+        stubConsoleLog.mockRestore();
     });
 
     it('Créez un ficher "run.js"', () => {
         assert(fs.existsSync(path.join(__dirname, 'run.js')), 'Le fichier "run.js" est manquant');
     });
 
-    it('Affiche le chemin vers "coucou.txt"', () => {
-        const stub = sinon.stub(console, 'log').callsFake((a) => {});
-        const filepath = path.resolve(__dirname, 'coucou.txt');
-        require('./run.js');
-        stub.restore();
-        assert(stub.calledWith(filepath));
+    it('Affiche le chemin vers "coucou.txt"', (done) => {
+      const filepath = path.resolve(__dirname, 'coucou.txt');
+      require('./run.js');
+      setTimeout(() => {
+        expect(stubConsoleLog).toHaveBeenCalledWith(filepath);
+        done();
+      }, 10);
     });
 
     it('A créé un dossier "jtutu"', (done) => {
