@@ -1,0 +1,20 @@
+{
+  "name": "exercises",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watchAll --bail"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "rimraf": "^2.6.1",
+    "stream-equal": "1.0.0"
+  },
+  "devDependencies": {
+    "jest": "24.1.0",
+    "supertest": "3.3.0"
+  }
+}

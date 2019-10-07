@@ -20,15 +20,15 @@ Lancer les tests:
 npm test -- **/ex01.test.js
 ```
 
-[exercice 1](./exercices/01_hello/README.md)  
-[exercice 2](./exercices/02_module/README.md)  
-[exercice 3](./exercices/03_fs/README.md)  
-[exercice 4](./exercices/04_http/README.md)  
-[exercice 5](./exercices/05_event_emitter/README.md)
+[exercice 1](./exercices/01_hello/README.md):  «Hello, World !»
+[exercice 2](./exercices/02_module/README.md): Modules 
+[exercice 3](./exercices/03_fs/README.md): fs
+[exercice 4](./exercices/04_http/README.md): http 
+[exercice 5](./exercices/05_event_emitter/README.md): event emitter
 
 ## jour 2: projet
 
-- [Step 01](./project/step01/README.md): «Hello, World !»
+- [Step 01](./project/step01/README.md): 
 - [Step 02](./project/step02/README.md): gestion des schools
 - [Step 03](./project/step03/README.md): tests
 - [Step 04](./project/step04/README.md): équipe
