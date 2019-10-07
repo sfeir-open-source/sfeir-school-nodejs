@@ -20,24 +20,23 @@ Lancer les tests:
 npm test -- **/ex01.test.js
 ```
 
-[exercice 1](./01_hello/README.md)  
-[exercice 2](./02_module/README.md)  
-[exercice 3](./03_fs/README.md)  
-[exercice 4](./04_http/README.md)
+[exercice 1](./exercices/01_hello/README.md)  
+[exercice 2](./exercices/02_module/README.md)  
+[exercice 3](./exercices/03_fs/README.md)  
+[exercice 4](./exercices/04_http/README.md)  
+[exercice 5](./exercices/05_event_emitter/README.md)
 
 ## jour 2: projet
 
-Il faut se placer sur la branche *projet-express*: `git checkout -f projet-express`.
-
-- [Step 01](https://github.com/Sfeir/sfeir-school-nodejs/tree/project-01-readme): «Hello, World !»
-- [Step 02](https://github.com/Sfeir/sfeir-school-nodejs/tree/project-02-readme): gestion des todos
-- [Step 03](https://github.com/Sfeir/sfeir-school-nodejs/tree/project-03-readme): tests
-- [Step 04](https://github.com/Sfeir/sfeir-school-nodejs/tree/project-04-readme): équipe
-- [Step 05](https://github.com/Sfeir/sfeir-school-nodejs/tree/project-05-readme): mongodb
-- [Step 06](https://github.com/Sfeir/sfeir-school-nodejs/tree/project-06-readme): tests
-- [Step 07](https://github.com/Sfeir/sfeir-school-nodejs/tree/project-07-readme): authentification
-- [Step 08](https://github.com/Sfeir/sfeir-school-nodejs/tree/project-08-readme): refactoring
-- [Step 09](https://github.com/Sfeir/sfeir-school-nodejs/tree/project-09-readme): logs
-- [Step 10](https://github.com/Sfeir/sfeir-school-nodejs/tree/project-10-readme): middlewares
-- [Step 11](https://github.com/Sfeir/sfeir-school-nodejs/tree/project-11-readme): sécurité
-- [Step 12](https://github.com/Sfeir/sfeir-school-nodejs/tree/project-12-readme): déploiement
+- [Step 01](./project/step01/README.md): «Hello, World !»
+- [Step 02](./project/step02/README.md): gestion des schools
+- [Step 03](./project/step03/README.md): tests
+- [Step 04](./project/step04/README.md): équipe
+- [Step 05](./project/step05/README.md): mongodb
+- [Step 06](./project/step06/README.md): tests
+- [Step 07](./project/step07/README.md): authentification
+- [Step 08](./project/step08/README.md): refactoring
+- [Step 09](./project/step09/README.md): logs
+- [Step 10](./project/step10/README.md): middlewares
+- [Step 11](./project/step11/README.md): sécurité
+- [Step 12](./project/step12/README.md): déploiement
