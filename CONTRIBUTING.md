@@ -41,22 +41,16 @@ Nous avons aussi les éléments supplémentaires suivants:
 
 ## Organisation du dépôt
 
-Le projet est séparé en différentes branches, qui représentent les différentes parties de la formation.
-
 ### Exercices
 
-Ils sont sur la branche [develop](https://github.com/Sfeir/sfeir-school-nodejs/tree/develop). L'utilisation de [pull requests](https://help.github.com/articles/about-pull-requests/) est indispensable.
+Ils sont dans le répertoire [exercices sur la branche master](https://github.com/Sfeir/sfeir-school-nodejs/tree/master/exercices).
 
 ### Projet express
 
-:warning: il est indispensable d'avoir une bonne connaissance de git et surtout de la fonctionnalité `rebase`.
+Le projet se trouve dans le répertoire [projet sur la branche master](https://github.com/Sfeir/sfeir-school-nodejs/tree/master/project).
 
-Le projet se trouve sur la branche [projet-express](https://github.com/Sfeir/sfeir-school-nodejs/tree/projet-express).
-
-Chaque étape est séparée en 2 commits: un «readme» et un «solution», chaque étape reprend où en est la précédente.
-
-Il faudra utiliser [tagzytout](https://github.com/SiegfriedEhret/tagzytout) pour mettre les tags git qui vont bien avant de tout pousser et de réécrire l'histoire du projet.
 
 ## Code de conduite
 
+L'utilisation de [pull requests](https://help.github.com/articles/about-pull-requests/) est indispensable.
 Merci de consulter le [sfeir-open-source/code-of-conduct](https://github.com/sfeir-open-source/code-of-conduct/blob/master/CODE_OF_CONDUCT.md).
