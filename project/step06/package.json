@@ -6,6 +6,7 @@
   "scripts": {
     "lint": "prettier --write lib/**/*.js index.js",
     "start": "node index.js",
+    "dev": "nodemon index.js",
     "test": "jest --detectOpenHandles"
   },
   "keywords": [],

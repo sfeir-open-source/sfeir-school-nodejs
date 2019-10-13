@@ -16,13 +16,12 @@ const {
 const url = `http://${DATABASE_USER}:${DATABASE_PASSWORD}@${DATABASE_HOST}:${DATABASE_PORT}/${INITDB_DATABASE}`;
 
 process.on("uncaughtException", err => {
-  log.error({ err }, "Got an uncaught exception");
+  log.error("Got an uncaught exception", err);
   process.exit(1);
 });
 
 process.on("unhandledRejection", err => {
-  console.error(err);
-  log.error({ err }, "Got an unhandled rejection");
+  log.error("Got an unhandled rejection", err);
   process.exit(1);
 });
 
@@ -35,7 +34,7 @@ const connect = () => {
       return true;
     })
     .catch(err => {
-      log.error({ err }, "Error while connecting to DB" + url);
+      log.error("Error while connecting to DB", err);
       return false;
     })
     .then(connected => {
