@@ -6,7 +6,7 @@
   "scripts": {
     "lint": "prettier --write lib/**/*.js index.js",
     "start": "cross-env SALT=kikou node index.js",
-    "dev": "cross-env SALT=kikou node index.js | bunyan",
+    "dev": "cross-env SALT=kikou nodemon index.js",
     "test": "cross-env SALT=kikou jest --detectOpenHandles"
   },
   "keywords": [],
@@ -14,7 +14,6 @@
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.3",
-    "bunyan": "^1.8.15",
     "cross-env": "^7.0.3",
     "express": "^4.16.3",
     "express-session": "^1.17.2",
@@ -22,7 +21,8 @@
     "passport-local": "^1.0.0",
     "pouchdb": "^7.2.2",
     "pouchdb-find": "^7.2.2",
-    "uuid": "^8.3.2"
+    "uuid": "^8.3.2",
+    "winston": "^3.3.3"
   },
   "devDependencies": {
     "jest": "^27.2.5",

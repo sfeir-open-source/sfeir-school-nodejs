@@ -9,7 +9,7 @@ const { SALT } = process.env;
 const findUser = db => (username, password, done) => {
   scrypt(password, SALT, 64, (err, derivedKey) => {
     if (err) {
-      log.error({ err }, "Failed to generate password");
+      log.error("Failed to generate password", err);
       err.statusCode = 401;
       return done(err);
     }

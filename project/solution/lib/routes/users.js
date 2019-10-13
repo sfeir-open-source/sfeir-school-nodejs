@@ -16,7 +16,7 @@ const doRegister = db => (req, res, next) => {
 
   scrypt(password, SALT, 64, (err, derivedKey) => {
     if (err) {
-      log.error({ err }, "Failed to generate password");
+      log.error("Failed to generate password", err);
       err.statusCode = 500;
       return next(err);
     }
@@ -30,7 +30,7 @@ const doRegister = db => (req, res, next) => {
         res.sendStatus(201);
       })
       .catch(err => {
-        log.error({ err }, "Failed to save user");
+        log.error("Failed to save user", err);
         err.statusCode = 500;
         next(err);
       });
