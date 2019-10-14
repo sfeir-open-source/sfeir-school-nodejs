@@ -15,7 +15,7 @@ L'ordre d'usage des middlewares est important !
 
 On va créer deux routes:
 
-- `/register` pour créer les comptes. Cette méthode de mongo sera utile: [insertOne](http://mongodb.github.io/node-mongodb-native/3.0/api/Collection.html#insertOne).
+- `/register` pour créer les comptes.
 - `/login` pour la connexion.
 
 On va utiliser un module core de Node: [crypto](https://nodejs.org/dist/latest-v10.x/docs/api/crypto.html). Il nous fournit [scrypt](https://nodejs.org/dist/latest-v10.x/docs/api/crypto.html#crypto_crypto_scrypt_password_salt_keylen_options_callback) pour ce qui est de la génération des mots de passe.
@@ -27,7 +27,6 @@ Nous allons utiliser [passport](https://github.com/jaredhanson/passport) pour g�
 Commençons par créer une stratégie avec [passport-local](https://github.com/jaredhanson/passport-local):
 
 - On va créer une `strategy` qui va fouiller dans la base.
-- Cette méthode de mongo sera utile: [findOne](http://mongodb.github.io/node-mongodb-native/3.0/api/Collection.html#findOne).
 
 ### 3. Passport - application
 

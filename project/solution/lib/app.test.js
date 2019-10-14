@@ -1,11 +1,8 @@
 const request = require("supertest");
+const PouchDB = require("pouchdb");
+PouchDB.plugin(require("pouchdb-find"));
+PouchDB.plugin(require("pouchdb-adapter-memory"));
 
-const {
-  MongoClient
-} = require("mongodb");
-
-
-let connection;
 let db;
 let session;
 
@@ -17,37 +14,34 @@ describe("Sfeir Schools app", () => {
   const fakeCredentials = {
     username: "test",
     password: "test"
-  }
+  };
 
   beforeAll(async () => {
-    connection = await MongoClient.connect(global.__MONGO_URI__);
-    db = await connection.db(global.__MONGO_DB_NAME__);
+    const db = new PouchDB("test", { adapter: "memory" });
 
     app = appFunction(db);
 
     await request(app)
-    .post("/users/register")
-    .send(fakeCredentials)
-    await request(app).post('/users/login')
+      .post("/users/register")
+      .send(fakeCredentials);
+    await request(app)
+      .post("/users/login")
       .send(fakeCredentials)
-      .then(function (res) {
-        const cookie = res
-        .headers['set-cookie'][0]
-        .split(',')
-        .map(item => item.split(';')[0])
-        session = cookie
-        return session
+      .then(function(res) {
+        const cookie = res.headers["set-cookie"][0]
+          .split(",")
+          .map(item => item.split(";")[0]);
+        session = cookie;
+        return session;
       });
   });
 
   afterAll(async () => {
-    await connection.close();
-    await db.close();
+    await db.destroy();
   });
 
   it("It should list Sfeir Schools", async done => {
-    const response = await request(app)
-    .get("/schools");
+    const response = await request(app).get("/schools");
 
     expect(response.statusCode).toBe(200);
     expect(response.body).toEqual([]);
@@ -58,7 +52,7 @@ describe("Sfeir Schools app", () => {
   it("It should add a Sfeir School", async done => {
     const responsePost = await request(app)
       .post("/schools")
-      .set('Cookie', session)
+      .set("Cookie", session)
       .send({
         title: "Sfeir School tartiflette"
       });

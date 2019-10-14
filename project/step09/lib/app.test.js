@@ -1,6 +1,7 @@
 const request = require("supertest");
-
-const { MongoClient } = require("mongodb");
+const PouchDB = require("pouchdb");
+PouchDB.plugin(require("pouchdb-find"));
+PouchDB.plugin(require("pouchdb-adapter-memory"));
 
 let connection;
 let db;
@@ -11,14 +12,12 @@ describe("Sfeir Schools app", () => {
   let app;
 
   beforeAll(async () => {
-    connection = await MongoClient.connect(global.__MONGO_URI__);
-    db = await connection.db(global.__MONGO_DB_NAME__);
+    const db = new PouchDB("test", { adapter: "memory" });
     app = appFunction(db);
   });
 
   afterAll(async () => {
-    await connection.close();
-    await db.close();
+    await db.destroy();
   });
 
   it("It should list Sfeir Schools", async done => {

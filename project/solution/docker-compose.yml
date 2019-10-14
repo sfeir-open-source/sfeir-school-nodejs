@@ -1,39 +1,25 @@
 version: "3.1"
 
 services:
+  couchdb:
+    image: couchdb
+    restart: always
+    ports:
+      - 5984:5984
+    environment:
+      INITDB_DATABASE: schoolsdb
+    networks:
+      - api
   schools:
     build: .
     ports:
       - "3000:3000"
     environment:
-      - DATABASE_HOST=mongo
+      - DATABASE_HOST=couchdb
       - LOG_LEVEL=debug
       - SALT=kikoo plop
     depends_on:
-      - mongo
-    networks:
-      - api
-
-  mongo:
-    image: mongo
-    restart: always
-    ports:
-      - 27017:27017
-    environment:
-      MONGO_INITDB_ROOT_USERNAME: root
-      MONGO_INITDB_ROOT_PASSWORD: example
-      MONGO_INITDB_DATABASE: schoolsdb
-    networks:
-      - api
-      
-  mongo-express:
-    image: mongo-express
-    restart: always
-    ports:
-      - 8082:8081
-    environment:
-      ME_CONFIG_MONGODB_ADMINUSERNAME: root
-      ME_CONFIG_MONGODB_ADMINPASSWORD: example
+      - couchdb
     networks:
       - api
 

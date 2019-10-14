@@ -1,35 +1,36 @@
 const express = require("express");
 const bodyParser = require("body-parser");
+const uuidv1 = require("uuid/v1");
 const app = express();
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 module.exports = db => {
-  const collection = db.collection("schools");
-
   app.get("/", (req, res) => {
-    collection.find({}).toArray(function(err, schools) {
-      if (err) {
+    db.find({ selector: { type: "school" } })
+      .then(function(results) {
+        res.send(results.docs);
+      })
+      .catch(err => {
         console.log("Failed to find schools", err);
         res.sendStatus(500);
-      } else {
-        res.send(schools);
-      }
-    });
+      });
   });
 
   app.post("/", (req, res) => {
     const school = req.body;
+    school.type = "school";
+    school._id = uuidv1();
 
-    collection.insertOne(school, function(err) {
-      if (err) {
+    db.put(school)
+      .then(() => {
+        res.sendStatus(201);
+      })
+      .catch(err => {
         console.log("Failed to insert school", school, err);
         res.sendStatus(500);
-      } else {
-        res.sendStatus(201);
-      }
-    });
+      });
   });
 
   return app;

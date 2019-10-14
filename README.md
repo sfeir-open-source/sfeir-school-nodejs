@@ -32,7 +32,7 @@ npm test -- **/ex01.test.js
 - [Step 02](./project/step02/README.md): gestion des schools
 - [Step 03](./project/step03/README.md): tests
 - [Step 04](./project/step04/README.md): équipe
-- [Step 05](./project/step05/README.md): mongodb
+- [Step 05](./project/step05/README.md): persistance
 - [Step 06](./project/step06/README.md): tests
 - [Step 07](./project/step07/README.md): authentification
 - [Step 08](./project/step08/README.md): refactoring

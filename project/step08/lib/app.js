@@ -3,6 +3,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const passport = require("passport");
 const session = require("express-session");
+const uuidv1 = require("uuid/v1");
 const app = express();
 
 const { SALT } = process.env;
@@ -37,33 +38,31 @@ function ensureAuthenticated(req, res, next) {
 }
 
 module.exports = db => {
-  const collection = db.collection("schools");
-  const users = db.collection("users");
-
-  passport.use(getUserStrategy(users));
+  passport.use(getUserStrategy(db));
 
   app.get("/", (req, res) => {
-    collection.find({}).toArray(function(err, schools) {
-      if (err) {
+    db.find({ selector: { type: "school" } })
+      .then(function(results) {
+        res.send(results.docs);
+      })
+      .catch(err => {
         console.log("Failed to find schools", err);
         res.sendStatus(500);
-      } else {
-        res.send(schools);
-      }
-    });
+      });
   });
 
   app.post("/", ensureAuthenticated, (req, res) => {
     const school = req.body;
-
-    collection.insertOne(school, function(err) {
-      if (err) {
+    school.type = "school";
+    school._id = uuidv1();
+    db.put(school)
+      .then(() => {
+        res.sendStatus(201);
+      })
+      .catch(err => {
         console.log("Failed to insert school", school, err);
         res.sendStatus(500);
-      } else {
-        res.sendStatus(201);
-      }
-    });
+      });
   });
 
   app.post("/login", passport.authenticate("local"), (req, res) => {
@@ -78,17 +77,19 @@ module.exports = db => {
         console.log("Failed to generate password", err);
         res.sendStatus(500);
       } else {
-        users.insertOne(
-          { username, password: derivedKey.toString("hex") },
-          err => {
-            if (err) {
-              console.log("Failed to save user", err);
-              res.sendStatus(500);
-            } else {
-              res.sendStatus(201);
-            }
-          }
-        );
+        db.put({
+          username,
+          password: derivedKey.toString("hex"),
+          type: "user",
+          _id: uuidv1()
+        })
+          .then(() => {
+            res.sendStatus(201);
+          })
+          .catch(err => {
+            console.log("Failed to save user", err);
+            res.sendStatus(500);
+          });
       }
     });
   });
