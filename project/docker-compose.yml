@@ -1,0 +1,24 @@
+version: "3.1"
+
+services:
+  api:
+    image: node:12
+    ports:
+      - 3000:3000
+    volumes:
+      - "./${STEP}:/src"
+    working_dir: "/src"
+    command: npm start
+    environment:
+      - DATABASE_HOST=db
+      - LOG_LEVEL=debug
+      - SALT=kikoo plop
+    depends_on:
+      - db
+  db:
+    image: couchdb
+    restart: always
+    environment:
+      INITDB_DATABASE: schoolsdb
+    logging:
+      driver: none
