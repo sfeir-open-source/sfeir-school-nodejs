@@ -46,3 +46,4 @@ jspm_packages
 globalConfig.json
 .vscode
 schoolsdb
+*-solution
