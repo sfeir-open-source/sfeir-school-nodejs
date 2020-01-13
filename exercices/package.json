@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest --watchAll --bail"
+    "test": "jest --bail"
   },
   "keywords": [],
   "author": "",
@@ -14,7 +14,13 @@
     "stream-equal": "1.0.0"
   },
   "devDependencies": {
+    "jasmine-fail-fast": "^2.0.0",
     "jest": "24.1.0",
     "supertest": "3.3.0"
+  },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "./.config/setup-after-env.js"
+    ]
   }
 }
