@@ -29,7 +29,7 @@ npm test -- **/ex01.test.js
 
 ## jour 2: projet
 
-- [Step 01](./project/step01/README.md):
+- [Step 01](./project/step01/README.md): initialisation
 - [Step 02](./project/step02/README.md): gestion des schools
 - [Step 03](./project/step03/README.md): tests
 - [Step 04](./project/step04/README.md): équipe

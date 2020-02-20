@@ -36,7 +36,7 @@ function ensureAuthenticated(req, res, next) {
     return next();
   } else res.sendStatus(401);
 }
-
+// TODO : refactoring. Use express router and move routes in appropriate files
 module.exports = db => {
   passport.use(getUserStrategy(db));
 

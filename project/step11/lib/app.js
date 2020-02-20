@@ -26,6 +26,7 @@ app.use(
 );
 app.use(passport.initialize());
 app.use(passport.session());
+// TODO : use helmet middleware
 
 app.use(durationMw);
 

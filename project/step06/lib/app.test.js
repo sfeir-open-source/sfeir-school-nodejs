@@ -1,8 +1,12 @@
 const request = require("supertest");
+// TODO : import pouchdb-adapter-memory
 
 const app = require("./app");
 
 describe("Sfeir Schools app", () => {
+
+  // TODO : use beforeAll method to instance in-memory database instance
+  
   it("It should list Sfeir Schools", async done => {
     const response = await request(app).get("/");
 
