@@ -25,12 +25,14 @@ describe("Sfeir Schools app", () => {
 
     expect(responsePost.statusCode).toBe(201);
 
-    const {
-      body: [element]
-    } = await request(app).get("/");
+    const responseGet = await request(app).get("/");
 
-    expect(element.title).toBe("Sfeir School NodeJS");
-    expect(element._id).toBeTruthy();
+    // TODO : adapt this test to match the new response
+    expect(responseGet.body).toEqual([
+      {
+        title: "Sfeir School NodeJS"
+      }
+    ]);
 
     done();
   });
