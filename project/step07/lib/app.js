@@ -3,16 +3,20 @@ const bodyParser = require("body-parser");
 const uuidv1 = require("uuid/v1");
 const app = express();
 
+// TODO : retrieve SALT from environment
+
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 // TODO : use session middleware
-// TODO : use passeport middleware and passeport session middleware
+// TODO : use passport middleware and passport session middleware
 
-// TODO : call passeport serialize and deserializeUser
+// TODO : call passport serialize and deserializeUser
 module.exports = db => {
 
-  // TODO : use a passeport local strategy (use databse find method with selector)
+  // TODO : configure passport here to use local strategy (this strategy uses database find method with selector)
+  // Local strategy should be declared in an external file and imported here (user.js)
+
   app.get("/", (req, res) => {
     db.find({ selector: { type: "school" } })
       .then(function(results) {
@@ -39,6 +43,9 @@ module.exports = db => {
       });
   });
 
-  // TODO : add login and register routes (POST)
+  // TODO : add login route (POST). Use `passport.authenticate` with `local` strategy
+
+  // TODO : add register route (POST). Create the user in database. Crypto could be useful
+
   return app;
 };

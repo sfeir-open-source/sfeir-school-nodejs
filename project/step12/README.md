@@ -13,9 +13,8 @@ Docker FTW !
 
 Pour aller plus loin:
 
-- On se connecte à un base CouchDB (voir le [docker hub](https://hub.docker.com/_/couchdb/)).
+- On se connecte à une base CouchDB (voir le [docker hub](https://hub.docker.com/_/couchdb/)).
 - Un petit peu de [docker compose](https://docs.docker.com/compose/compose-file/) pour tout brancher facilement.
-- Pour passer le bon host.
 - Mettre un système de retry pour attendre que la DB soit bien démarrée !
 - Attention au `process.exit(1)` qui peut faire des blagues (expérience vécue ^^).
 - On run avec `docker-compose up` 

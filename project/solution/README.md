@@ -11,3 +11,11 @@
 - Faire un login: `http --session=/tmp/session.json POST http://localhost:3000/users/login username="Jtutu" password="Plop"`. Le `--session=/tmp/session.json` permet de persister les cookies etc.
 - Ajouter une Sfeir school: `http POST http://localhost:3000/schools title="Another school" --session=/tmp/session.json`.
 - Lister les Sfeir Schools: `http http://localhost:3000/schools`.
+
+## Avec docker-compose
+
+- On build avec `docker-compose build` 
+- On run avec `docker-compose up` 
+
+## Si vous utilisez CouchDB
+- [Page admin](http://localhost:5984/_utils/)
