@@ -27,6 +27,7 @@ describe("Sfeir Schools app", () => {
 
     const responseGet = await request(app).get("/");
 
+    // TODO : adapt this test to match the new response
     expect(responseGet.body).toEqual([
       {
         title: "Sfeir School NodeJS"

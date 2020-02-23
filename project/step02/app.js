@@ -7,6 +7,6 @@ const app = express();
 // TODO : GET on / should return an array of schools
 app.get('/', (req, res) => res.send('Hello, Sfeir School!'));
 
-// TODO : Add a POST method and store the body in an array of schools
+// TODO : Add a POST method and store the body in an array of schools. Send back HTTP "Created" status.
 
 app.listen(3000, () => console.log('App listening on port 3000!'));
