@@ -1,6 +1,6 @@
-# Les API: require(‘url’)
-
 <!-- .slide: class="with-code" -->
+
+# Les API: require(‘url’)
 
 * url.format(): créer une url (string) à partir d’un objet
 * url.parse(): créer un objet à partir d’une url (string)

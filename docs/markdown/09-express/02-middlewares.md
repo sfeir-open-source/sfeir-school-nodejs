@@ -26,4 +26,4 @@ Cas d’application :
 
 # Les middlewares Express
 
-![full-width](./assets/images/express_middlewares.png)
+![full-width](./assets/images/express_middlewares.svg)
