@@ -27,7 +27,7 @@ console.log(2);
 
 # Sous le capot  : V8 + node API + LIBUV
 
-![w-1000](./assets/images/v8_node_api_libuv.png)
+![w-1000](./assets/images/v8_node_api_libuv.svg)
 
 ##==##
 <!-- .slide: class="with-code" -->
