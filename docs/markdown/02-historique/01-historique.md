@@ -32,4 +32,4 @@ NodeJs Foundation and Open JS Foundation has merged together on March 2019
 
 # Il était une fois… Node.JS !
 
-![full-width](./assets/images/release-schedule.png)
+![full-width](./assets/images/release-schedule.svg)
