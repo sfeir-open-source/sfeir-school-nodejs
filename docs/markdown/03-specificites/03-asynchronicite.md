@@ -27,14 +27,33 @@ console.log(2);
 
 # Sous le capot  : V8 + node API + LIBUV
 
-![w-1000](./assets/images/v8_node_api_libuv.png)
+![w-1000](./assets/images/v8_node_api_libuv.svg)
 
 ##==##
-<!-- .slide: class="full-center" -->
+<!-- .slide: class="with-code" -->
 
 # Sous le capot : event loop
 
-![w-1000](./assets/images/event_loop.png)
+```bash
+   ┌───────────────────────────┐
+┌─>│           timers          │
+│  └─────────────┬─────────────┘
+│  ┌─────────────┴─────────────┐
+│  │     pending callbacks     │
+│  └─────────────┬─────────────┘
+│  ┌─────────────┴─────────────┐
+│  │       idle, prepare       │
+│  └─────────────┬─────────────┘      ┌───────────────┐
+│  ┌─────────────┴─────────────┐      │   incoming:   │
+│  │           poll            │<─────┤  connections, │
+│  └─────────────┬─────────────┘      │   data, etc.  │
+│  ┌─────────────┴─────────────┐      └───────────────┘
+│  │           check           │
+│  └─────────────┬─────────────┘
+│  ┌─────────────┴─────────────┐
+└──┤      close callbacks      │
+   └───────────────────────────┘
+```
 
 ##==##
 

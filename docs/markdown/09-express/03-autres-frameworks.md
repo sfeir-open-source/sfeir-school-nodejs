@@ -4,10 +4,13 @@
 
 <br><br>
 
-![h-200](./assets/images/hapi.png)
-![h-200](./assets/images/koa.png)
-![h-200](./assets/images/restify.png)
-![h-200](./assets/images/fastify.png)
+![h-150](./assets/images/hapi.svg)
+![h-150](./assets/images/koa.svg)
+
+<br><br>
+
+![h-150](./assets/images/restify.svg)
+![h-150](./assets/images/fastify.svg)
 
 ##==##
 <!-- .slide: class="flex-row" -->
@@ -16,7 +19,10 @@
 
 <br><br>
 
-![h-200](./assets/images/nest.png)
-![h-200](./assets/images/loopback-io.png)
-![h-200](./assets/images/sails.png)
-![h-200](./assets/images/kraken.png)
+![h-200](./assets/images/nest.svg)
+![h-200](./assets/images/loopback-io.svg)
+
+<br><br>
+
+![h-200](./assets/images/sails.svg)
+![h-200](./assets/images/kraken.svg)

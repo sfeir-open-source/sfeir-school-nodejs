@@ -8,4 +8,4 @@
 
 # Sous le capot
 
-![full-width](./assets/images/nodejs-system.png)
+![full-width](./assets/images/nodejs-system.svg)
