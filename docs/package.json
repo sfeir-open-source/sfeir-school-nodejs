@@ -9,7 +9,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "live-server --port=4242 --open=\"./index.html\" --watch=\"markdown/\"",
     "start": "parallelshell \"npm run serve\" \"npm run sass\"",
-    "prepare": "snowpack"
+    "copy-reveal": "cpx \"node_modules/reveal.js/**/*\" \"web_modules/reveal.js\" ",
+    "prepare": "parallelshell \"npm run copy-reveal\" \"snowpack\""
   },
   "repository": {
     "type": "git",

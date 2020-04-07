@@ -28,7 +28,7 @@
 
 process:
 <ul>
-    <li class="fragment">`process.argv` : pour les arguments de la ligne de commande</li>
+    <li class="fragment" data-fragment-index="1">`process.argv` : pour les arguments de la ligne de commande</li>
     <li class="fragment">`process.chdir(directory)` : pour changer le répertoire de travail</li>
     <li class="fragment">`process.cwd()` : pour récupérer le répertoire courant</li>
     <li class="fragment">`process.env` : object contenant les variables d’environnement</li>
