@@ -42,8 +42,8 @@
     "webDependencies": [
       "sfeir-school-theme/dist/**/*",
       "lit-html",
-      "reveal.js/**/^(?!LICENSE)(.*)",
-      "highlight.js/style/**/*"
+      "highlight.js/styles/**/*",
+      "reveal.js/css/**/*"
     ]
   }
 }

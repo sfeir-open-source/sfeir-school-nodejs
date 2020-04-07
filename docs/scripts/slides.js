@@ -81,7 +81,7 @@ function npmSlides() {
 
 function finPremierJourSlides() {
   return [
-    '07-fin-premier-jour/00-TITLE'
+    '07-fin-premier-jour/00-TITLE.md'
   ];
 }
 
