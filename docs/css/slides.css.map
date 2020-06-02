@@ -1,8 +1,8 @@
 {
 	"version": 3,
-	"file": "nodejs.css",
+	"file": "slides.css",
 	"sources": [
-		"../scss/nodejs.scss"
+		"../scss/slides.scss"
 	],
 	"names": [],
 	"mappings": ""
