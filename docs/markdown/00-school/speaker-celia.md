@@ -2,8 +2,7 @@
 
 # Présentation
 
-![speaker](./assets/images/celia.png)
-![company](./assets/images/logo-sfeir-blanc.png)
+![company](./assets/images/speaker/logo-sfeir-blanc.png)
 
 <h2>Célia<span> Doolaeghe</span></h2>
 
