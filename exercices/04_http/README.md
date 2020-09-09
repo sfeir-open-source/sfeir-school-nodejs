@@ -8,7 +8,7 @@ Créer un fichier `run-01.js` qui renvoie «coucou.js» pour toutes les requête
 
 Tips:
 
-- Utiliser `http.createServer`
+- Utiliser `http.createServer`.
 
 ## Exercice 4.2
 
@@ -16,15 +16,15 @@ Créer un fichier `run-02.js` pour renvoyer la méthode et la requête que l'uti
 
 ## Exercice 4.3
 
-Créer un fichier `run-03.js` pour renvoyer un status 404 quand on appelle l'url `/404`
+Créer un fichier `run-03.js` pour renvoyer un status 404 quand on appelle l'url `/404`.
 
 Tips:
 
-- on peut mettre un `statusCode` sur la réponse
+- on peut mettre un `statusCode` sur la réponse.
 
 ## Exercice 4.4
 
-Créer un fichier `run-04.js` pour renvoyer [le logo google](https://www.google.fr/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png) en réponse à une requête `GET` sur `/google`
+Créer un fichier `run-04.js` pour renvoyer [le logo google](https://www.google.fr/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png) en réponse à une requête `GET` sur `/google`.
 
 Tips:
 

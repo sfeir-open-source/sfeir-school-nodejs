@@ -11,4 +11,4 @@ On aura besoin de [Node.js 10](https://nodejs.org/en/).
 - Lancer avec `npm start`.
 - Tester avec [httpie](https://httpie.org/): `http http://localhost:3000/` ou avec [Postman](https://www.postman.com/).
 
-Pour les utilisateurs de Postman, vous pouvez importer la collection de requête [Sfeir school NodeJS.postman_collection.json](../../resources/Sfeir school NodeJS.postman_collection.json)
+Pour les utilisateurs de Postman, vous pouvez importer la collection de requête [Sfeir school NodeJS.postman_collection.json](../../resources/Sfeir school NodeJS.postman_collection.json).
