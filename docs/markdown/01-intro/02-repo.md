@@ -1,5 +1,20 @@
-# Déroulement de la formation
+<!-- .slide: class="with-code" -->
 
-## Git de la formation
+# Pour récupérer l'appli
 
-git clone -b master https://github.com/sfeir-open-source/sfeir-school-nodejs<!-- .element: class="center" -->
+<br>
+
+```bash
+ git clone git@github.com:sfeir-open-source/sfeir-school-nodejs.git
+```
+
+<!-- .element: class="big-code" -->
+
+# ou
+
+```bash
+git clone https://github.com/sfeir-open-source/sfeir-school-nodejs.git
+```
+
+<!-- .element: class="big-code" -->
+

@@ -11,3 +11,10 @@
 
 ![h-200](./assets/images/Unofficial_JavaScript_logo_2.svg)
 ![h-200](./assets/images/C_plus_plus.svg)
+
+Notes:
+- https://libuv.org/
+- https://v8.dev/
+- V8 just in time compilation
+- Mozilla : SpiderMonkey
+- MS Edge : Chakra

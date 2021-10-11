@@ -1,9 +1,16 @@
 function schoolSlides() {
   return [
     '00-school/00-TITLE.md', 
-    '00-school/speaker-geoffrey.md',
-    '00-school/speaker-yohann.md',
-    '00-school/speaker-celia.md',
+    'speakers/speaker-geoffrey.md',
+    'speakers/speaker-yohann.md',
+    'speakers/speaker-celia.md',
+  ];
+}
+
+function instituteSlides() {
+  return [
+    '00-institute/00-TITLE.md', 
+    'speakers/speaker-geoffrey.md'
   ];
 }
 
@@ -30,6 +37,21 @@ function specificitesSlides() {
     '03-specificites/01-technos.md',
     '03-specificites/02-threads.md',
     '03-specificites/03-asynchronicite.md',
+    '03-specificites/04-event-loop.md',
+  ];
+}
+
+function installationSlides() {
+  return [
+    '04-installation/00-TITLE.md',
+    '04-installation/01-install.md',
+  ];
+}
+function nodeSlides() {
+  return [
+    '04-node/00-TITLE.md',
+    '04-node/01-command.md',
+    '04-node/02-repl.md',
   ];
 }
 
@@ -119,6 +141,30 @@ function formation() {
   });
 }
 
-export function usedSlides() {
-  return formation();
+function institute() {
+  return [
+    ...instituteSlides(),
+    ...introSlides(),
+    ...historiqueSlides(),
+    ...specificitesSlides(),
+    ...installationSlides(),
+    ...nodeSlides(),
+    ...exercicesSlides(),
+    ...apiSlides(),
+    ...npmSlides(),
+    ...finPremierJourSlides(),
+    ...projetSlides(),
+    ...expressSlides(),
+  ].map(slidePath => {
+    return { path: slidePath };
+  });
 }
+
+// export function usedSlides() {
+//   return formation();
+// }
+
+export function usedSlides() {
+  return institute();
+}
+
