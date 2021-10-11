@@ -2,7 +2,7 @@
 
 A [SFEIR School](https://www.sfeir.com/formation/school/)
 
-![logo](https://www.sfeir.com/img/school/formations/Node%20200.png)
+<img src="https://nodejs.org/static/images/logos/nodejs-new-pantone-black.svg" width="250" />
 
 [Planning, trainers and other details](https://www.sfeir.com/formation/school/node-200/)
 
