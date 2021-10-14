@@ -9,7 +9,7 @@
 
 
 Notes:
-- package manager = retard et requiert sudo
+- package manager = retard de version et requiert sudo
 
 ##--##
 

@@ -16,3 +16,7 @@
 * .exit (`<ctrl>` + D)
 * .break (`<ctrl>` + C)
 * `<tab>`
+
+Notes:
+- Faire une démo
+- explorer le globals

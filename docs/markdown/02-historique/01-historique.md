@@ -10,9 +10,11 @@
 ![](./assets/images/320px-Ryan_Dahl.jpg)
 
 https://en.wikipedia.org/wiki/Node.js
+<!-- .element: class="credits" -->
 
 Notes:
-NodeJs Foundation and Open JS Foundation has merged together on March 2019
+- NodeJs Foundation and Open JS Foundation has merged together on March 2019
+- ryan dahl JSConf 2009 : https://www.youtube.com/watch?v=ztspvPYybIY&t=484s&ab_channel=stri8ted
 
 ##==##
 
@@ -47,6 +49,9 @@ Notes:
 <div style="height:700px; width:100%;">
 <img class="full-height center" src="./assets/images/release-schedule.svg">
 </div>
+
+https://nodejs.org/en/about/releases/
+<!-- .element: class="credits" -->
 
 Notes:
 

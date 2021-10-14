@@ -9,4 +9,5 @@ La plupart des fonctions ont une alternative Synchrone !
 
 Promises: fs.promises.readFile(), fs.promises.open(), etc.
 
-https://nodejs.org/dist/latest-v6.x/docs/api/fs.html
+https://nodejs.org/api/fs.html
+<!-- .element: class="credits" -->

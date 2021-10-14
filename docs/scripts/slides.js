@@ -47,6 +47,7 @@ function installationSlides() {
     '04-installation/01-install.md',
   ];
 }
+
 function nodeSlides() {
   return [
     '04-node/00-TITLE.md',
@@ -54,6 +55,26 @@ function nodeSlides() {
     '04-node/02-repl.md',
   ];
 }
+
+function javascript() {
+  return [
+    'javascript/00-TITLE.md',
+    'javascript/01-type-donnees.md',
+    'javascript/02-fonctions.md',
+    'javascript/03-this.md',
+    'javascript/04-prototypes.md',
+    'javascript/04-prototypes-exercice.md',
+    'javascript/05-variables.md',
+    'javascript/06-objects.md',
+    'javascript/06-object-assign.md',
+    'javascript/07-array.md',
+    'javascript/07-array-exercice.md',
+    'javascript/08-asynchronicite.md',
+    'javascript/08-promises-exercice.md',
+    'javascript/09-async-await.md',
+  ]
+}
+
 
 function exercicesSlides() {
   return [
@@ -150,9 +171,9 @@ function institute() {
     ...installationSlides(),
     ...nodeSlides(),
     ...exercicesSlides(),
+    ...javascript(),
     ...apiSlides(),
     ...npmSlides(),
-    ...finPremierJourSlides(),
     ...projetSlides(),
     ...expressSlides(),
   ].map(slidePath => {

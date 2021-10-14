@@ -36,8 +36,52 @@
 * `nextTickQueue`: hors event-loop et immédiatement après l’opération en cours
 
 ##==##
-<!-- .slide: class="flex-row" -->
+<!-- .slide: -->
 
-# Sous le capot : event loop
+# L'event loop et les timers
+
+* setTimeout/setInterval
+* setImmediate
+* process.nextTick
+
+
+Les callbacks de `setTimeout` et `setImmediate` sont exécutés au prochain cycle de l'event loop.
+Le callback de `process.nextTick` est exécuté à la fin du cycle courant de l'event loop.
+
 
 https://nodejs.org/en/docs/guides/event-loop-timers-and-nexttick
+<!-- .element: class="credits" -->
+
+Notes:
+- Démo : bloquer l'event loop
+- setTimeout et setImmediate : on ne sait pas qui arrive en premier
+- process.nextTick asap : prioritaire, ou besoin d'éxécuté du code avant prochain cyle (cleanup)
+
+##--##
+<!-- .slide: class="with-code" -->
+
+# L'event loop et les timers
+
+```javascript
+setTimeout(() => {
+  console.log('timeout');
+}, 0);
+```
+```javascript
+setImmediate(() => {
+  console.log('immediately executing immediate');
+});
+```
+
+```javascript
+const intervalObj = setInterval(() => {
+  console.log('interviewing the interval');
+}, 500);
+clearInterval(intervalObj);
+```
+
+https://nodejs.org/en/docs/guides/timers-in-node/
+<!-- .element: class="credits" -->
+
+Notes:
+- Philip Roberts https://www.youtube.com/watch?v=8aGhZQkoFbQ&t=957s&ab_channel=JSConf
