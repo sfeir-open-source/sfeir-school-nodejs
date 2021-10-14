@@ -22,3 +22,7 @@
 ```bash
  node --print "1 + 1"
 ```
+
+Notes:
+- Faire une démo
+- node --v8-options | grep "in progress"
