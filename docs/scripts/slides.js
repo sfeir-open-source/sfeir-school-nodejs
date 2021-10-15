@@ -2,7 +2,7 @@ import { SfeirThemeInitializer } from "../web_modules/sfeir-school-theme/sfeir-s
 
 function schoolSlides() {
   return [
-    '00-school/00-TITLE.md', 
+    '00-school/00-TITLE.md',
     'speakers/speaker-geoffrey.md',
     'speakers/speaker-yohann.md',
     'speakers/speaker-celia.md',
@@ -11,7 +11,7 @@ function schoolSlides() {
 
 function instituteSlides() {
   return [
-    '00-institute/00-TITLE.md', 
+    '00-institute/00-TITLE.md',
     'speakers/speaker-geoffrey.md'
   ];
 }
