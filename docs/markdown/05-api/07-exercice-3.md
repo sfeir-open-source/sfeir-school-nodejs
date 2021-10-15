@@ -80,5 +80,3 @@ fs.mkdir('jtutu', function(err) {
    readStream.pipe(writeStream);
 });
 ```
-
-https://nodejs.org/dist/latest-v6.x/docs/api/stream.html

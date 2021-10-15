@@ -1,9 +1,10 @@
 # Les API: require(‘http’) / require(‘https’)
 
-* http.createServer(): crée un serveur !
-* http.get(): 
-* http.request(): 
+* `http.createServer()`: crée un serveur !
+* `http.request()`: crée une requête HTTP
+* `http.get()`: crée une requête GET
 
+<br>
 <br>
 
 * On a plusieurs objets:
@@ -13,6 +14,5 @@
 
 <br>
 
-https://nodejs.org/dist/latest-v6.x/docs/api/http.html
-
-https://nodejs.org/dist/latest-v6.x/docs/api/https.html
+https://nodejs.org/api/http.html
+<!-- .element: class="credits" -->

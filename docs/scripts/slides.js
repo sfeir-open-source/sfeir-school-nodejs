@@ -100,6 +100,7 @@ function apiSlides() {
     '05-api/11-exercice-4-fin.md',
     '05-api/12-events-api.md',
     '05-api/13-exercice-5.md',
+    '05-api/12-streams-api.md',
     '05-api/14-child-process-api.md',
     '05-api/15-worker-threads.md',
     '05-api/16-repl.md',
