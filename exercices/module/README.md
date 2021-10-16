@@ -1,4 +1,4 @@
-Écrivez un programme qui dit « Hello, [VAR] » dans la console, en décomposant votre programme en un module qui peut prendre n'importe quelle valeur en paramètre pour [VAR].
+Écrivez un script `run.js` qui dit « Hello, [VAR] » dans la console, en décomposant votre programme en un module `hello.js` qui peut prendre n'importe quelle valeur en paramètre pour [VAR].
 
 ---
 

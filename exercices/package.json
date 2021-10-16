@@ -4,23 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest --bail"
+    "test": "jest --forceExit --silent --bail",
+    "clean": ""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "rimraf": "^2.6.1",
-    "stream-equal": "1.0.0"
+    "rimraf": "^3.0.2",
+    "stream-equal": "^2.0.1"
   },
   "devDependencies": {
-    "jasmine-fail-fast": "^2.0.0",
-    "jest": "24.1.0",
-    "supertest": "3.3.0"
-  },
-  "jest": {
-    "setupFilesAfterEnv": [
-      "./.config/setup-after-env.js"
-    ]
+    "jest": "^27.2.5",
+    "ramda": "^0.27.1",
+    "supertest": "^6.1.6"
   }
 }

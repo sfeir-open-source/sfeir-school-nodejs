@@ -3,16 +3,21 @@ const {exercise1Fn, exercise2Fn, exercise3Fn} = require('./exo.js');
 describe('Test exercise for promises', function () {
 
   let instanceToTest;
+  let stubConsoleLog;
 
   beforeEach(() => {
-    spyOn(console, 'log');
+    stubConsoleLog = jest.spyOn(console, 'log');
+  });
+
+  afterEach(() => {
+    stubConsoleLog.mockRestore();
   });
 
   it('Exercise 1', done => {
     expect(exercise1Fn).toBeDefined();
     exercise1Fn().then(value => {
       expect(value).toBe(undefined);
-      expect(console.log.calls.count()).toBe(1);
+      expect(console.log).toHaveBeenCalledTimes(1);
       expect(console.log).toHaveBeenCalledWith('I love promise');
       done();
     });
@@ -22,7 +27,7 @@ describe('Test exercise for promises', function () {
     expect(exercise2Fn).toBeDefined();
     exercise2Fn().then(value => {
       expect(value).toBe(undefined);
-      expect(console.log.calls.count()).toBe(1);
+      expect(console.log).toHaveBeenCalledTimes(1);
       expect(console.log).toHaveBeenCalledWith('I hate rejection');
       done();
     });
