@@ -1,13 +1,13 @@
 const { EventEmitter } = require('events')
 
 const emitter = new EventEmitter('')
-emitter.on('foo', () => {
-    console.log('first listener')
+emitter.on('foo', (data) => {
+    console.log(`first listener: ${data}`)
 })
-emitter.on('foo', () => {
-    console.log('second listener')
+emitter.on('foo', (data) => {
+    console.log(`second listener: ${data}`)
 })
-emitter.emit('foo')
-emitter.on('foo', () => {
+emitter.emit('foo', "Hello")
+emitter.on('foo', (data) => {
     console.log('third listener never called')
 })
