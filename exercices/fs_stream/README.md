@@ -1,0 +1,2 @@
+Écrivez un programme `run.js` qui utilise les modules `fs` et `path` pour rechercher et afficher dans la console le chemin vers le fichier `coucou.txt`, créer un dossier `jtutu` et y copier le fichier `coucou.txt`
+Pour la lecture et l'écriture d'un fichier, on utilisera les méthodes `createReadStream`et `createWriteStream`

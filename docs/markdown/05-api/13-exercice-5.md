@@ -1,5 +1,5 @@
 <!-- .slide: class="exercice" -->
-# Exercice 5
+# Les évènements
 
 ## Exercice
 
@@ -20,7 +20,7 @@ Got a pong!
 
 ##==##
 <!-- .slide: class="exercice" -->
-# Exercice 5 : Solution
+# Les évènements : Solution
 
 ## Solution
 

@@ -1,4 +1,4 @@
-Écrivez un programme qui utilise les modules `fs` et `path` pour rechercher et afficher dans la console le chemin vers le fichier `coucou.txt`, créer un dossier `jtutu` et y copier le fichier `coucou.txt`
+Écrivez un programme `run.js` qui utilise les modules `fs` et `path` pour rechercher et afficher dans la console le chemin vers le fichier `coucou.txt`, créer un dossier `jtutu` et y copier le fichier `coucou.txt`
 
 ---
 

@@ -1,5 +1,5 @@
 <!-- .slide: class="exercice" -->
-# Exercice 1
+# Créer un script
 
 ## Exercice
 
@@ -12,7 +12,7 @@ $ node run.js
 ```
 3. Lancer les tests avec
 ```bash
-$ npm test -- **/ex01.test.js
+$ npm test hello
 ```
 
 Notes:
@@ -20,7 +20,7 @@ Montrer le test automatisé. Introduire le TDD
 
 ##==##
 <!-- .slide: class="exercice" -->
-# Exercice 1 : Solution
+# Solution
 
 ## Solution
 

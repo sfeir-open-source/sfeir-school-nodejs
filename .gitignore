@@ -46,4 +46,5 @@ jspm_packages
 globalConfig.json
 .vscode
 schoolsdb
+*.file
 TODO.md

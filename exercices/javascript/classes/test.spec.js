@@ -3,10 +3,15 @@ const {MainCoon} = require('./exo.js');
 describe('Test exercise for classes', function () {
 
   let instanceToTest;
+  let stubConsoleLog;
 
   beforeEach(() => {
-    spyOn(console, 'log');
+    stubConsoleLog = jest.spyOn(console, 'log');
     instanceToTest = new MainCoon('Garfield', 'red');
+  });
+
+  afterEach(() => {
+    stubConsoleLog.mockRestore();
   });
 
   it('Is create correctly', () => expect(instanceToTest).toBeDefined());
@@ -21,7 +26,7 @@ describe('Test exercise for classes', function () {
 
   it('Have a play()', () => {
     instanceToTest.play();
-    expect(console.log.calls.count()).toBe(2);
+    expect(console.log).toHaveBeenCalledTimes(2);
   });
 
 });

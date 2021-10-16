@@ -1,5 +1,5 @@
 <!-- .slide: class="exercice" -->
-# Exercice 4-4
+# Serveur HTTP (avec les streams)
 
 ## Exercice
 
@@ -23,7 +23,7 @@ $ node run.js
 
 ##==##
 <!-- .slide: class="exercice" -->
-# Exercice 4-4 : Solution
+# Serveur HTTP : Solution avec les streams
 
 ## Solution
 
@@ -57,11 +57,12 @@ server.listen(9000);
 
 ##==##
 <!-- .slide: class="exercice" -->
-# Exercice 4-4 : Solution avec pipe
+# Serveur HTTP : Solution avec les streams
 
 ## Solution
 
 <br>
+
 
 run-04.js
 ```javascript

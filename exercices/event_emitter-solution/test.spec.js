@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-describe('Exercice 4', () => {
+describe('Event emitter', () => {
 
   let stubConsoleLog
   beforeAll(() => {
@@ -16,8 +16,8 @@ describe('Exercice 4', () => {
     expect(fs.existsSync(path.join(__dirname, 'run.js'))).toBeTruthy();
   });
 
-  it("Le programme affiche 'Got a ping!' puis 'Got a pong' une seconde plus tard", (done) => {
-    require('./run.js');
+  it("Le programme affiche 'Got a ping!' puis 'Got a pong' une seconde plus tard", done => {
+    require('./run.js')
     setTimeout(() => {
       expect(stubConsoleLog).toHaveBeenNthCalledWith(1, 'Got a ping!');
       expect(stubConsoleLog).toHaveBeenNthCalledWith(2, 'Got a pong!');

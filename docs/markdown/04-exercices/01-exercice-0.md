@@ -1,6 +1,5 @@
 <!-- .slide: class="exercice" -->
-# Exercice 0
-
+# Installer les dépendances
 ## Exercice
 
 <br>

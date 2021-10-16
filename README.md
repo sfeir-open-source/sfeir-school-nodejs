@@ -33,12 +33,6 @@ Launch tests :
 npm test -- **/ex01.test.js
 ```
 
-- [exercice 1](./exercices/01_hello/README.md): «Hello, World !»
-- [exercice 2](./exercices/02_module/README.md): Modules
-- [exercice 3](./exercices/03_fs/README.md): fs
-- [exercice 4](./exercices/04_http/README.md): http
-- [exercice 5](./exercices/05_event_emitter/README.md): event emitter
-
 ## Day 2: project
 
 - [Step 01](./project/step01/README.md): initialisation

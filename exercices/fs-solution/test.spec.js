@@ -44,15 +44,13 @@ describe('Exercice 3', () => {
         }, 10);
     });
 
-    it('Le contenu des fichiers est identique', (done) => {
-        setTimeout(() => {
-            const oldfile = fs.createReadStream(path.resolve(__dirname, './coucou.txt'));
-            const newfile = fs.createReadStream(path.resolve(__dirname, './jtutu/coucou.txt'));
-            streamEqual(oldfile, newfile, (err, result) => {
-                assert(result);
-                done(err)
-            });
-        }, 10);
+    it('Le contenu des fichiers est identique', async () => {
+        await new Promise(resolve => setTimeout(resolve, 10))
+        const oldfile = fs.createReadStream(path.resolve(__dirname, './coucou.txt'));
+        const newfile = fs.createReadStream(path.resolve(__dirname, './jtutu/coucou.txt'));
+        await streamEqual(oldfile, newfile, (err, result) => {
+            assert(result);
+        });
     });
 
 });

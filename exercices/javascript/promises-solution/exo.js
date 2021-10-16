@@ -1,6 +1,6 @@
 function exercise1Fn() {
   let exercise1 = new Promise((resolve) => {
-    setTimeout(() => resolve('I Love Promise'), 500);
+    setTimeout(() => resolve('I love promise'), 500);
   });
 
   return exercise1.then(val => console.log(val));

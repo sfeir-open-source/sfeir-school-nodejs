@@ -1,5 +1,5 @@
 <!-- .slide: class="exercice" -->
-# Exercice 2
+# Les modules
 
 ## Exercice
 
@@ -19,7 +19,7 @@ Hello, Sfeir!
 
 ##==##
 <!-- .slide: class="exercice" -->
-# Exercice 2 : Solution
+# Les modules : Solution
 
 ## Solution
 
