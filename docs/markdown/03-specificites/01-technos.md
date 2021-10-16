@@ -18,5 +18,7 @@ Notes:
 - https://v8.dev/
 - V8 just in time compilation
 - Mozilla : SpiderMonkey
-- MS Edge : Chakra
+- MS Edge : Chakra => V8
+- Safari : JavaScriptCore (Nitro)
+- implement the ECMA ES-262 standard
 - github nodejs: https://github.com/nodejs/node

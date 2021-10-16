@@ -10,4 +10,5 @@
 * `npm run <nom du script>` pour lancer un script…
 * `npm link` et `npm unlink`
 * `npm audit` pour lancer un audit de sécurité (npm@6)
+* `npm update <package(@version)>` pour mettre à jour un package
 * On peut ajouter `--verbose` pour avoir des logs !

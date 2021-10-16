@@ -13,6 +13,7 @@ https://en.wikipedia.org/wiki/Node.js
 <!-- .element: class="credits" -->
 
 Notes:
+- Javascript 25ans, node 12 ans
 - NodeJs Foundation and Open JS Foundation has merged together on March 2019
 - ryan dahl JSConf 2009 : https://www.youtube.com/watch?v=ztspvPYybIY&t=484s&ab_channel=stri8ted
 

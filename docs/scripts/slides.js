@@ -94,11 +94,10 @@ function apiSlides() {
     '05-api/05-path-api.md', 
     '05-api/06-fs-api.md',
     '05-api/07-exercice-3.md', // exercice fichier
-
     '05-api/10-url-api.md',
+    '05-api/08-net-api.md',
     '05-api/08-http-api.md',
     '05-api/09-exercice-4.md', // simple http server
-
     '05-api/12-events-api.md',
     '05-api/13-exercice-5.md',// exercice events
     '05-api/12-streams-api.md',
@@ -106,7 +105,8 @@ function apiSlides() {
     '05-api/11-exercice-4-fin.md', // exercice http avec stream
     '05-api/14-child-process-api.md',
     '05-api/15-worker-threads.md',
-    '05-api/16-repl.md',
+    //'05-api/16-repl.md',
+    '05-api/17-cluster.md'
   ];
 }
 
@@ -122,7 +122,7 @@ function npmSlides() {
     '06-npm/07-configuration.md',
     '06-npm/08-bonnes-pratiques.md',
     '06-npm/09-npx.md',
-    '06-npm/10-references.md',
+    //'06-npm/10-references.md',
   ];
 }
 
@@ -132,11 +132,23 @@ function finPremierJourSlides() {
   ];
 }
 
+function gestionErreurs() {
+  return [
+    '10-gestion-erreurs/00-TITLE.md'
+  ]
+}
+
+function deployer() {
+  return [
+    '11-deployer/00-TITLE.md'
+  ]
+}
+
 function projetSlides() {
   return [
     '08-projet/00-TITLE.md',
     '08-projet/01-lancement.md',
-    '08-projet/02-debugging.md',
+    //'08-projet/02-debugging.md',
   ];
 }
 
@@ -178,6 +190,8 @@ function institute() {
     ...javascript(),
     ...apiSlides(),
     ...npmSlides(),
+    ...gestionErreurs(),
+    ...deployer(),
     ...projetSlides(),
     ...expressSlides(),
   ].map(slidePath => {
