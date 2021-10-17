@@ -8,10 +8,12 @@ const {
   INITDB_DATABASE = "schoolsdb",
   DATABASE_HOST = "localhost",
   DATABASE_PORT = 5984,
-  PORT = 3000
+  PORT = 3000,
+  DATABASE_USER,
+  DATABASE_PASSWORD
 } = process.env;
 
-const url = `http://${DATABASE_HOST}:${DATABASE_PORT}/${INITDB_DATABASE}`;
+const url = `http://${DATABASE_USER}:${DATABASE_PASSWORD}@${DATABASE_HOST}:${DATABASE_PORT}/${INITDB_DATABASE}`;
 
 process.on("uncaughtException", err => {
   log.error({ err }, "Got an uncaught exception");
@@ -24,6 +26,7 @@ process.on("unhandledRejection", err => {
   process.exit(1);
 });
 
+
 const connect = () => {
   const db = new PouchDB(url);
   db.info()
@@ -32,7 +35,7 @@ const connect = () => {
       return true;
     })
     .catch(err => {
-      log.error({ err }, "Error while connecting to DB");
+      log.error({ err }, "Error while connecting to DB" + url);
       return false;
     })
     .then(connected => {

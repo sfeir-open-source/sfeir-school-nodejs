@@ -1,17 +1,16 @@
-FROM node:10
+FROM node:14
 
-RUN mkdir /src
-WORKDIR /src
+# Create app directory
+WORKDIR /usr/src/app
 
-COPY package.json package-lock.json /src/
-RUN mkdir lib/ \
-    && npm install --silent --production
+# Install app dependencies
+COPY package*.json ./
 
-COPY index.js /src/
-COPY lib /src/lib/
+RUN npm ci --only=production
 
-ENV NODE_ENV development
+COPY . .
+
+ENV NODE_ENV production
 
 EXPOSE 3000
-
-CMD ["npm", "run", "dev"]
+CMD ["npm", "start"]

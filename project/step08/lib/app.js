@@ -3,7 +3,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const passport = require("passport");
 const session = require("express-session");
-const uuidv1 = require("uuid/v1");
+const { v1: uuidv1 } = require("uuid");
 const app = express();
 
 const { SALT } = process.env;

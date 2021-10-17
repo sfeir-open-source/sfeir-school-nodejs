@@ -18,4 +18,4 @@ Une Sfeir School est un objet, par exemple:
 - Lancer avec `npm start`.
 - Tester avec [httpie](https://httpie.org/):
   - Pour récupérer la liste: `http http://localhost:3000/`.
-  - Pour ajouter une Sfeir School: `http POST http://localhost:3000/ title="Sfeir School NodeJS" trainer="Siegfried Ehret"`.
+  - Pour ajouter une Sfeir School: `http POST http://localhost:3000/ title="Sfeir School NodeJS" trainer="Ryan Dahl"`.

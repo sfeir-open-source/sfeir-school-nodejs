@@ -1,7 +1,7 @@
 const { scrypt } = require("crypto");
 const express = require("express");
 const passport = require("passport");
-const uuidv1 = require("uuid/v1");
+const { v1: uuidv1 } = require("uuid");
 
 const { SALT } = process.env;
 

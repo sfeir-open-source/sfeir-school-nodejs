@@ -2,12 +2,13 @@ version: "3.1"
 
 services:
   couchdb:
-    image: couchdb
+    image: couchdb:latest
     restart: always
     ports:
       - 5984:5984
     environment:
-      INITDB_DATABASE: schoolsdb
+      COUCHDB_USER: admin
+      COUCHDB_PASSWORD: plop
     networks:
       - api
   schools:
@@ -15,13 +16,17 @@ services:
     ports:
       - "3000:3000"
     environment:
+      - DATABASE_USER=admin
+      - DATABASE_PASSWORD=plop
       - DATABASE_HOST=couchdb
       - LOG_LEVEL=debug
       - SALT=kikoo plop
     depends_on:
       - couchdb
+      - couchdbsetup
     networks:
       - api
 
 networks:
   api:
+    driver: bridge
