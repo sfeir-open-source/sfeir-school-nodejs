@@ -18,30 +18,30 @@ On va créer deux routes:
 - `/register` pour créer les comptes.
 - `/login` pour la connexion.
 
-On va utiliser un module core de Node: [crypto](https://nodejs.org/dist/latest-v10.x/docs/api/crypto.html). Il nous fournit [scrypt](https://nodejs.org/dist/latest-v10.x/docs/api/crypto.html#crypto_crypto_scrypt_password_salt_keylen_options_callback) pour ce qui est de la génération des mots de passe.
+On va utiliser un module core de Node: [crypto](https://nodejs.org/dist/latest-v14.x/docs/api/crypto.html). Il nous fournit [scrypt](https://nodejs.org/dist/latest-v14.x/docs/api/crypto.html#crypto_crypto_scrypt_password_salt_keylen_options_callback) pour ce qui est de la génération des mots de passe.
 
 ### 2. Passport - Stratégie
 
-Nous allons utiliser [passport](https://github.com/jaredhanson/passport) pour gérer les histoires d'authentification.
+Nous allons utiliser [passport](https://www.passportjs.org/) pour gérer les histoires d'authentification.
 
-Commençons par créer une stratégie avec [passport-local](https://github.com/jaredhanson/passport-local):
-
-- On va créer une `strategy` qui va fouiller dans la base.
+Commençons par créer une stratégie avec [passport-local](https://www.passportjs.org/packages/passport-local/):
+- Dans le fichier `user.js`, on va créer une `strategy` qui va fouiller dans la base.
 
 ### 3. Passport - application
 
-- Configurer les méthodes `serializeUser` et `deserializeUser` pour passport.
 - Ajouter le middleware global `passport.initialize()` à express.
-- Ajouter le middleware pour la route d'authentification pour la `/login`.
-- Protéger la route pour créer une Sfeir School avec un middleware qui vérifie qu'un utilisateur est connecté ([hint](https://github.com/jaredhanson/passport/blob/882d65e69d5b56c6b88dd0248891af9e0d80244b/lib/http/request.js#L83)).
+- Ajouter le middleware `passport.authenticate("local")` pour la route d'authentification pour la `/login`.
+- Protéger la route pour créer une Sfeir School avec un middleware qui vérifie qu'un utilisateur est connecté ([hint](https://github.com/jaredhanson/passport/blob/882d65e69d5b56c6b88dd0248891af9e0d80244b/lib/http/request.js#L83))
   
 Au cas où: [un peu de doc](https://github.com/jwalton/passport-api-docs) en plus.
 
 ### 4. Gestion de session
 
-Passport ne gère pas la session. On va déléguer ça à [express-session](http://expressjs.com/en/resources/middleware/session.html) afin de gérer ça en mémoire pour nous.
+Les sessions utilisateur sont gérées par le middleware [express-session](https://github.com/expressjs/session). Par défaut les sessions sont stockées en mémoire (ce qui n'est pas recommandé pour la production)
 
-On aura aussi besoin de [`passport.session()`](https://github.com/jwalton/passport-api-docs/tree/18f7336ce91f0300068c944197017c0815d71b5f#passportsessionoptions).
+- On aura besoin de [`passport.session()`](https://github.com/jwalton/passport-api-docs/tree/18f7336ce91f0300068c944197017c0815d71b5f#passportsessionoptions).
+- de la méthode `serializeUser` de passport pour sérializer le user dans la session.
+- de la méthode `deserializeUser` de passport pour desérializer le user à partir de la session.
 
 ### Pour essayer tout ça:
 
