@@ -134,13 +134,18 @@ function finPremierJourSlides() {
 
 function gestionErreurs() {
   return [
-    '10-gestion-erreurs/00-TITLE.md'
+    '10-gestion-erreurs/00-TITLE.md',
+    '10-gestion-erreurs/01-erreurs.md',
+    '10-gestion-erreurs/02-debugging.md',
+    '10-gestion-erreurs/03-logging.md'
   ]
 }
 
 function deployer() {
   return [
-    '11-deployer/00-TITLE.md'
+    '11-deployer/00-TITLE.md',
+    '11-deployer/01-production.md',
+    '11-deployer/02-container.md'
   ]
 }
 

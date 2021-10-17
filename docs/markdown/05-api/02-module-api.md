@@ -24,7 +24,8 @@ https://nodejs.org/docs/latest/api/modules.html
 <!-- .element: class="credits" -->
 
 Notes:
-npm : packages global
+- npm : packages global
+- recherche recursive
 
 ##--##
 
