@@ -85,3 +85,6 @@ https://nodejs.org/en/docs/guides/timers-in-node/
 
 Notes:
 - Philip Roberts https://www.youtube.com/watch?v=8aGhZQkoFbQ&t=957s&ab_channel=JSConf
+- https://nodejs.dev/learn/the-nodejs-event-loop
+- https://medium.com/preezma/node-js-event-loop-architecture-go-deeper-node-core-c96b4cec7aa4
+

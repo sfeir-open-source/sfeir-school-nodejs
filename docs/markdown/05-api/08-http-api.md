@@ -16,3 +16,6 @@
 
 https://nodejs.org/api/http.html
 <!-- .element: class="credits" -->
+
+Notes:
+peut-être remplacé par axios ou node-fetch (es6)

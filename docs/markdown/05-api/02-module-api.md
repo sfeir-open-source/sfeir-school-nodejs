@@ -36,9 +36,9 @@ Notes:
     * CJS est le mode par défaut
     * Extension .js ou .cjs
     * Import synchrone
-* import ES6 (MJS)
+* import ES6 (MJS) (stable depuis v13.2.0)
     * Utilise `import` et `export`
-    * Extension .mjs
+    * Extension .mjs ("type": "module" dans package.json)
     * Import asynchrone
 
 ##--##
