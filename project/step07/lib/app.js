@@ -1,6 +1,6 @@
 const express = require("express");
 const bodyParser = require("body-parser");
-const uuidv1 = require("uuid/v1");
+const { v1: uuidv1 } = require("uuid");
 const app = express();
 
 // TODO : retrieve SALT from environment

@@ -1,5 +1,5 @@
 const express = require("express");
-const uuidv1 = require("uuid/v1");
+const { v1: uuidv1 } = require("uuid");
 const log = require("../logger")();
 
 function ensureAuthenticated(req, res, next) {
