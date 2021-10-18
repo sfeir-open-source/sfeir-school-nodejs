@@ -8,10 +8,8 @@
     "sass-once": "node-sass ./scss/slides.scss -o ./css/ --source-map=true ",
     "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "live-server --port=4242 --open=\"./index.html\" --watch=\"markdown/\"",
-    "start": "npm-run-all --parallel serve sass",
-    "copy-highlight": "cpx \"node_modules/highlight.js/styles/**/*\" \"web_modules/highlight.js/styles\" ",
-    "copy-reveal": "cpx \"node_modules/reveal.js/**/*\" \"web_modules/reveal.js\" ",
-    "prepare": "parallelshell \"npm run copy-reveal\"  \"npm run copy-highlight\" \"snowpack\""
+    "start": "parallelshell \"npm run serve\" \"npm run sass\"",
+    "prepare": "snowpack"
   },
   "repository": {
     "type": "git",
@@ -33,14 +31,16 @@
     "highlight.js": "^9.15.6",
     "lit-html": "^1.1.2",
     "live-server": "^1.2.1",
-    "node-sass": "^4.12.0",
+    "node-sass": "^6.0.1",
     "parallelshell": "3.0.1",
-    "reveal.js": "^3.9.2",
-    "sfeir-school-theme": "^2.2.0",
+    "reveal.js": "^4.1.0",
+    "sfeir-school-theme": "../../sfeir-school-theme",
     "snowpack": "^1.6.0"
   },
   "snowpack": {
     "webDependencies": [
+      "reveal.js/dist/*.esm.js",
+      "reveal.js/plugin/**/*.esm.js",
       "sfeir-school-theme/dist/**/*",
       "lit-html",
       "highlight.js/styles/**/*"
