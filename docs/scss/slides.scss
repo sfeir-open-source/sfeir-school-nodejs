@@ -1,5 +1,10 @@
 @import 'colors.scss';
 
+/* double .slides is a little specificity hack */
+.reveal .slides.slides section.sfeir-basic-slide.present.exercice.smaller-font p {
+  font-size: 1.05em;
+}
+
 /**
   - modify the top of icon to avoid the icon be just below the name of the speaker
 **/

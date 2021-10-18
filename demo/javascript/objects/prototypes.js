@@ -1,8 +1,8 @@
-function Animal(specie, color) {
-    this.specie = specie;
+function Animal(species, color) {
+    this.species = species;
     this.color = color;
 }
-Animal.prototype.toString = function () { return `${this.specie} ${this.color}` }
+Animal.prototype.toString = function () { return `${this.species} ${this.color}` }
 
 function Cat(color, race) {
     Animal.call(this, "cat", color)

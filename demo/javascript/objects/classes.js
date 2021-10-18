@@ -1,9 +1,9 @@
 class Animal {
-    constructor(specie, color) {
-        this.specie = specie;
+    constructor(species, color) {
+        this.species = species;
         this.color = color;
     }
-    toString() { return `${this.specie} ${this.color}` }
+    toString() { return `${this.species} ${this.color}` }
 }
 
 class Cat extends Animal {
