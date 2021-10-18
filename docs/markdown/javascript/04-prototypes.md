@@ -4,11 +4,11 @@
 * L'héritage en JavaScript est réalisé avec une chaîne de prototypes.
 
 ```javascript
-function Animal(specie, color) {
-    this.specie = specie;
+function Animal(species, color) {
+    this.species = species;
     this.color = color;
 }
-Animal.prototype.toString = function () { return `${this.specie} ${this.color}` }
+Animal.prototype.toString = function () { return `${this.species} ${this.color}` }
 
 function Cat(color, race) {
     Animal.call(this, "cat", color)
@@ -30,11 +30,11 @@ console.log(cat.toString())
 
 ```javascript
 class Animal {
-    constructor(specie, color) {
-        this.specie = specie;
+    constructor(species, color) {
+        this.species = species;
         this.color = color;
     }
-    toString() { return `${this.specie} ${this.color}` }
+    toString() { return `${this.species} ${this.color}` }
 }
 
 class Cat extends Animal {

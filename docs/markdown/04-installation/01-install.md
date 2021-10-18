@@ -19,7 +19,7 @@ Notes:
 
 <br>
 
-* Installer un version
+* Installer une version
 
 ```bash
  nvm install 14
