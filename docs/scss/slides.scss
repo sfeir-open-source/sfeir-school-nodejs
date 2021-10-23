@@ -92,3 +92,35 @@
     left: 0;
   }
 }
+
+.reveal .slides section.with-code{
+   
+  pre {
+
+      code {
+          max-height: 700px;
+      }
+  }
+}
+
+/* Workaround to solve two column layout */
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0 5px;
+}
+.row:first-child {
+  margin-right: 30px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  height: 100%;
+  margin: 0 5px;
+}

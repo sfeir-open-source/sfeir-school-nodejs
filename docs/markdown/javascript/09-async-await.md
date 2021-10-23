@@ -2,27 +2,15 @@
 
 # Async/Await
 
-<br/>
-<br/>
-<br/>
-<br/>
-
 - Utiliser des promesses dans un style d'écriture synchrone
 
 ##==##
 
-<!-- .slide: class="two-column-layout" -->
+<!-- .slide: class="with-code" -->
 
 # Async/Await
 
-- **Avant la fonction async, le problème de l'asynchronicité**
-
-##--##
-
-<!-- .slide: class="with-code" -->
-
-<br/>
-<br/>
+- Avant la fonction async, le problème de l'asynchronicité
 
 ```javascript
 function getData() {
@@ -34,13 +22,6 @@ function getData() {
 }
 ```
 
-##--##
-
-<!-- .slide: class="with-code" -->
-
-<br/>
-<br/>
-
 ```javascript
 function main() {
   var data = getData();
@@ -50,18 +31,11 @@ function main() {
 
 ##==##
 
-<!-- .slide: class="two-column-layout" -->
+<!-- .slide: class="with-code" -->
 
 # Async/Await
 
-- **Une écriture simplifiée pour une lisibilité accrue**
-
-##--##
-
-<!-- .slide: class="with-code" -->
-
-<br/>
-<br/>
+- Une écriture simplifiée pour une lisibilité accrue
 
 ```javascript
 function logData() {
@@ -72,12 +46,6 @@ function logData() {
 // ES2015 | On utilise une promesse
 ```
 
-##--##
-
-<!-- .slide: class="with-code" -->
-
-<br/>
-<br/>
 
 ```javascript
 async function logData() {

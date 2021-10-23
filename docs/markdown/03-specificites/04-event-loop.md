@@ -1,31 +1,32 @@
-<!-- .slide: class="two-column-layout"-->
-
+<!-- .slide: class="with-code" -->
 # Sous le capot : event loop
 
-##--##
-<!-- .slide: class="with-code" -->
-```bash
-   ┌───────────────────────────┐
-┌─>│           timers          │
-│  └─────────────┬─────────────┘
-│  ┌─────────────┴─────────────┐
-│  │     pending callbacks     │
-│  └─────────────┬─────────────┘
-│  ┌─────────────┴─────────────┐
-│  │       idle, prepare       │
-│  └─────────────┬─────────────┘      ┌───────────────┐
-│  ┌─────────────┴─────────────┐      │   incoming:   │
-│  │           poll            │<─────┤  connections, │
-│  └─────────────┬─────────────┘      │   data, etc.  │
-│  ┌─────────────┴─────────────┐      └───────────────┘
-│  │           check           │
-│  └─────────────┬─────────────┘
-│  ┌─────────────┴─────────────┐
-└──┤      close callbacks      │
-   └───────────────────────────┘
-```
+<div class="row">
+  <div class="column">
 
-##--##
+  ```bash
+     ┌───────────────────────────┐
+  ┌─>│           timers          │
+  │  └─────────────┬─────────────┘
+  │  ┌─────────────┴─────────────┐
+  │  │     pending callbacks     │
+  │  └─────────────┬─────────────┘
+  │  ┌─────────────┴─────────────┐
+  │  │       idle, prepare       │
+  │  └─────────────┬─────────────┘      ┌───────────────┐
+  │  ┌─────────────┴─────────────┐      │   incoming:   │
+  │  │           poll            │<─────┤  connections, │
+  │  └─────────────┬─────────────┘      │   data, etc.  │
+  │  ┌─────────────┴─────────────┐      └───────────────┘
+  │  │           check           │
+  │  └─────────────┬─────────────┘
+  │  ┌─────────────┴─────────────┐
+  └──┤      close callbacks      │
+     └───────────────────────────┘
+  ```
+
+  </div>
+  <div class="column">
 
 * `timers` : exécute les callbacks setTimeout/setInterval
 * `I/O callbacks` : exécute tous les callbacks sauf close, timers et setImmediate
@@ -35,8 +36,9 @@
 * `close callbacks` : xxx.on(‘close’, …)
 * `nextTickQueue`: hors event-loop et immédiatement après l’opération en cours
 
+</div>
+</div>
 ##==##
-<!-- .slide: -->
 
 # L'event loop et les timers
 

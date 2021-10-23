@@ -77,13 +77,9 @@ Présent depuis ES2015
 
 ##==##
 
-<!-- .slide: class="two-column-layout"-->
+<!-- .slide: class="with-code" -->
 
 # Promises
-
-##--##
-
-<!-- .slide: class="with-code" -->
 
 ```javascript
 let p = new Promise(function(resolve, reject) {
@@ -95,8 +91,6 @@ let p = new Promise(function(resolve, reject) {
 p.then(value => ...);
 ```
 
-##--##
-
 ![center h-500](./assets/images/Promises_01.png) <!-- .element: class="fragment" -->
 
 Notes:
@@ -104,18 +98,12 @@ Faire le parallèle avec le problème de confiance en la fonction appelant des c
 
 ##==##
 
-<!-- .slide: class="two-column-layout"-->
+<!-- .slide: class="with-code" -->
 
 # Promises
 
 Pour revenir à l'exemple du callback hell, on peut utiliser les promesses !
 
-##--##
-
-<br />
-<br />
-
-<!-- .slide: class="with-code" -->
 
 ```javascript
 a(function (resultA) {
@@ -131,13 +119,6 @@ a(function (resultA) {
 });
 ```
 
-##--##
-
-<!-- .slide: class="with-code" -->
-
-<br />
-<br />
-
 ```javascript
 a()
   .then(resultA => b(resultA))
@@ -152,18 +133,11 @@ Faire le parallèle avec le problème d'ordre d'exécution
 
 ##==##
 
-<!-- .slide: class="two-column-layout"-->
+<!-- .slide: class="with-code" -->
 
 # Promises
 
 Pour revenir à l'exemple du callback hell, on peut utiliser les promesses !
-
-##--##
-
-<!-- .slide: class="with-code" -->
-
-<br />
-<br />
 
 ```javascript
 a()
@@ -173,13 +147,6 @@ a()
   .then(resultD => e(resultD))
   .then(resultE => console.log(resultE));
 ```
-
-##--##
-
-<!-- .slide: class="with-code" -->
-
-<br />
-<br />
 
 ```javascript
 function a() {
@@ -194,19 +161,11 @@ etc ...
 ```
 
 ##==##
-
-<!-- .slide: class="two-column-layout"-->
+<!-- .slide: class="with-code" -->
 
 # Promises
 
 On peut faire encore mieux !
-
-##--##
-
-<!-- .slide: class="with-code" -->
-
-<br />
-<br />
 
 ```javascript
 a()
@@ -216,13 +175,6 @@ a()
   .then(resultD => e(resultD))
   .then(resultE => console.log(resultE));
 ```
-
-##--##
-
-<!-- .slide: class="with-code" -->
-
-<br />
-<br />
 
 ```javascript
 a()
@@ -262,7 +214,7 @@ Notes:
 
 Maintenant, il y a le .finally() qui permet d'executer un truc à la fin que l'on ait un catch ou un then
 
-Faire le parallèle avec le problème de la gestion d'erreursq
+Faire le parallèle avec le problème de la gestion d'erreurs
 
 ##==##
 
@@ -339,15 +291,12 @@ Promise.race([Promise.resolve(4), Promise.resolve('toto')])
 
 ##==##
 
-<!-- .slide: class="two-column-layout" -->
+<!-- .slide: class="with-code" -->
 
 # Promises
 
 "Ok ok ok, moi je veux créer une promesse, comment je fais ?"
 
-##--##
-
-<!-- .slide: class="with-code" -->
 
 <br/>
 <br/>

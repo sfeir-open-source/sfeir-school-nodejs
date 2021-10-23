@@ -1,16 +1,12 @@
-<!-- .slide: class="two-column-layout" -->
-
+<!-- .slide: class="with-code" -->
 # Object.assign
 
 - JS nous permet de **copier** un objet ou d'en **fusionner** plusieurs !
 
-##--##
+<br />
 
-<!-- .slide: class="with-code" -->
-
-<br />
-<br />
-<br />
+<div class="row">
+<div class="column">
 
 ```javascript
 const o1 = { a: 1 }, o2 = { b: 2 };
@@ -25,15 +21,8 @@ Object.defineProperty(o2, 'g', {
     enumerable: true
 });
 ```
-<!-- .element: class="fragment" -->
-
-##--##
-
-<!-- .slide: class="with-code" -->
-
-<br />
-<br />
-<br />
+</div>
+<div class="column">
 
 ```javascript
 const newO = Object.assign(target, o1, o2 );
@@ -50,7 +39,9 @@ newO.b;                 // 2
 newO.f;                 // undefined
 newO.g;                 // 8
 ```
-<!-- .element: class="fragment" -->
+
+</div>
+</div>
 
 Notes:
 f est undefined car non enumerable dans l'objet d'origine.

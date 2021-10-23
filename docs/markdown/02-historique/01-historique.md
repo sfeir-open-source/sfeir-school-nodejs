@@ -1,5 +1,3 @@
-<!-- .slide: class="two-column-layout"-->
-
 # Il était une fois… Node.JS !
 
 * Créé par Ryan Dahl

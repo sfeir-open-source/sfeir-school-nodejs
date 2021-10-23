@@ -1,8 +1,5 @@
-<!-- .slide: class="two-column-layout"-->
-
 # Javascript: l’asynchronicité comme standard
 
-##--##
 <!-- .slide: class="with-code" -->
 ```javascript
 // 1
@@ -16,7 +13,6 @@ fs.readFile('/path/to/file', function callback() {
 // 2
 console.log(2);
 ```
-##--##
 
 * Les fonctions asynchrones sont non-bloquantes
 * Elles sont “résolues” à un moment ultérieur et on peut fournir un callback à exécuter

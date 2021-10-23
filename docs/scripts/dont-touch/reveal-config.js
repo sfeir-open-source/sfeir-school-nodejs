@@ -18,6 +18,8 @@ Reveal.initialize(
     center: false,
     width: 1920,
     height: 1080,
+    pdfSeparateFragments: false,
+    pdfMaxPagesPerSlide: 1,
 
     keyboard: {
       32: function() {
