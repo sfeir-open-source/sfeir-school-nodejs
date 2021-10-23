@@ -8,6 +8,8 @@
 ```
 <!-- .element: class="fragment" -->
 
+<br>
+
 ```javascript
     const valueB = 1234;
     valueB = 12345; //ERROR
@@ -26,6 +28,7 @@ Notes:
 
 # Const et let : Mais où sont les var ?
 
+
 ```javascript
 if (true) {
   var j = 2;
@@ -33,6 +36,8 @@ if (true) {
 console.log(j); // 2
 ```
 <!-- .element: class="fragment" -->
+
+<br>
 
 ```javascript
 if (true) {

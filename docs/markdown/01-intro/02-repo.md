@@ -1,4 +1,4 @@
-<!-- .slide: class="with-code" -->
+<!-- .element: class="big-code" -->
 
 # Pour récupérer l'appli
 

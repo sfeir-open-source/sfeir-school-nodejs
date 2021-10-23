@@ -60,10 +60,6 @@ html.print-pdf {
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
-  padding: 0 5px;
-}
-.row:first-child {
-  margin-right: 30px;
 }
 
 .column {
@@ -72,5 +68,13 @@ html.print-pdf {
   flex-basis: 100%;
   flex: 1;
   height: 100%;
-  margin: 0 5px;
+}
+.column:first-child {
+  margin-right: 30px;
+}
+
+.reveal .slides section[data-background].speaker-slide{
+  h3.icon-linkedin:before{
+    content: '\f0E1';
+  }
 }
