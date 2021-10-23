@@ -8,5 +8,11 @@
 <h2>Geoffrey <span>Brunois</span></h2>
 
 
+### Développeur full stack
+<!-- .element: class="icon-rule icon-first" -->
+
 ### brunois.g@sfeir.com
 <!-- .element: class="icon-email icon-second" -->
+
+### geoffrey-brunois
+<!-- .element: class="icon-linkedin icon-third" -->

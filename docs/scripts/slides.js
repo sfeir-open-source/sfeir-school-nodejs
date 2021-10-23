@@ -17,9 +17,9 @@ function instituteSlides() {
 function introSlides() {
   return [
     '01-intro/00-TITLE.md',
+    '01-intro/03-plan.md',
     '01-intro/01-slides.md',
     '01-intro/02-repo.md',
-    '01-intro/03-plan.md',
   ];
 }
 

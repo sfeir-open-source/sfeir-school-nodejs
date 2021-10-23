@@ -1,5 +1,15 @@
 @import 'colors.scss';
 
+// .reveal .slides.slides section.sfeir-basic-slide.present.exercice [id=exercice] {
+//   visibility: hidden;
+// }
+// .reveal .slides.slides section.sfeir-basic-slide.present.exercice [id=solution] {
+//   visibility: hidden;
+// }
+// .reveal .slides.slides section.sfeir-basic-slide.present.exercice [id=solution-1] {
+//   visibility: hidden;
+// }
+
 /* double .slides is a little specificity hack */
 .reveal .slides.slides section.sfeir-basic-slide.present.exercice.smaller-font p {
   font-size: 1.05em;
@@ -110,10 +120,6 @@
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
-  padding: 0 5px;
-}
-.row:first-child {
-  margin-right: 30px;
 }
 
 .column {
@@ -122,5 +128,13 @@
   flex-basis: 100%;
   flex: 1;
   height: 100%;
-  margin: 0 5px;
+}
+.column:first-child {
+  margin-right: 30px;
+}
+
+.reveal .slides section[data-background].speaker-slide{
+  h3.icon-linkedin:before{
+    content: '\f0E1';
+  }
 }

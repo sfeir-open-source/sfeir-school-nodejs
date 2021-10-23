@@ -1,4 +1,4 @@
-<!-- .slide: class="with-code" -->
+<!-- .element: class="big-code" -->
 
 # Pour récupérer l'appli
 
@@ -8,13 +8,9 @@
  git clone git@github.com:sfeir-open-source/sfeir-school-nodejs.git
 ```
 
-<!-- .element: class="big-code" -->
-
-# ou
+ou
 
 ```bash
 git clone https://github.com/sfeir-open-source/sfeir-school-nodejs.git
 ```
-
-<!-- .element: class="big-code" -->
 
