@@ -1,6 +1,6 @@
 # Fn JS : Exercice
 
-Créer une fonction (getTotalAmount) qui calcul le prix total des livres du panier shoppingCart
+Créer une fonction (getTotalAmount) qui calcule le prix total des livres du panier shoppingCart
 
 La fonction doit :
 
