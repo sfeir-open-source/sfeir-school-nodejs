@@ -56,7 +56,8 @@ https://nodejs.org/en/docs/guides/event-loop-timers-and-nexttick
 
 Notes:
 - Démo : bloquer l'event loop
-- setTimeout et setImmediate : on ne sait pas qui arrive en premier
+- setTimeout : prochain cycle. on place du code en file d'attente
+- setTimeout et setImmediate : on ne sait pas qui arrive en premier (demo)
 - process.nextTick asap : prioritaire, ou besoin d'éxécuté du code avant prochain cyle (cleanup)
 
 ##--##
