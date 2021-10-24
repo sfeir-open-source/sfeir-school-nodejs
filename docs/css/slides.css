@@ -1,12 +1,3 @@
-.reveal .slides.slides section.sfeir-basic-slide.present.exercice [id=exercice] {
-  visibility: hidden; }
-
-.reveal .slides.slides section.sfeir-basic-slide.present.exercice [id=solution] {
-  visibility: hidden; }
-
-.reveal .slides.slides section.sfeir-basic-slide.present.exercice [id=solution-1] {
-  visibility: hidden; }
-
 /* double .slides is a little specificity hack */
 .reveal .slides.slides section.sfeir-basic-slide.present.exercice.smaller-font p {
   font-size: 1.05em; }
@@ -15,7 +6,7 @@
   - modify the top of icon to avoid the icon be just below the name of the speaker
 **/
 .reveal .slides section[data-background].speaker-slide img[alt*=badge] {
-  top: 850px; }
+  top: 800px; }
 
 /**
   - add a new class to display code correctly when there is a lot of code on the diapo
