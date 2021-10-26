@@ -34,6 +34,8 @@ process.on('uncaughtException', err => {
 })
 ```
 
+##--##
+
 # Les exceptions asynchrones
 
 * On traite les promesses rejetées avec la méthode `catch`.
