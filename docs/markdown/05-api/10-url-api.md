@@ -1,6 +1,6 @@
 <!-- .slide: -->
 
-# Les API: require(‘url’)
+# API: require(‘url’)
 
 * `URL`: parse et construit un objet `URL`.
     * `const myURL = new URL('https://example.org?id=123')`
@@ -8,9 +8,9 @@
     * `myURL.searchParams.get("id")`
 <br>
 <br>
-* `url.format()`: créer une url (string) à partir d’un objet (legacy API).
-* `url.parse()`: créer un objet à partir d’une url (legacy API).
-* `url.resolve()`: comme path.resolve() (legacy API).
+* `url.format()`: create a url (string) from an object (legacy API).
+* `url.parse()`: create an object from a url (legacy API).
+* `url.resolve()`: like path.resolve() (legacy API).
 
 ##--##
 

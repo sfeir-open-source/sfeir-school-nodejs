@@ -1,9 +1,9 @@
-# Le REPL
+# REPL
 
 <b>Read-Eval-Print-Loop</b>
 
-* Taper `node` dans un terminal
-* Tout ce qu’on a vu est utilisable depuis le repl !
+* Type `node` in a terminal
+* Everything we have seen is usable since the repl!
 
 ##--##
 

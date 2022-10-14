@@ -1,5 +1,5 @@
 <!-- .slide: class="with-code" -->
-# Sous le capot : event loop
+# What inside: event loop
 
 <div class="row">
   <div class="column">
@@ -28,27 +28,27 @@
   </div>
   <div class="column">
 
-* `timers` : exécute les callbacks setTimeout/setInterval
-* `I/O callbacks` : exécute tous les callbacks sauf close, timers et setImmediate
-* `idle, prepare`: interne
-* `poll`: récupération ou attente de nouveaux événements I/O
-* `check`: exécute les callback setImmediate
+* `timers` : execute callbacks setTimeout/setInterval
+* `I/O callbacks` : executes all callbacks except close, timers et setImmediate
+* `idle, prepare`: internal
+* `poll`: retrieving or waiting for new events I/O
+* `check`: execute setImmediate callbacks
 * `close callbacks` : xxx.on(‘close’, …)
-* `nextTickQueue`: hors event-loop et immédiatement après l’opération en cours
+* `nextTickQueue`: outside event-loop and immediately after the current operation
 
 </div>
 </div>
 ##==##
 
-# L'event loop et les timers
+# The event loop and the timers
 
 * setTimeout/setInterval
 * setImmediate
 * process.nextTick
 
 
-Les callbacks de `setTimeout` et `setImmediate` sont exécutés au prochain cycle de l'event loop.
-Le callback de `process.nextTick` est exécuté à la fin du cycle courant de l'event loop.
+The callbacks of `setTimeout` and  `setImmediate` are executed at the next cycle of the event loop.
+The callbacks of `process.nextTick` is executed at the end of the current cycle of the event loop.
 
 
 https://nodejs.org/en/docs/guides/event-loop-timers-and-nexttick
@@ -63,7 +63,7 @@ Notes:
 ##--##
 <!-- .slide: class="with-code" -->
 
-# L'event loop et les timers
+# The event loop and the timers
 
 ```javascript
 setTimeout(() => {

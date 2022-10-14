@@ -1,6 +1,6 @@
 <!-- .slide: class="flex-row" -->
 
-# Autres frameworks
+# Others frameworks
 
 <br><br>
 

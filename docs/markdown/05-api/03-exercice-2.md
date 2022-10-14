@@ -5,12 +5,12 @@
 
 <br>
 
-1. Créer un fichier hello.js qui exporte une fonction avec un argument nom
-2. Créer un fichier run.js qui importe le module hello.js et qui appelle la fonction en passant ‘Sfeir’ comme argument.
+In exercices/02_module
 
-<br>
+1. Create a hello.js file that exports a function with a name argument
+2. Create a run.js file that imports the hello.js module and calls the function passing 'Sfeir' as an argument.
 
-Résultat attendu:
+Expected result:
 
 ```bash
 $ node run.js
@@ -19,7 +19,7 @@ Hello, Sfeir!
 
 ##==##
 <!-- .slide: class="exercice" -->
-# Les modules : Solution
+# Modules : Solution
 
 ## Solution
 

@@ -1,3 +1,3 @@
 <!-- .slide: class="transition" -->
 
-# Déployer son application
+# Deploy your app

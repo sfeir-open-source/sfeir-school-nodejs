@@ -1,9 +1,9 @@
-# npm : les dépendances
+# npm : dependencies
 
-* [dependencies](https://docs.npmjs.com/files/package.json#dependencies) : nécessaire pour faire fonctionner le package ou l’application
-* [devDependencies](https://docs.npmjs.com/files/package.json#devdependencies) : nécessaire pour développer (tests, build system…)
+* [dependencies](https://docs.npmjs.com/files/package.json#dependencies) : necessary to operate the package or application
+* [devDependencies](https://docs.npmjs.com/files/package.json#devdependencies) : necessary to develop (tests, build system…)
 
-Installés par version :
+Install by version :
 
 ```json
 {

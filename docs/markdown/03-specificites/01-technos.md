@@ -1,6 +1,6 @@
 <!-- .slide: class="flex-row" -->
 
-# Sous le capot
+# What inside
 
 <br><br>
 

@@ -2,19 +2,19 @@
 
 ## Step 8
 
-Refactoring !
+Refactoring!
 
-On va ranger un peu:
+Let's tidy up a bit:
 
-- Renommer les routes liées aux utilisateurs en `/users/login` et `/users/register`.
-- Renommer les routes liées aux Sfeir Schools en `/schools`.
-- Tout ça en utilisant [`express.Router`](http://expressjs.com/en/guide/routing.html).
+- Rename user-related routes to `/users/login` and `/users/register`.
+- Rename routes related to Sfeir Schools to `/schools`.
+- All this using [`express.Router`](http://expressjs.com/en/guide/routing.html).
 
-On reprend les exemples du step précédent en corrigeant les routes:
+We take the examples of the previous step by correcting the routes:
 
-- Créer un user: `http POST http://localhost:3000/users/register username="Jtutu" password="plop"`.
-- Lister les Sfeir Schools: `http http://localhost:3000/schools`.
-- Tenter de créer une Sfeir School: `http POST http://localhost:3000/schools title="Sfeir School tartiflette"`. On doit avoir un 401.
-- Faire un login: `http --session=/tmp/session.json POST http://localhost:3000/users/login username="Jtutu" password="plop"`. Le `--session=/tmp/session.json` permet de persister les cookies etc.
-- On crée pour de vrai une Sfeir School: `http --session=/tmp/session.json POST http://localhost:3000/schools title="Sfeir School tartiflette"`.
-- Lister les Sfeir Schools: `http http://localhost:3000/schools` pour voir notre nouvelle Sfeir School !
+- Create a user: `http POST http://localhost:3000/users/register username="Jtutu" password="plop"`.
+- List Sfeir Schools: `http http://localhost:3000/schools`.
+- Attempt to create a Sfeir School: `http POST http://localhost:3000/schools title="Sfeir School tartiflette"`. We must have a 401.
+- Login: `http --session=/tmp/session.json POST http://localhost:3000/users/login username="Jtutu" password="plop"`. The `--session=/tmp/session.json` allows cookies etc to be persisted.
+- We create a real Sfeir School: `http --session=/tmp/session.json POST http://localhost:3000/schools title="Sfeir School tartiflette"`.
+- List Sfeir Schools: `http http://localhost:3000/schools` to see our new Sfeir School!

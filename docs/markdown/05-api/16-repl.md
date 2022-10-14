@@ -1,4 +1,4 @@
-# Le REPL
+# REPL (Read-Eval-Print-Loop)
 
-* Taper node dans un terminal
-* Tout ce qu’on a vu est utilisable depuis le repl !
+* Type node in a terminal
+* Everything we saw is usable from the repl!

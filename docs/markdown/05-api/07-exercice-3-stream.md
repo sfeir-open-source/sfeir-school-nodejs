@@ -1,16 +1,17 @@
 <!-- .slide: class="exercice" -->
-# Le système de fichier (avec les streams)
+# file system (using streams)
 
 ## Exercice
 
 <br>
 
-Créer un fichier run.js qui
-* Affiche le path vers le fichier coucou.txt
-* Crée un dossier jtutu
-* Copie le contenu du fichier coucou.txt dans un fichier du même nom sous le répertoire jtutu
+Create a run.js file that
+* Displays the path to the cuckoo.txt file
+* Create a jtutu folder
+* Copy the contents of the cuckoo.txt file into a file of the same name under the jtutu directory
 
-Résultat attendu:
+expected result:
+
 ```bash
 $ node run.js
 /home/sfeir/nodejs/exercice3/coucou.txt
@@ -21,7 +22,7 @@ Hello, Sfeir!
 ##--##
 
 <!-- .slide: class="exercice" -->
-# Le système de fichier : Solution avec streams
+# file system (using streams)
 
 ## Solution
 

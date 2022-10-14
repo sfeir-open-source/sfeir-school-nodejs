@@ -1,10 +1,10 @@
 # npm : package.json
 
-Initialisation avec `npm init`
+Init with `npm init`
 
 ```json
 {
- "name": "monsuperpackage",
+ "name": "mysuperpackage",
  "version": "1.0.0",
  "description": "",
  "main": "index.js",
@@ -17,6 +17,6 @@ Initialisation avec `npm init`
 }
 ```
 
-Valeurs par défaut avec `npm init -y`
+Value by default `npm init -y`
 
 https://docs.npmjs.com/files/package.json

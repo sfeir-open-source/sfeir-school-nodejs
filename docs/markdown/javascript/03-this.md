@@ -1,9 +1,9 @@
 <!-- .slide: class="with-code" -->
 # This
 
-## **this** est souvent mal compris
+## **this** is often misunderstood
 
-* Par défaut `this` fait référence à l'objet `global` (sauf en mode strict).
+* By default `this` refers to the `global` object (except in strict mode)
 
 ```javascript
 function fn() {
@@ -24,8 +24,8 @@ fnStrict()
 <!-- .slide: class="with-code" -->
 # This
 
- * `this` fait référence à une instance `new`.
- * Le constructeur Personne() définit `this` comme lui-même.
+ * `this` refers to an instance `new`.
+ * The constructor Personne() defined `this` like himself.
 
 ```javascript
 function Person(name) {
@@ -43,7 +43,7 @@ person.displayName();
 <!-- .slide: class="with-code" -->
 # This
 
- `this` fait référence à un object parent
+ `this` refers to a parent object
 
 ```javascript
 let user = {
@@ -62,7 +62,7 @@ console.log(user.count)
 <!-- .slide: class="with-code" -->
 # This
 
- * `this` fait référence à l'objet sur lequel la fonction est appelée
+ * `this` refers to the object on which the function is called
 
 ```javascript
 const john = { name: "John", display: function () { console.log(this.name) } }
@@ -71,7 +71,7 @@ john.display()
 emily.display()
 ```
 
-* chaque function possède les méthodes `call`, `apply`et `bind` pour changer le contexte d'éxécution
+* each function has the `call`, `apply` and `bind` methods to change the execution context
 
 ```javascript
 const john = { name: "John", display: function () { console.log(this.name) } }
@@ -87,9 +87,9 @@ displayJohn();
 <!-- .slide: class="with-code" -->
 # This
 
- * Le comportement est différent pour les functions lamda (ES2015).
- * Les lambda n'ont pas leur propre context `this`.
- * si `this` est dans une lambda, `this`référence le context de la fonction parente non-lambda.
+ * The behavior is different for lamda functions (ES2015).
+ * Lambdas do not have their own `this` context.
+ * if `this` is in a lambda, `this` references the context of the non-lambda parent function.
 
 ```javascript
 function Personne() {

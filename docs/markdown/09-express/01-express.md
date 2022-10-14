@@ -1,11 +1,11 @@
 # Express
 
-* Créé en 2010
-* Principal “framework” de NodeJS en terme de popularité
-* Rend le routage facile
-* De nombreux modules disponibles s’intégrant facilement avec :
+* Created in 2010
+* Main “framework” of NodeJS in terms of popularity
+* Makes routing easy
+* Many modules available that can be easily integrated with:
     * body-parser
     * helmet
     * passport
     * ...
-* Introduit la notion de middleware
+* Introduces the notion of middleware

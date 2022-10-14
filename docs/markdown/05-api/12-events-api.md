@@ -1,11 +1,11 @@
 <!-- .slide: class="with-code" -->
-# Les API: require(‘events’)
+# API: require(‘events’)
 
-Plusieurs API de node héritent de `EventEmitter` (http, fs, stream).
+Several node APIs inherit from `EventEmitter` (http, fs, stream).
 
-* `emitter.addListener`(alias `on`) : attache un écouteur
-* `emitter.emit` déclenche un évènement
-* `emiiter.removeListener`(alias `off`): détache un écouteur
+* `emitter.addListener`(alias `on`) : attach a listener
+* `emitter.emit` emit an event
+* `emiiter.removeListener`(alias `off`): remove a listener
 
 ```javascript
 const EventEmitter = require('events');
@@ -20,7 +20,7 @@ myEmitter.on('event', () => {
 myEmitter.emit('event');
 ```
 
-L’objet response d’une requête http expose par exemple les events “data” et “end”
+The response object of an http request exposes for example the “data” and “end” events
 
 https://nodejs.org/api/events.html
 <!-- .element: class="credits" -->
@@ -28,16 +28,16 @@ https://nodejs.org/api/events.html
 ##--##
 <!-- .slide: class="with-code" -->
 
-# Les API: require(‘events’)
+# API: require(‘events’)
 
-Les listeners s'éxécutent dans l'ordre de déclaration et sont synchrones
+Listeners execute in declaration order and are synchronous
 
-* `emitter.once`: pour attacher un écouteur et le détacher après le premier déclenchement
-* `emitter.removeAllListeners`: pour détacher tous les écouteurs
+* `emitter.once`: to attach an earphone and detach it after the first trigger
+* `emitter.removeAllListeners`: to detach all headphones
 <br>
 <br>
 
-L'évènement `error` est un évènement spécial. Si aucun écouteur n'est attaché, le script s'arrête.
+The `error` event is a special event. If no listener is attached, the script stops.
 
 ```javascript
 const myEmitter = new MyEmitter();

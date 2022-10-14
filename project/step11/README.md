@@ -2,15 +2,15 @@
 
 ## Step 11
 
-Les tests sont cassés depuis le step 7 !
+The tests are broken since step 7!
 
 ...
 
-Je plaisante (même si c'est vrai). On va parler sécurité vite fait.
+Just kidding (even if it's true). We're going to talk about security quickly.
 
-- On installe le module [helmet](https://www.npmjs.com/package/helmet).
-- On ajoute le middleware qui va bien.
-- C'est tout !
+- Install the [helmet](https://www.npmjs.com/package/helmet) module.
+- We add the middleware that works well.
+- That's all !
 
-Un peu de lecture sur les CSP :
+A little reading on CSPs:
 https://developers.google.com/web/fundamentals/security/csp

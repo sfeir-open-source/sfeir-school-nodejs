@@ -1,3 +1,3 @@
 <!-- .slide: class="transition" -->
 
-# C’est parti !
+# Let's go !

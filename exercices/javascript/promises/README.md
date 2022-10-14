@@ -1,15 +1,28 @@
 # Promises : Exercice
 
-Dans la fonction **exercise1Fn**, compléter la création de la promise afin de la **résoudre** avec la valeur “I love promise” au bout de 500ms. (Utiliser setTimeout). Attacher à cette promesse un then afin de **console.log** la valeur reçu. Renvoyer la promesse résultante.
+In the **exercise1Fn** function, complete the creation of the promise in order to
+**solve** it with the value "I love promise" after 500ms. (Use setTimeout).
+Attach to this promise a then in order to **console.log** the value received. Return the resulting Promise.
 
-Dans la fonction **exercise2Fn**, compléter la création de la promise afin de la **rejeter** avec la valeur “I hate rejection” au bout de 500ms. (Utiliser setTimeout). Attacher à cette promesse un catch afin de **console.log** la valeur reçu. Renvoyer la promesse résultante.
+In the **exercise2Fn** function, complete the creation of the promise in order to
+the **reject** with the value "I hate rejection" after 500ms. (Use setTimeout).
+Attach to this promise a catch in order to **console.log** the value received. Return the resulting Promise.
 
-Dans la fonction **exercise3Fn**, faire une chaîne de promesses en partant de l’objet **exercise3** afin d’ajouter 5 à la valeur, de la multiplier par 2 et enfin de soustraire 4. Chacune de ces opérations doivent être réalisées **dans un morceau de la chaîne différent**. Renvoyer la promesse résultante.
-
+In the **exercise3Fn** function, make a chain of promises starting from
+the **exercise3** object to add 5 to the value, multiply it by 2 and finally subtract 4.
+Each of these operations must be performed **in a different piece of the chain**. Return the resulting Promise.
 # Tips
 
 ```javascript
 new Promise((resolve, reject) => {}).then(result => {}).catch(error => {});
 
 Promise.resolve();
+```
+
+## test
+
+launch test with
+
+```
+npm test -- javascript/promises/test.spec.js
 ```

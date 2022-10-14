@@ -8,11 +8,11 @@
 
 # JavaScript
 
-- langage de programmation de script
-- créé en 1995 par Brendan Eich
-- standardisé en juin 1997 sous le nom d'ECMAScript: ES1
+- scripting programming language
+- created in 1995 by Brendan Eich
+- standardized in June 1997 as ECMAScript: ES1
 
-Javascript est une implémentation d'ECMAScript par Mozilla.
+JavaScript is an implementation of ECMAScript by Mozilla.
 
 Notes:
 
@@ -22,7 +22,7 @@ Notes:
 
 # ECMAScript
 
-![h-800](./assets/images/es_encapsulation.png)
+![h-800](./assets/images/es_encapsulation_eng.png)
 
 Notes:
 - Ecmascript est le standard, JS est une implémentation de ES. Unity est part exemple aussi une autre implémentation de Ecmascript via Uniscript

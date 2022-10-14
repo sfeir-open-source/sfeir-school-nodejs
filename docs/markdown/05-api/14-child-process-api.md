@@ -1,19 +1,18 @@
-# Les API: require(‘child_process’)
+# API: require(‘child_process’)
 
-
-* Exécuter un processus enfant
-    * `child_process.spawn()` : crée un sous-process
-    * `child_process.exec()` : éxécute une commande dans un shell
-    * `child_process.execFile()` : éxécute un binaire
-    * `child_process.fork()` : spawn un nouveau process Node.js avec une interface de communication
-* Le processus enfant peut communiquer avec son parent
-    * Events (héritent de `EventEmitter`) `message`, `data`, `close `
-    * `child.send(...)` fork uniquement
-* Accès à stdout, stderr.
+* Run child process
+    * `child_process.spawn()` : spawns a sub-process
+    * `child_process.exec()` : execute a command in a shell
+    * `child_process.execFile()` : execute a binary
+    * `child_process.fork()` : spawn a new Node.js process with a communication interface
+* Child process can communicate with its parent
+    * Events (inherit from`EventEmitter`) `message`, `data`, `close `
+    * `child.send(...)` fork only
+* Access to stdout, stderr.
 
 <br>
 
-* Certaines fonctions ont un mode Synchrone !
+* Some functions have a Synchronous mode!
 
 <br>
 
@@ -21,12 +20,12 @@ https://nodejs.org/api/child_process.html
 <!-- .element: class="credits" -->
 
 Notes:
-- spawn préférable pour les long process. Crée une interface de communication par stream avec le process enfant
+- spawn preferable for long processes. Creates a communication interface by stream with the child process
 
 ##--##
 <!-- .slide: class="with-code" -->
 
-# Les API: require(‘child_process’)
+# API: require(‘child_process’)
 
 ```javascript
 const { exec } = require('child_process');
@@ -44,7 +43,7 @@ exec('cat *.js missing_file | wc -l', (error, stdout, stderr) => {
 
 <!-- .slide: class="with-code" -->
 
-# Les API: require(‘child_process’)
+# API: require(‘child_process’)
 
 
 ```javascript

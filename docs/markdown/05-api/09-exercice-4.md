@@ -5,14 +5,14 @@
 
 <br>
 
-Créer un fichier run-01.js qui:
-* Crée un serveur http
-* Écoute sur le port 9000
-* Répond ‘coucou.js’ pour toutes les requêtes
+Create a run-01.js file that:
+* Create an http server
+* Listening on port 9001
+* Responds 'coucou.js' for all requests
 
-Protip: utiliser https://github.com/jkbrzt/httpie !
+Protip: use https://github.com/jkbrzt/httpie !
 
-Résultat attendu:
+expected result:
 
 ```bash
 $ node run-01.js
@@ -56,10 +56,10 @@ server.listen(9000);
 
 <br>
 
-Créer un fichier run-02.js pour:
-* Afficher un texte qui reprend la méthode et l’url appelée
+Create a run-02.js file for:
+* Display a text that includes the method and the url called
 
-Résultat attendu:
+expected result:
 
 ```bash
 $ node run-02.js
@@ -88,7 +88,7 @@ run-02.js
 const http = require('http');
 
 const server = http.createServer((req, res) => {
- res.end(`Kikou ! Tu as fait un ${req.method} sur ${req.url} !`);
+ res.end(`Kikou ! you have done a ${req.method} on ${req.url} !`);
 });
 
 server.listen(9000);
@@ -102,10 +102,10 @@ server.listen(9000);
 
 <br>
 
-Créer un fichier run-03.js pour:
-* Renvoyer une 404 quand on appelle l’url /404
+Create a run-03.js file for:
+* Return a 404 when calling the url /404
 
-Résultat attendu:
+expected result:
 
 ```bash
 $ node run-03.js
@@ -136,9 +136,9 @@ const http = require('http');
 const server = http.createServer((req, res) => {
  if (req.url === '/404') {
    res.statusCode = 404;
-   res.end('Pas trouvé !')
+   res.end('not found !')
  } else {
-   res.end(`Kikou ! Tu as fait un ${req.method} sur ${req.url} !`);
+   res.end(`Kikou ! you have a ${req.method} on ${req.url} !`);
  }
 });
 

@@ -1,11 +1,11 @@
 <!-- .slide: class="with-code" -->
 
-# Fonctions utilitaires - Array
+# Utility Functions - Array
 
 ```javascript
 var numbers = [ 1, 2, 3 ];
-// Vérifier si un tableau inclut une valeurvar hasOne = numbers.indexOf(1) !== -1;
-// Transformer un tableau en tableau d'une valeur unique
+// Check if an array includes a value var hasOne = numbers.indexOf(1) !== -1;
+// Transform an array into an array of a single value
 var listOfTens = numbers.map(() => 10);
 
 var people = [{
@@ -16,7 +16,7 @@ var people = [{
   city: "Bordeaux"
 }];
 
-// Trouver la première valeur qui remplit une condition
+// Filter the first object that meets a condition
 var alice = people.filter(person => person.name === "Alice")[0];
 ```
 
@@ -24,14 +24,14 @@ var alice = people.filter(person => person.name === "Alice")[0];
 
 <!-- .slide: class="with-code" -->
 
-# Fonctions utilitaires - Array
+# Utility Functions - Array
 
 ```javascript
 const numbers = [ 1, 2, 3 ];
-// Vérifier si un tableau inclut une valeur
+// Check if an array includes a value
 const hasOne = numbers.includes(1);
-// Remplir un tableau d'une valeur unique
-const listOfTens = numbers.slice().fill(10); // .slice évite de modifier numbers
+// Fill an array with a single value
+const listOfTens = numbers.slice().fill(10); // .slice avoids modifying numbers
 
 const people = [{
   name: "Alice",
@@ -41,41 +41,47 @@ const people = [{
   city: "Bordeaux"
 }];
 
-// Trouver la première valeur qui remplit une condition
+// Find the first object that meets a condition
 const alice = people.find(person => person.name === "Alice");
 ```
 
 Notes:
-/!\ includes est beaucoup moins performant
+/!\ includes is much less efficient
 
 ##==##
 
 <!-- .slide: class="with-code" -->
 
-# Fonctions utilitaires - Array
+# Utility Functions - Array
 
-||Modifie le tableau|Laisse le tableau inchangé|Description|
+|Method|Modify the array|Leave the array unchanged|Description|
 |-|-|-|-|
-|Slice||X|Retourne une copie d'une partie du tableau.|
-|Concat||X|Retourne une version fusionnée des tableaux spécifiés en paramètres.|
-|Flat||X|Retourne le tableau en version aplatie.|
-|Fill|X||Remplit le tableau avec la valeur spécifiée.|
-|CopyWithin|X||Copie une partie et l'insère dans le même tableau, sans changer la taille de celui-ci.|
-|Sort|X||Trie le tableau|
+|Slice||X| Returns a copy of part of the array.|
+|Concat||X| Returns a merged version of the arrays specified in parameters.|
+|Flat||X|Returns the array in a flattened version.|
+|Fill|X||Fills the array with the specified value.|
+|CopyWithin|X|| Copies a part and inserts it in the same table, without changing its size.|
+|Sort|X||Sort the array|
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
+<!-- .element: class="credits" -->
 
 ##==##
 
 <!-- .slide: class="" -->
 
-# Fonctions utilitaires - Array
+# Utility Functions - Array
 
-||Modifie le tableau|Laisse le tableau inchangé|Description|
+|Method|Modify the array|Leave the array unchanged|Description|
 |-|-|-|-|
-|Splice|X||Supprime, insère ou remplace des éléments.|
-|Push|X||Ajoute un élément à la fin du tableau.|
-|Shift|X||Retire le premier élément, qui est retourné.|
-|Unshift|X||Insère un ou plusieurs éléments au début et retourne la nouvelle longueur.|
-|Pop|X||Retire le dernier élément, qui est retourné.|
+|Splice|X|| Deletes, inserts or replaces elements.|
+|Push|X||Adds an element at the end of the array.|
+|Shift|X|| Removes the first element, which is returned.|
+|Unshift|X|| Inserts one or more elements at the beginning and returns the new length.|
+|Pop|X||Removes the last element, which is returned|
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
+<!-- .element: class="credits" -->
 
 ##==##
 
@@ -83,8 +89,7 @@ Notes:
 
 # Array.from
 
-- Créé un tableau à partir d'un objet semblable à un tableau.
-<!-- .element: class="fragment" -->
+- Creates an array from an array-like object.
 
 ```javascript
 Array.from(document.querySelectorAll('body'));      // []

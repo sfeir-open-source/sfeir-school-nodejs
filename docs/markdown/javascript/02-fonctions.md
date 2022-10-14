@@ -1,10 +1,10 @@
 <!-- .slide: class="with-code" -->
 
-# Fonctions
+# Functions
 
-* Une fonction est un objet.
-* Une fonction peut retourner une fonction.
-* Une fonction peut être passée en argument d'une autre fonction.
+* A function is an object.
+* A function can return a function.
+* A function can be passed as an argument to another function
 
 ```
 function factory () {
@@ -15,7 +15,7 @@ function wrapper(f) {
 }
 ```
 
-* Il existe aussi des arrow fonctions appelées aussi lambda.
+* There are also arrow functions also called lambda.
 
 ```
 const arrowFunction = () => {}

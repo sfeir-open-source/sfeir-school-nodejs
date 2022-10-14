@@ -1,13 +1,13 @@
 <!-- .slide: class="with-code" -->
-# Les exceptions
+# Exceptions
 
-Une exception est déclenchée avec `throw`.
+An exception is raised with `throw`.
 
 ```javascript
 throw new Error('Something bad happened')
 ```
 
-ou
+or
 
 ```javascript
 class SomethingBadError extends Error {
@@ -16,16 +16,17 @@ class SomethingBadError extends Error {
 throw new SomethingBadError()
 ```
 
-On utilise `try/catch` pour traiter une exception.
+We use `try/catch` to handle an exception.
 
 Notes:
-Bonne pratique : regarder le code d'erreur
+Best practice : look to error code
 
 ##--##
 
-# Les exceptions
+# Exceptions
 
-Si une exception n'est pas traitée, le programme s'arrête et process déclenche l'évènement `uncaughtException`.
+
+If an exception is not handled, the program stops and process triggers the event `uncaughtException`.
 
 ```javascript
 process.on('uncaughtException', err => {
@@ -36,11 +37,11 @@ process.on('uncaughtException', err => {
 
 ##--##
 
-# Les exceptions asynchrones
+# Asynchronous Exceptions
 
-* On traite les promesses rejetées avec la méthode `catch`.
-* La méthode `catch` retourne une promesse et donc utilisée dans le chaînage de promesses.
-* Quand une promesse rejetée n'est pas traitée, process déclenche l'évènement `unhandledRejection`
+* We process rejected promises with the method `catch`.
+* The `catch` method returns a promise and therefore used in chaining promises.
+* When a rejected promise is not processed, process fires the event `unhandledRejection`
  
 
 ```javascript
@@ -59,4 +60,4 @@ doSomething1()
 
 Notes:
 - Promises.reject()
-- UnhandledPromiseRejectionWarning jusqu'à Node.js 15
+- UnhandledPromiseRejectionWarning until Node.js 15

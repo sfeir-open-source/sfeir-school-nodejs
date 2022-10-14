@@ -1,11 +1,12 @@
 <!-- .slide: class="with-code" -->
 
-# Initialisateur d'objet
+# Object initializer
 
-* `new Object()`, `Object.create()`, ou grâce à un littéral (appelée initialisateur)
-* Nouvelle syntaxe ES2015
-    * Raccourci pour les noms de propriétés et méthodes
-    * Noms calculés pour les propriétés
+*
+`new Object()`, `Object.create()`, or through a literal (called an initializer)
+* New ES2015 syntax
+    * Shortcut for property and method names
+    * Computed names for properties
 
 ```javascript
 let x = 0, y = 1;
@@ -17,3 +18,5 @@ const object = {
     ["tr" + "uc"]: "ho",
 };
 ```
+Notes:
+{ x: 0, y: 1, foo: [Function: foo], property: 'hey', truc: 'ho' }

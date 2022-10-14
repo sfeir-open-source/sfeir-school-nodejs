@@ -1,6 +1,6 @@
-# Environnement de production
+# production environment
 
-* Signaler Node.js que l'on tourne en production
+* Report Node.js that we are running in production
     * `export NODE_ENV=production`
 
 <br>
@@ -12,8 +12,8 @@ if (process.env.NODE_ENV === "production") {
 }
 ```
 
-* `npm install --production` ignore les `devDependencies`
-* `cross-env` pour le multi plate-forme
+* `npm install --production` ignore `devDependencies`
+* `cross-env` for multi-platform
 
 ```
 `"build:deploy": "cross-env NODE_ENV=production node index.js"`
@@ -21,12 +21,12 @@ if (process.env.NODE_ENV === "production") {
 
 ##--##
 
-# Le gestionnaire de processus PM2
+# The PM2 process manager
 
-Démarre une application Node.js en mode cluster
+Starts a Node.js application in cluster mode
 
 * `npm install -g pm2`
-* `pm2 start server.js  -i 0 --name "my-app"` : i est le nombre de processus à générer
+* `pm2 start server.js  -i 0 --name "my-app"` : i is the number of processes to spawn
 * `pm2 list`
 * `pm2 stop my-app`
 * `pm2 restart my-app`
@@ -35,7 +35,7 @@ Démarre une application Node.js en mode cluster
 
 # Forever
 
-Surveille une application Node.js et la redémarre si elle bloque
+Monitors a Node.js application and restarts it if it crashes
 
 * `npm install -g forever`
 * `npm start server.js`

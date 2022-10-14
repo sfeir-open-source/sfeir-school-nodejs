@@ -1,11 +1,11 @@
 <!-- .slide: -->
 
-# Installer Node.js
+# Install Node.js
 
 
-* Déconseillé avec un package manager (apt-get, Brew, Chocolatey)
-* Déconseillé de l'installer depuis le site Node.js car requiert des droits d'administrateur (`sudo`)
-* Recommandé avec <b>Node Version Manager</b>
+* Not recommended with a package manager (apt-get, Brew, Chocolatey)
+* Not recommended installing from the website Node.js because it's required admin right (`sudo`)
+* Recommended with <b>Node Version Manager</b>
 
 
 Notes:
@@ -19,19 +19,19 @@ Notes:
 
 <br>
 
-* Installer une version
+* Install a version
 
 ```bash
  nvm install 14
 ```
 
-* Utiliser une version
+* Use a version
 
 ```bash
  nvm use 14
 ```
 
-* Vérifier la version de Node.js
+* Verify the Node.js version
 
 ```bash
  node -v
@@ -42,4 +42,22 @@ Notes:
 # Node version manager pour Windows
 
 * [nvm-windows](https://github.com/coreybutler/nvm-windows)
-* [nvs](https://github.com/jasongin/nvs/releases) (recommandé)
+* [nvs](https://github.com/jasongin/nvs/releases) (recommended)
+
+install with msi the nvs https://github.com/jasongin/nvs/releases
+
+```bash
+ nvs add 14
+```
+
+* Use a version
+
+```bash
+ nvs use 14
+```
+
+* Verify the Node.js version
+
+```bash
+ node --version
+```

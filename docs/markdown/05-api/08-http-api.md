@@ -1,16 +1,16 @@
-# Les API: require(‘http’) / require(‘https’)
+# API: require(‘http’) / require(‘https’)
 
-* `http.createServer()`: crée un serveur !
-* `http.request()`: crée une requête HTTP
-* `http.get()`: crée une requête GET
+* `http.createServer()`: create a server !
+* `http.request()`: create a request HTTP
+* `http.get()`: create a request GET
 
 <br>
 <br>
 
-* On a plusieurs objets:
-    * Server: l’objet renvoyé par createServer
-    * ClientRequest: la requête du client
-    * ServerResponse: la réponse du serveur
+* We have several objects:
+    * Server: the object returned by createServer
+    * ClientRequest: customer's request
+    * ServerResponse: the server response
 
 <br>
 
@@ -18,4 +18,4 @@ https://nodejs.org/api/http.html
 <!-- .element: class="credits" -->
 
 Notes:
-peut-être remplacé par axios ou node-fetch (es6)
+maybe replaced by axios or node-fetch (es6)

@@ -1,9 +1,9 @@
-# Il était une fois… Node.JS !
+# Once upon a time… Node.JS !
 
-* Créé par Ryan Dahl
-* Inspiré par l’upload de fichier flickr (barre de progression)
-* Sponsorisé par [Joyent](https://www.joyent.com/)
-* Actuellement soutenu par la [OpenJS Foundation](https://openjsf.org/)
+* Created by Ryan Dahl
+* Inspired by file upload flickr (progress bar)
+* Sponsored by [Joyent](https://www.joyent.com/)
+* Currently supported by [OpenJS Foundation](https://openjsf.org/)
 
 ![](./assets/images/320px-Ryan_Dahl.jpg)
 
@@ -19,20 +19,22 @@ Notes:
 
 <!-- .slide -->
 
-# Quelques dates !
+# Some dates !
 
 | | |
 |--|---|
-|2009|Naissance de NodeJS|
-|2010|Naissance de npm|
+|2009|Birth of NodeJS|
+|2010|Birth of npm|
 |2014-12|Fork io.js|
-|2015|Node.js 0.12 (LTS) et io.js v1, v2, v3 !|
-|2015-06|Création de la Node.js foundation, réconciliation|
+|2015|Node.js 0.12 (LTS) and io.js v1, v2, v3 !|
+|2015-06|Node.js foundation creation, reconciliation|
 |2015-09|Node.js v0.12 + io.js v3.3 = Node.js v4 (LTS)|
 |...|...|
-|2019|Node.js foundation fusionne avec JS foundation : OpenJS Foundation|
+|2019|Node.js foundation fuse with JS foundation : OpenJS Foundation|
 |2020-10-27|Node.js v14 (LTS)|
 |2021-10-26|Node.js v16 (LTS)|
+|2022-04-19|Node.js v18 current|
+|2022-10-18|Node.js v19 planned|
 
 Notes:
 2009: Présentation du projet à la JSConf
@@ -43,7 +45,7 @@ Notes:
 
 <!-- .slide class="full-center" -->
 
-# Il était une fois… Node.JS !
+# Once upon a time… Node.JS !
 
 <div style="height:700px; width:100%;">
 <img class="full-height center" src="./assets/images/release-schedule.svg">
@@ -54,6 +56,6 @@ https://nodejs.org/en/about/releases/
 
 Notes:
 
-Current (impaire) : 6 mois (dev)
-Release paire: 12 mois
-LTS: critcal bugs pendant 30 mois (active/maintenance)
+Current (odd) : 6 mois (dev)
+Release even: 12 month
+LTS: critcal bugs during 30 month (active/maintenance)

@@ -1,7 +1,7 @@
 <!-- .slide: class="with-code" -->
 # Object.assign
 
-- JS nous permet de **copier** un objet ou d'en **fusionner** plusieurs !
+- JS allows us to **copy** an object or to **merge** several of them!
 
 <br />
 
@@ -44,21 +44,21 @@ newO.g;                 // 8
 </div>
 
 Notes:
-f est undefined car non enumerable dans l'objet d'origine.
+f is undefined because not enumerable in the original object.
 
-/!\ si on a des nested object, ce sont les références qui sont copiées !
+/!\ if we have nested objects, it is the references that are copied!
 
-De même une propriété non enumerable n'est donc pas copiée car assign copy via l'itération des propriétés d'objet
+Similarly a non-enumerable property is therefore not copied because assign copy via iteration of object properties
 
-l'autre manière de copier un objet est le spread operator
+the other way to copy an object is the spread operator
 
 ##==##
 
 <!-- .slide: class="with-code" -->
 
-# Fonctions utilitaires sur Object
+# Utility Functions on Object
 
-- Nouvelles fonctions utilitaires values() et entries(), keys() déjà en ES5
+- New utility functions values() and entries(), keys() already in ES5
 
 ```javascript
 const person = {
@@ -81,9 +81,9 @@ console.log(entries);
 
 <!-- .slide: class="with-code" -->
 
-# Fonctions utilitaires sur Object
+# Utility Functions on Object
 
-- Nouvelles fonctions utilitaires values() et entries(), keys() déjà en ES5
+- New utility functions values() and entries(), keys() already in ES5
 
 ```javascript
 var person = {

@@ -1,12 +1,12 @@
-# Les API: require('stream')
+# API: require('stream')
 
-* Héritent aussi de `EventEmitter`
-* Efficace en mémoire : pas besoin de charger de grande quantité de données en mémoire pour les traiter.
-* Efficace en temps : On commence à traiter la donnée avant que tout ne soit chargé.
-* Indispensables pour traiter des fichiers volumineux.
+* Also inherit from `EventEmitter`
+* Memory efficient: no need to load large amounts of data into memory to process them.
+* Time efficient: We start processing the data before everything is loaded.
+* Indispensable for processing large files.
 
 Notes:
-Limites de mémoire : 2GO
+Limits memory : 2GO
 
 https://nodejs.org/api/stream.html
 <!-- .element: class="credits" -->
@@ -37,18 +37,17 @@ fs.readFile(bigFileName, (err, buffer) => {
 ```
 
 Notes:
-Démo de streams : aperçu de la mémoire
+Démo de streams : show the memory
 
 ##--##
 
 <!-- .slide: class="with-code" -->
 
-# Les API: require('stream')
+# API: require('stream')
 ## Pipe
 
-
-* Les streams peuvent être câblé avec la méthode `pipe`
-* Même fonctionnement qu'en Bash : `du | sort | head`
+* Streams can be piped with the `pipe` method
+* Same operation as in Bash: `du | fate | head`
 * `src.pipe(dest1).pipe(dest2)`
 <br>
 <br>
@@ -68,27 +67,27 @@ server.listen(3000)
 
 <!-- .slide: -->
 
-# Les API: require('stream')
+# API: require('stream')
 ## Les types de streams
 
 * Readable
-  * Flux de lecture 
+  * Reading stream 
   * `process.stdin`, `fs.createReadStream`
 * Writable
-  * Flux d'écriture 
+  * Writing flow
   * `process.stdout`, `process.stderr`, `fs.createWriteStream`, `http.request`
 * Duplex
-  * Flux lecture/écriture
+  * Read/Write Streams
   * `net.createConnection`
 * Transform
-  * Similaire à Duplex mais la sortie est une transformation de l'entrée
+  * Similar to Duplex but the output is a transformation of the input
   * `zlib.createGzip`
 
 ##--##
 
 <!-- .slide: class="with-code" -->
 
-# Les API: require('stream')
+# API: require('stream')
 ## Transform stream
 
 ```javascript

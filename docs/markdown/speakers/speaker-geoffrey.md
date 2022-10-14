@@ -1,20 +1,15 @@
 <!-- .slide: class="speaker-slide" -->
 
-# Présentation
+# Presentation
 
-![speaker](./assets/images/speaker/Geoffrey.jpg)
+![speaker](./assets/images/speaker/Theo.png)
 ![company](./assets/images/speaker/logo-sfeir-blanc.png)
 
-<h2>Geoffrey <span>Brunois</span></h2>
+<h2>Theo <span>Genez</span></h2>
 
 
-### Développeur full stack
+### Developer full stack
 <!-- .element: class="icon-rule icon-first" -->
 
-### brunois.g@sfeir.com
+### genez.t@sfeir.com
 <!-- .element: class="icon-email icon-second" -->
-
-### geoffrey-brunois
-<!-- .element: class="icon-linkedin icon-third" -->
-
-![badge second-badge](./assets/images/speaker/OpenJS_JSNAD.svg)

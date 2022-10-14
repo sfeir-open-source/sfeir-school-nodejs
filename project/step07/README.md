@@ -2,57 +2,57 @@
 
 ## Step 7
 
-Authentification !
+Authentication!
 
-C'est le moment de parler des [middlewares dans Express](https://expressjs.com/en/guide/using-middleware.html). Il y en a 2 types:
+It's time to talk about [middlewares in Express](https://expressjs.com/en/guide/using-middleware.html). There are 2 types:
 
-- Les middlewares de base (signature: `function(req, res, next) {...}`).
-- Les middlewares d'erreur (signature: `function(err, req, res, next) {...}`).
+- Basic middleware (signature: `function(req, res, next) {...}`).
+- Error middleware (signature: `function(err, req, res, next) {...}`).
 
-L'ordre d'usage des middlewares est important !
+The order of use of middleware is important!
 
 ### 1. Routes
 
-On va créer deux routes:
+We will create two routes:
 
-- `/register` pour créer les comptes.
-- `/login` pour la connexion.
+- `/register` to create accounts.
+- `/login` for login.
 
-On va utiliser un module core de Node: [crypto](https://nodejs.org/dist/latest-v14.x/docs/api/crypto.html). Il nous fournit [scrypt](https://nodejs.org/dist/latest-v14.x/docs/api/crypto.html#crypto_crypto_scrypt_password_salt_keylen_options_callback) pour ce qui est de la génération des mots de passe.
+We will use a core module from Node: [crypto](https://nodejs.org/dist/latest-v14.x/docs/api/crypto.html). It provides us with [scrypt](https://nodejs.org/dist/latest-v14.x/docs/api/crypto.html#crypto_crypto_scrypt_password_salt_keylen_options_callback) for password generation.
 
-### 2. Passport - Stratégie
+### 2. Passport - Strategy
 
-Nous allons utiliser [passport](https://www.passportjs.org/) pour gérer les histoires d'authentification.
+We will be using [passport](https://www.passportjs.org/) to handle authentication histories.
 
-Commençons par créer une stratégie avec [passport-local](https://www.passportjs.org/packages/passport-local/):
-- Dans le fichier `user.js`, on va créer une `strategy` qui va fouiller dans la base.
+Let's start by creating a policy with [passport-local](https://www.passportjs.org/packages/passport-local/):
+- In the `user.js` file, we will create a `strategy` which will dig into the database.
 
 ### 3. Passport - application
 
-- Ajouter le middleware global `passport.initialize()` à express.
-- Ajouter le middleware `passport.authenticate("local")` pour la route d'authentification pour la `/login`.
-- Protéger la route pour créer une Sfeir School avec un middleware qui vérifie qu'un utilisateur est connecté ([hint](https://github.com/jaredhanson/passport/blob/882d65e69d5b56c6b88dd0248891af9e0d80244b/lib/http/request.js#L83))
-  
-Au cas où: [un peu de doc](https://github.com/jwalton/passport-api-docs) en plus.
+- Add `passport.initialize()` global middleware to express.
+- Add the `passport.authenticate("local")` middleware for the authentication route for the `/login`.
+- Protect the route to create a Sfeir School with middleware that verifies a user is logged in ([hint](https://github.com/jaredhanson/passport/blob/882d65e69d5b56c6b88dd0248891af9e0d80244b/lib/http/request.js#L83)))
 
-### 4. Gestion de session
+Just in case: [some doc](https://github.com/jwalton/passport-api-docs) extra.
 
-Les sessions utilisateur sont gérées par le middleware [express-session](https://github.com/expressjs/session). Par défaut les sessions sont stockées en mémoire (ce qui n'est pas recommandé pour la production)
+### 4. Session management
 
-- On aura besoin de [`passport.session()`](https://github.com/jwalton/passport-api-docs/tree/18f7336ce91f0300068c944197017c0815d71b5f#passportsessionoptions).
-- de la méthode `serializeUser` de passport pour sérializer le user dans la session.
-- de la méthode `deserializeUser` de passport pour desérializer le user à partir de la session.
+User sessions are managed by the middleware [express-session](https://github.com/expressjs/session). By default sessions are stored in memory (which is not recommended for production)
 
-### Pour essayer tout ça:
+- We will need [`passport.session()`](https://github.com/jwalton/passport-api-docs/tree/18f7336ce91f0300068c944197017c0815d71b5f#passportsessionoptions).
+- the `serializeUser` method of passport to serialize the user in the session.
+- the `deserializeUser` method of passport to deserialize the user from the session.
 
-- Créer un user: `http POST http://localhost:3000/register username="Siegfried" password="plop"`.
-- Lister les Sfeir Schools: `http http://localhost:3000/`.
-- Tenter de créer une Sfeir School: `http POST http://localhost:3000/ title="Sfeir School NodeJS"`. On doit avoir un 401.
-- Faire un login: `http --session=/tmp/session.json POST http://localhost:3000/login username="Siegfried" password="plop"`. Le `--session=/tmp/session.json` permet de persister les cookies etc.
-- On crée pour de vrai une Sfeir School: `http --session=/tmp/session.json POST http://localhost:3000/ title="Sfeir School NodeJS"`.
-- Lister les Sfeir Schools: `http http://localhost:3000/` pour voir notre nouvelle Sfeir School !
+### To try:
 
-### Variable d'environnement
+- Create an user: `http POST http://localhost:3000/register username="Siegfried" password="plop"`.
+- List the sfeir schools: `http http://localhost:3000/`.
+- Attempt to create a Sfeir School: `http POST http://localhost:3000/ title="Sfeir School NodeJS"`. We must have a 401.
+- Do a Login: `http --session=/tmp/session.json POST http://localhost:3000/login username="Siegfried" password="plop"`. The `--session=/tmp/session.json` allows to persist cookies etc.
+- We create for real a Sfeir School: `http --session=/tmp/session.json POST http://localhost:3000/ title="Sfeir School NodeJS"`.
+- List the Sfeir Schools: `http http://localhost:3000/` to see our new Sfeir School!
 
-- Créer une variable d'environnement `SALT` pour `scrypt`
-- Pour assurer la compatibilité entre systèmes d'exploitations, on utilise [cross-env](https://www.npmjs.com/package/cross-env).
+### Environment variable
+
+- Create a `SALT` environment variable for `scrypt`
+- To ensure compatibility between operating systems, we use [cross-env](https://www.npmjs.com/package/cross-env).

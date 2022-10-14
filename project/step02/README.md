@@ -2,7 +2,7 @@
 
 ## Step 2
 
-Une Sfeir School est un objet, par exemple:
+A Sfeir School is an object, for example:
 
 ```json
 {
@@ -12,12 +12,12 @@ Une Sfeir School est un objet, par exemple:
 }
 ```
 
-- On va gérer les Sfeir Schools en mémoire avec un tableau.
-- Modifier la route `GET` pour renvoyer l'ensemble des Sfeir Schools.
-- Créer une route correspondant à la méthode `POST` pour ajouter une Sfeir School (installer le module [body-parser](https://github.com/expressjs/body-parser)).
-- Lancer avec `npm start`.
-- Tester avec [httpie](https://httpie.org/):
-  - Pour récupérer la liste: `http http://localhost:3000/`.
-  - Pour ajouter une Sfeir School: `http POST http://localhost:3000/ title="Sfeir School NodeJS" trainer="Siegfried Ehret"`.
+- We will manage the Sfeir Schools in memory with a table.
+- Modify the `GET` route to return all Sfeir Schools.
+- Create a route corresponding to the `POST` method to add a Sfeir School (install the [body-parser](https://github.com/expressjs/body-parser) module).
+- Launch with `npm start`.
+-  Test with [httpie](https://httpie.org/):
+  - To retrieve the list:  `http http://localhost:3000/`.
+  - To add a Sfeir School:  `http POST http://localhost:3000/ title="Sfeir School NodeJS" trainer="Siegfried Ehret"`.
 
-  Notes: depuis express v4.16.0, body-parser est déprécié et remplacé par express.
+Notes: since express v4.16.0, body-parser is deprecated and replaced by express

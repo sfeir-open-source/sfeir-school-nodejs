@@ -1,15 +1,15 @@
 <!-- .slide: class="with-code" -->
 
-# Pour récupérer l'appli
+# To get the app
 
 <br>
 
 ```bash
- git clone git@github.com:sfeir-open-source/sfeir-school-nodejs.git
+git clone git@github.com:Sfeir/sfeir-school-nodejs.git
 ```
 <!-- .element: class="big-code" -->
 
-ou
+or
 
 ```bash
 git clone https://github.com/sfeir-open-source/sfeir-school-nodejs.git

@@ -1,9 +1,19 @@
 # Fn JS : Exercice
 
-Créer une fonction (getTotalAmount) qui calcule le prix total des livres du panier shoppingCart
+Create a function (getTotalAmount) which calculates the total price of the books in the shoppingCart basket.
 
-La fonction doit :
+The function must :
 
-1. filtrer par type “books”
-2. transformer l’objet shoppingCart en collection de montants via map
-3. calculer le montant total via reduce
+1. filter by type "books" using filter()
+2. transform the shoppingCart object into a collection of amounts using map()
+3. calculate the total amount using reduce()
+
+To help, you can go to https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
+
+## test
+
+launch test with
+
+```
+npm test -- javascript/functional/test.spec.js
+```

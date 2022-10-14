@@ -1,7 +1,7 @@
 <!-- .slide: class="with-code" -->
 # Prototypes
 
-* L'héritage en JavaScript est réalisé avec une chaîne de prototypes.
+* Inheritance in JavaScript is achieved with a chain of prototypes.
 
 ```javascript
 function Animal(species, color) {
@@ -24,9 +24,9 @@ console.log(cat.toString())
 ##==##
 
 <!-- .slide: class="with-code" -->
-# Les classes
+# Class
 
-* Les mises à jour du langage ont simplifié la syntaxe.
+* Language updates have simplified the syntax.
 
 ```javascript
 class Animal {
@@ -50,4 +50,4 @@ console.log(cat.toString())
 ```
 
 Notes:
-Attention, sucre syntaxique
+Attention, do not alter its expressiveness and make it more enjoyable to write and read.

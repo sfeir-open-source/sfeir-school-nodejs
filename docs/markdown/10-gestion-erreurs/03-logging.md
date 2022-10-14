@@ -1,9 +1,9 @@
 # Logging
 
-* On log avec `console.log` sur la sortie standard (stdout)
-* On log avec `console.error` sur la sortie erreur (stderr)
+* We log with `console.log` on standard output (stdout)
+* We log with `console.error` on the error output  (stderr)
 
-Astuce pour afficher un objet dans la console :
+Tip for displaying an object in the console:
 
 ```javascript
 console.log(JSON.stringify(obj, null, 2))
@@ -13,13 +13,14 @@ console.log(JSON.stringify(obj, null, 2))
 
 # Logging
 
-Quelques librairies pour la gestion des logs
+Some libraries for log management
 
-* Winston : le plus populaire
-* Log4js : similaire à log4j pour Java
-* Pino : rapidité
-* Bunyan : sortie JSON
+* Winston : the most popular
+* Log4js : similar to log4j for Java
+* Pino : speed
+* Bunyan : out JSON
 * Morgan : middleware HTTP Request
-* Roar : compatible Node.js et navigateur
+* Roar : compatible Node.js et browser
 
 https://www.npmtrends.com/log4js-vs-morgan-vs-pino-vs-winston-vs-bunyan
+<!-- .element: class="credits" -->

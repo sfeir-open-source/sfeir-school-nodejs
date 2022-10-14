@@ -1,16 +1,17 @@
 <!-- .slide: class="exercice" -->
-# Le système de fichier
+# File system
 
 ## Exercice
 
 <br>
+In exercices/03_fs
 
-Créer un fichier run.js qui
-* Affiche le path vers le fichier coucou.txt
-* Crée un dossier jtutu
-* Copie le contenu du fichier coucou.txt dans un fichier du même nom sous le répertoire jtutu
+Create a run.js file that
+* Displays the path to the cuckoo.txt file
+* Create a jtutu folder
+* Copy the contents of the cuckoo.txt file into a file of the same name under the jtutu directory
 
-Résultat attendu:
+Expected result:
 ```bash
 $ node run.js
 /home/sfeir/nodejs/exercice3/coucou.txt
@@ -20,7 +21,7 @@ Hello, Sfeir!
 
 ##==##
 <!-- .slide: class="exercice" -->
-# Le système de fichier : Solution
+# File system : Solution
 
 ## Solution
 
@@ -53,11 +54,11 @@ fs.mkdir(folder, function(err) {
 
 ##==##
 <!-- .slide: class="exercice" -->
-# Le système de fichier : Solution
+# File system : Solution
 
 ## Solution
 
-Avec async/await
+With async/await
 <br>
 
 run.js

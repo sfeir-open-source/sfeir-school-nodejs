@@ -1,3 +1,3 @@
 <!-- .slide: class="transition" -->
 
-# Le projet !
+# The project !

@@ -1,7 +1,7 @@
 # Debugging
 
-* Démarrer le programme Node avec l’option `--inspect` ou `--inspect-brk`
-* On utilise un client pour l’inspecteur de Node
+* Start the Node program with the option `--inspect` or `--inspect-brk`
+* We use a client for the Node inspector
     * [node-inspect](https://github.com/nodejs/node-inspect)
     * Chrome DevTools 55+ (chrome://inspect)
     * [VsCode](https://code.visualstudio.com/docs/nodejs/nodejs-debugging)

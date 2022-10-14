@@ -4,8 +4,10 @@
 
 ## Exercice
 
-Créer une classe **Cat** avec un constructeur prenant en paramètre un **name**. Elle a besoin d'une méthode **meow** (avec un console.log de votre choix) et d'une méthode **play** (avec un console.log de votre choix).
+In /exercices/javascript/classes
 
-Créer une classe **MainCoon** qui étend la classe **Cat** avec un constructeur prenant un **name** et une **color**. Surcharger la méthode play et appeler le **play du parent** (avec un console.log de votre choix). Ajouter une méthode **sleep** (avec un console.log de votre choix).
+Create a **Cat** class with a constructor taking a **name** as a parameter. It needs a **meow** method (with a console.log of your choice) and a **play** method (with a console.log of your choice).
 
-Tester votre code en ouvrant une console nodejs. Importer votre code dans la console (facile si vous avez tout suivi ;) ) puis construire vos objets.
+Create a **MainCoon** class that extends the **Cat** class with a constructor taking a **name** and a **color**. Override the play method and call the parent's **play** (with a console.log of your choice). Add a **sleep** method (with a console.log of your choice).
+
+Test your code by opening a nodejs console. Import your code into the console (easy if you have followed everything ;) ) then build your objects.

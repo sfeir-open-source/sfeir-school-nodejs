@@ -1,18 +1,18 @@
-# Quelques API
+# Some API
 
-* Quelques API globales: timers, module, process, global
+* Some global API : timers, module, process, global
 * API :
-    * child_process: gestion des processus
-    * events: tout pour les évènements
-    * fs: I/O du système de fichiers
-    * http/https/http2: I/O des internets
-    * module: pour la gestion des modules
-    * path: tout pour les chemins de fichiers
-    * process: pour le processus en cours
-    * stream: pour faire des flux
-* Utilitaires:
-    * os: ce qui est en rapport avec le système d’exploitation
-    * util: avec plein d’outils pratiques
+    * child_process: process management
+    * events: everything for events
+    * fs: I/O file system
+    * http/https/http2: I/O internet
+    * module: module management
+    * path: file path
+    * process: for the current process
+    * stream: to do stream
+* Utilities:
+    * os: what is related to the operating system
+    * util: with lots of handy tools
     * url, querystring…
 
 

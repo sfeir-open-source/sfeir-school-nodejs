@@ -1,6 +1,6 @@
 <!-- .slide: class="with-code" -->
 
-# Const et let : Mais où sont les var ?
+# Const and let: But where are the vars?
 
 ```javascript
     var valueA = 1234;
@@ -20,13 +20,13 @@
 <!-- .element: class="fragment" -->
 
 Notes:
-**const** n'est pas une vrai const en effet, si on const un objet, on pourra toucher à l'objet => const c'est une constante de référence
+**const** is not a real const indeed, if we const an object, we can touch the object => const it is a reference constant
 
 ##==##
 
 <!-- .slide: class="with-code" -->
 
-# Const et let : Mais où sont les var ?
+# Const and let: But where are the vars?
 
 
 ```javascript
@@ -51,9 +51,9 @@ console.log(j); // ERROR
 Notes:
 IIFE = Immediately Invoked Function Expression
 
-en ES6, les accolades nous permettent de créer des scopes sans IIFE.
+In ES6, braces allow us to create scopes without IIFE.
 
-Le mot clé function revient à une déclaration globale de la fonction
+The function keyword amounts to a global declaration of the function
 
 ##==##
 
@@ -61,7 +61,7 @@ Le mot clé function revient à une déclaration globale de la fonction
 
 # Template String
 
-On utilise les back **quotes ``** et on peut créer des expressions avec **\${}**
+We use back **quotes ``** and we can create expressions with **\${}**
 
 ```javascript
 var welcome = 'Welcome';
@@ -84,7 +84,7 @@ var myTemplateHTML = '<div class="sfeirschool">\n<p>'+welcome+'</p>\n<p>'+sujet+
 
 # Template String
 
-On utilise les back **quotes ``** et on peut créer des expressions avec **\${}**
+We use back **quotes ``** and we can create expressions with **\${}**
 
 ```javascript
 const welcome = 'Welcome';
@@ -106,6 +106,5 @@ const myTemplateHTML = `
 <!-- .element: class="fragment" -->
 
 Notes:
-\${} contient des expressions javascript
-
-et les templates string peuvent aussi servir pour autre chose cf lit-html
+\${} contains javascript expressions
+and string templates can also be used for other things cf lit-html

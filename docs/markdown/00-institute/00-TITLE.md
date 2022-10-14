@@ -8,13 +8,13 @@
 
 <!-- .slide -->
 
-# Déroulement de la formation
+# Program of the training
 
 <p class="center">
-Tour de table ...<br>
-C'est quand la pause ?<br>
-Quand est-ce qu'on mange ?
+Introduce yourself ...<br>
+When is the break ?<br>
+What are we eating ?
 </p>
 <br><br>
 
-**Feuille de présence (obligatoire)** <!-- .element: class="center" -->
+**Attendance register (mandatory)** <!-- .element: class="center" -->

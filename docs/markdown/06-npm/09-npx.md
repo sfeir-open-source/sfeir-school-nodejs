@@ -1,7 +1,7 @@
 # npx: npm package runner
 
-* Disponible depuis npm@5.2.0
-* Exécute un outil de npm sans devoir l’installer globalement et sans avoir à référencer `./node_mobules/.bin`
+* Available since npm@5.2.0
+* Run a tool from npm without having to install it globally and without having to reference `./node_mobules/.bin`
 
 <br>
 

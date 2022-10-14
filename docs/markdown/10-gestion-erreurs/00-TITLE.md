@@ -1,3 +1,3 @@
 <!-- .slide: class="transition" -->
 
-# La gestion d'erreurs
+# Error handling

@@ -8,12 +8,31 @@ A [SFEIR School](https://www.sfeir.com/formation/school/)
 
 # Slides
 
-You can view the slides [here](https://sfeir-open-source.github.io/sfeir-school-nodejs/#/).
+You can view the slides [here](https://sfeir-open-source.github.io/sfeir-school-nodejs/).
+
+You can launch the slide in local
+go to the folder docs
+```bash
+cd docs
+```
+
+install the dependencies
+```
+npm insall
+```
+
+launch the slide server
+```
+npm run serve
+```
+your slide is available on http://127.0.0.1:4242
 
 # Installation
 
 ```bash
 git clone git@github.com:Sfeir/sfeir-school-nodejs.git
+or
+git clone https://github.com/sfeir-open-source/sfeir-school-nodejs.git
 ```
 
 # Training plan
@@ -24,13 +43,13 @@ Start:
 
 ```sh
 cd exercices
-npm i
+npm install
 ```
 
 Launch tests :
 
 ```sh
-npm test -- **/ex01.test.js
+npm test -- 01_hello/test.spec.js
 ```
 
 ## Day 2: project

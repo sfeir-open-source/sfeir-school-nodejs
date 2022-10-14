@@ -1,13 +1,13 @@
-# Déroulement de la formation
+# Program of the training
 
 ## Plan
 
-* Présentation et historique de Node.js
-* Sous le capot
-* Le language JavaScript
-* Les API
-* npm et les modules
-* La gestion d'erreurs et le debug
-* Déployer en production
+* Presentation and history of Node.js
+* What inside
+* JavaScript language
+* The API
+* npm and modules
+* Error handling and debug
+* Deploy in production
 
-* Et un projet !
+* And a project !

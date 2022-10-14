@@ -1,12 +1,12 @@
 <!-- .slide: class="transition red" -->
 
-# Asynchronicité
+# Asynchronicity
 
 <!-- .slide: class="with-code" -->
 
-# Le callback hell
+# The callback hell
 
-Le problème peut avoir plusieurs formes. La plus connue :
+The problem can take many forms. The best known :
 
 ```javascript
 a(function (resultA) {
@@ -26,9 +26,9 @@ a(function (resultA) {
 
 <!-- .slide: class="with-code" -->
 
-# Le callback hell
+# The callback hell
 
-Mais le vrai problème n'est pas ici l'imbrication. On peut en effet aplatir le code :
+But the real problem here is not the nesting. We can indeed flatten the code:
 
 ```javascript
 const cb1 = function (x) {
@@ -53,12 +53,12 @@ a(cb1);
 
 <!-- .slide: class="with-code" -->
 
-# Le callback hell
+# The callback hell
 
-Il y a alors plusieurs problèmes :
-- on ne peut pas faire confiance aux fonctions qui reçoivent les callbacks (appels multiples du callback, pas d'appel, etc.)
-- l'ordre d'exécution est difficile à suivre
-- on ne peut pas gérer simplement les erreurs qui arrivent dans a, b, c, d, ou e.
+There are then several problems :
+- functions that receive callbacks cannot be trusted (multiple callback calls, no call, etc.)
+- the order of execution is difficult to follow
+- you can't just handle errors that happen in a, b, c, d, or e.
 
 ##==##
 
@@ -66,7 +66,7 @@ Il y a alors plusieurs problèmes :
 
 # Promises
 
-C'est une "façon" de gérer les traitements asynchrones avec une api unique en utilisant des callbacks !
+It's a "way" to handle asynchronous processing with a single API using callbacks!
 
 ![h-700 center](./assets/images/Promises_00.png) <!-- .element: class="fragment" -->
 
@@ -94,7 +94,7 @@ p.then(value => ...);
 ![center h-500](./assets/images/Promises_01.png) <!-- .element: class="fragment" -->
 
 Notes:
-Faire le parallèle avec le problème de confiance en la fonction appelant des callbacks
+Draw a parallel with the problem of confidence in the function calling callbacks
 
 ##==##
 
@@ -102,7 +102,7 @@ Faire le parallèle avec le problème de confiance en la fonction appelant des c
 
 # Promises
 
-Pour revenir à l'exemple du callback hell, on peut utiliser les promesses !
+Going back to the hell callback example, we can use promises!
 
 
 ```javascript
@@ -129,7 +129,7 @@ a()
 ```
 
 Notes:
-Faire le parallèle avec le problème d'ordre d'exécution
+Draw a parallel with the execution order problem
 
 ##==##
 
@@ -137,7 +137,7 @@ Faire le parallèle avec le problème d'ordre d'exécution
 
 # Promises
 
-Pour revenir à l'exemple du callback hell, on peut utiliser les promesses !
+Going back to the hell callback example, we can use promises!
 
 ```javascript
 a()
@@ -165,7 +165,7 @@ etc ...
 
 # Promises
 
-On peut faire encore mieux !
+We can do even better!
 
 ```javascript
 a()
@@ -191,9 +191,11 @@ a()
 
 # Promises
 
-![h-400 center](./assets/images/Promises_03.png)
+![h-400 center](./assets/images/Promises_03_eng.png)
 
-<p class="text-center">https://bevacqua.github.io/promisees</p>
+
+https://bevacqua.github.io/promisees
+<!-- .element: class="credits" -->
 
 ##==##
 
@@ -201,20 +203,20 @@ a()
 
 # Promises
 
-On résume
+We summarize
 
-- **Une promesse renvoie toujours une promesse !**<br/><br/>
+- ** A promise always returns a promise !**<br/><br/>
 
-- Si une promesse est **résolue**, la valeur résolue va dans le prochain **then()**<br/><br/>
+- If a promise is **resolved**, the resolved value goes into the next **then()**<br/><br/>
 
-- Si une promesse est **rejetée**, la valeur rejetée va dans le prochain **catch()** (ou dans le then avec la fonction en second paramètre)<br/><br/>
+- If a promise is **rejected**, the rejected value goes into the next **catch()** (or in the then with the function as second parameter)<br/><br/>
 
 Notes:
-/!\ un catch depuis être suivi d'un then
+/!\ a catch since being followed by a then
 
-Maintenant, il y a le .finally() qui permet d'executer un truc à la fin que l'on ait un catch ou un then
+Now there is the .finally() which allows you to execute something at the end whether you have a catch or a then
 
-Faire le parallèle avec le problème de la gestion d'erreurs
+Draw a parallel with the problem of error handling
 
 ##==##
 
@@ -223,15 +225,15 @@ Faire le parallèle avec le problème de la gestion d'erreurs
 # Promises
 
 <div class="fragment" data-fragment-index="1">
-L'API Promise
+Promise API
 
 <br/>
 
-Créer une nouvelle promesse
+Create a new promise
 
 ```javascript
 new Promise(function(resolveFn, rejectFn) {
-  // Votre code asynchrone
+  // Your asynchronous code
 });
 ```
 </div>
@@ -239,11 +241,11 @@ new Promise(function(resolveFn, rejectFn) {
 <br/>
 
 <div class="fragment" data-fragment-index="2">
-Créer une nouvelle promesse à partir d'une valeur ou d'une autre promesse
+Create a new promise from a value or another promise
 
 ```javascript
-Promise.resolve(/* valeur ou une promesse */) // Renvoie une promesse résolue
-Promise.reject(/* valeur ou une promesse */) // Renvoie une promesse rejetée
+Promise.resolve(/* value or promise */) // Returns a resolved Promise
+Promise.reject(/* value or promise */) //Returns a rejected promise
 
 // Exemple
 Promise.resolve(4).then(value => console.log(value)) // 4
@@ -258,16 +260,16 @@ Promise.resolve(Promise.resolve('toto')).then(value => console.log(value)) // 't
 # Promises
 
 <div class="fragment" data-fragment-index="1">
-L'API Promise
+Promise API
 
 <br/>
 
-Attendre plusieurs promesses et les fusionner en une
+Wait for multiple promises and merge them into one
 
 ```javascript
-Promise.all([promises...]) // Renvoie une promesse
+Promise.all([promises...]) // Returns a promise
 
-// Exemple
+// Example
 Promise.all([Promise.resolve(4), Promise.resolve('toto')])
 .then(values => console.log(values));
 // [4, 'toto']
@@ -277,10 +279,10 @@ Promise.all([Promise.resolve(4), Promise.resolve('toto')])
 <br/>
 
 <div class="fragment" data-fragment-index="2">
-Attendre plusieurs promesses, premier arrivé => premier servi
+Wait for several promises, first come => first served
 
 ```javascript
-Promise.race([promises...]) // Renvoie une promesse
+Promise.race([promises...]) // Returns a promise
 
 // Exemple
 Promise.race([Promise.resolve(4), Promise.resolve('toto')])
@@ -295,7 +297,7 @@ Promise.race([Promise.resolve(4), Promise.resolve('toto')])
 
 # Promises
 
-"Ok ok ok, moi je veux créer une promesse, comment je fais ?"
+"Ok ok ok, I want to create a promise, how do I do it?"
 
 
 <br/>
@@ -308,7 +310,7 @@ function asyncFn(callback) {
   request.onreadystatechange = event => {
     if (request.readyState == 4) return;
     if (request.status == 200) callback(null, request.responseText);
-    else callback('Erreur pendant le chargement de la page.\n');
+    else callback('Error while loading the page.\n');
   };
 }
 
@@ -332,7 +334,7 @@ function asyncFn() {
     request.onreadystatechange = event => {
       if (request.readyState == 4) {
         if (request.status == 200) resolve(request.responseText);
-        else reject('Erreur pendant le chargement de la page.\n');
+        else reject('Error while loading the page.\n');
       }
     };
   });

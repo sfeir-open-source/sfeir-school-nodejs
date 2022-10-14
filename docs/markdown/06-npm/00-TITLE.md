@@ -1,3 +1,3 @@
 <!-- .slide: class="transition" -->
 
-# npm et les modules
+# npm and modules

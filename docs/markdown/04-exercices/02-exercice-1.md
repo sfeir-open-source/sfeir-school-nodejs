@@ -1,16 +1,16 @@
 <!-- .slide: class="exercice" -->
-# Créer un script
+# Create a script
 
 ## Exercice
 
 <br>
 
-1. Créer un fichier `run.js` un script qui écrit “Hello, World!”, dans le dossier `01_hello`
-2. Lancer avec 
+1. Complete the file `run.js`, the script must write “Hello, World!”, in the folder `01_hello`
+2. Launch with 
 ```bash
 $ node run.js
 ```
-3. Lancer les tests avec
+3. Launch the tests with
 ```bash
 $ npm test hello
 ```
@@ -38,14 +38,15 @@ console.log('Hello, World!');
 ```bash
 $ npm install -g nodemon
 ```
-* Comment on reload ?
+* automatic reload when file saved 
 ```bash
-$ nodemon monfichier.js
+$ nodemon myfile.js
 ```
+forced reload
 ```bash
 $ rs
 ```
-* ⚠ c’est pour le dev !
+* ⚠ it's for dev only !
 
 Notes:
 Montrer pour les tests

@@ -1,10 +1,10 @@
 # npm
 
-* Gestionnaire de paquets pour Node.JS (et autres !)
-* Première release en 2010
-* Livré avec Node.JS
-* 1.3 million packages (1 million le 4 juin 2019)
-* Concurrencé par yarn
+* Package manager for Node.JS (and others!)
+* First release in 2010
+* Install with Node.JS
+* 1.3 million packages
+* yarn is an alternative
 
 Notes:
 https://www.npmtrends.com/

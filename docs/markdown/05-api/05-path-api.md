@@ -1,16 +1,16 @@
-# Les API: require(‘path’)
+# API: require(‘path’)
 
-* `path.dirname(),` `path.extname()`: infos sur le chemin de fichier
-* `path.format(),` `path.parse()`: chemin ⇔ objet
-* `path.sep`: séparateur système (dépend de l’environnement)
-* `path.join()`, `path.resolve()`: pour créer des chemins
+* `path.dirname(),` `path.extname()`: file path info
+* `path.format(),` `path.parse()`: path ⇔ objet
+* `path.sep`: system separator (depends on environment)
+* `path.join()`, `path.resolve()`: to create paths
 
 ##--##
 
 <!-- .element: class="with-code" -->
 
 
-# Les API: require(‘path’)
+# API: require(‘path’)
 
 * POSIX
 

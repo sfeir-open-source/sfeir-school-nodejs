@@ -1,7 +1,7 @@
 <!-- .slide: class="with-code" -->
-# Conteneurisation
+# Containerization
 
-* Contruire une image Docker avec un fichier `Dockerfile`
+* Build a Docker image with a file`Dockerfile`
 
 ```
 FROM node:14
@@ -25,17 +25,17 @@ CMD [ "node", "server.js" ]
 
 ##--##
 
-# Conteneurisation
+# Containerization
 
-* Créer un fichier `.dockerignore` pour exclure le répertoire node_modules
+* Create a `.dockerignore` file to exclude the node_modules directory
 
-* Construire l'image
+* Build the image
 
 ```bash
 docker build . -t <your username>/node-web-app
 ```
 
-* Démarrer l'image
+* Run the image
 
 ```bash
 docker run -p 49160:8080 -d <your username>/node-web-app

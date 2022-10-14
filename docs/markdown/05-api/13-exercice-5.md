@@ -1,14 +1,15 @@
 <!-- .slide: class="exercice" -->
-# Les évènements
+# Events
 
 ## Exercice
 
 <br>
 
-Créer un nouveau fichier run.js pour: 
-* Faire un ping pong avec EventEmitter et des setTimeout !
+Write a `run.js` program that uses the `events` module to create a new `EventEmitter` which when it receives a "ping" event displays "Got a ping!" and returns a "pong" event after one second.
 
-Résultat attendu:
+When receiving "pong", display "Got a pong!" and return a "ping" event after one second.
+
+expected result:
 
 ```bash
 $ node run.js

@@ -1,3 +1,3 @@
 <!-- .slide: class="transition" -->
 
-# Déroulement de la formation
+# Program of the training

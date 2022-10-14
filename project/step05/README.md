@@ -2,22 +2,20 @@
 
 ## Step 5
 
-Persistence des données avec [PouchDB](https://pouchdb.com)
+Data persistence with [PouchDB](https://pouchdb.com)
 
-On va préparer une variable d'environnement :
+We will prepare an environment variable:
 
-- `INITDB_DATABASE` avec la valeur `schoolsdb`.
+- `INITDB_DATABASE` with value `schoolsdb`.
 
-Et côté code:
+And on the code side:
 
-- Utiliser le plugin [pouchdb-find](https://pouchdb.com/guides/mango-queries.html) pour les requêtes
-- Mettre à jour `lib/app.js` pour lui passer la db.
-- Vérifier que la base est accessible avant de démarrer l'application.
-- Profitons-en pour ajouter une variable d'environnement `PORT` avec le port sur lequel notre application doit tourner.
+- Use the [pouchdb-find](https://pouchdb.com/guides/mango-queries.html) plugin for queries
+- Update `lib/app.js` to pass the db to it.
+- Check that the database is accessible before starting the application.
+- Let's take this opportunity to add a `PORT` environment variable with the port on which our application must run.
 
 # PouchDB
 
-- Pour inserer un document dans la base, on utilise la méthode `put`. Le document doit contenir un identifiant `_id` et un `type`
-- Pour générer des `_id` uniques, on peut utiliser le package [uuid](https://www.npmjs.com/package/uuid)
-
-
+- To insert a document in the database, we use the `put` method. The document must contain an identifier `_id` and a `type`
+- To generate unique `_id`, we can use the package [uuid](https://www.npmjs.com/package/uuid)

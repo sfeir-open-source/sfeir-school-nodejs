@@ -1,29 +1,29 @@
-# Les middlewares Express
+# middlewares Express
 
-Les middlewares permettent le chaînage de plusieurs fonctions
+Middleware allows the chaining of several functions
 
-Cas d’application :
-* Log de toutes les requêtes
-* Métriques
-* Authentification
-* Gestion des erreurs
+Application case :
+* Log of all requests
+* Metrics
+* Authentication
+* Error management
 * Routing
 
 ##==##
 
-# Les middlewares Express
+# middlewares Express
 
-* 2 types de middlewares :
-    * middleware “classique” : `function (req, res, next)`
-    * middleware d’erreur : `function (err, req, res, next)` appelée si une erreur est remontée par un middleware précédent
 
+* 2 types of middleware:
+  * “classic” middleware: `function (req, res, next)`
+  * error middleware: `function (err, req, res, next)` called if an error is reported by a previous middleware
 <br>
 
-* `next` : fonction permettant le chaînage de middleware. On appelle le middleware suivant avec `next()`, et potentiellement le prochain middleware d’erreur avec `next(err)`
+* `next` : function allowing the chaining of middleware. We call the following middleware with`next()`, and potentially the next error middleware with `next(err)`
 
 ##==##
 <!-- .slide: class="full-center" -->
 
-# Les middlewares Express
+# middlewares Express
 
 ![full-width](./assets/images/express_middlewares.svg)

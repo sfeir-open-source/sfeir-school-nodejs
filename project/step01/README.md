@@ -1,15 +1,15 @@
 # Sfeir Schools
 
-On va faire un petit projet pour gérer des Sfeir Schools !
+We are going to do a little project to manage Sfeir Schools!
 
-On aura besoin de [Node.js 14](https://nodejs.org/en/).
+We will need [Node.js 16](https://nodejs.org/en/).
 
 ## Step 1
 
-- Installer [Express](http://expressjs.com/).
-- Créer une route correspondant [à la méthode `GET`](https://fr.wikipedia.org/wiki/Hypertext_Transfer_Protocol#M%C3%A9thodes) pour répondre "Hello, Sfeir School!".
-- Lancer avec `npm start`.
-- Créer un script `dev` dans package.json pour lancer le programe avec `nodemon`.
-- Tester avec [httpie](https://httpie.org/): `http http://localhost:3000/` ou avec [Postman](https://www.postman.com/).
+- Install [Express](http://expressjs.com/).
+- Create a route for method [à la méthode `GET`](https://fr.wikipedia.org/wiki/Hypertext_Transfer_Protocol#M%C3%A9thodes) need to answer "Hello, Sfeir School!".
+- Launch with `npm start`.
+- Create a script `dev` in  package.json to launch using `nodemon`.
+- Test with [Postman](https://www.postman.com/): `http http://localhost:3000/` or with [httpie](https://httpie.org/).
 
-Pour les utilisateurs de Postman, vous pouvez importer la collection de requête [Sfeir school NodeJS.postman_collection.json](../../resources/Sfeir school NodeJS.postman_collection.json)
+For the users of Postman, you can import the request collection [Sfeir school NodeJS.postman_collection.json](../../resources/Sfeir school NodeJS.postman_collection.json)

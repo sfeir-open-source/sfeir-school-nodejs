@@ -1,13 +1,13 @@
-# Bonnes pratiques : les dépendances
+# Best Practices : Dependencies
 
-* `package-lock.json` est généré automatiquement et ajouté au contrôle de source
-* [npm outdated](https://docs.npmjs.com/cli/outdated) pour afficher les dépendances qui ne sont pas à jour
-* [npm update](https://docs.npmjs.com/cli/update) pour mettre à jour les dépendances
-* [npm-check](https://www.npmjs.com/package/npm-check) pour une mise à jour intéractive `npm-check -u`
-* [npm-check-updates](https://www.npmjs.com/package/npm-check-updates) pour tout mettre à jour `ncu -u`
+* `package-lock.json` is automatically generated and added to source control
+* [npm outdated](https://docs.npmjs.com/cli/outdated) to show outdated dependencies
+* [npm update](https://docs.npmjs.com/cli/update) to update dependencies
+* [npm-check](https://www.npmjs.com/package/npm-check) for an interactive update `npm-check -u`
+* [npm-check-updates](https://www.npmjs.com/package/npm-check-updates) to update everything `ncu -u`
 
 Notes:
-- package-lock.json depuis la version 5 remplace le shrinkwrap.
-- package-lock.json présent dans le contrôle de source
-- npm install : meme version que package-lock.json
-- npm-shrinkwrap.json : présent avec le code publié sur npm
+- package-lock.json since version 5 replaces the shrinkwrap.
+- package-lock.json present in source control
+- npm install: same version as package-lock.json
+- npm-shrinkwrap.json: present with the code published on npm

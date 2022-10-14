@@ -1,10 +1,9 @@
-# Les API: require('worker_threads')
+# API: require('worker_threads')
 
-
-* Disponible depuis la version 10 et stable depuis la version 12 LTS
-* Multithreading pour les opérations CPU intensives
-* Chaque thread dispose de sa propre event-loop
-* Communication entre threads, <b>partage de mémoire</b>
+* Available since version 10 and stable since version 12 LTS
+* Multithreading for CPU intensive operations
+* Each thread has its own event-loop
+* Communication between threads, <b>memory sharing</b>
 
 https://nodejs.org/api/worker_threads.html
 <!-- .element: class="credits" -->

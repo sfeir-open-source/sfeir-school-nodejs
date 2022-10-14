@@ -1,21 +1,21 @@
 <!-- .slide: class="exercice" -->
-# Serveur HTTP (avec les streams)
+# HTTP server (using streams)
 
 ## Exercice
 
 <br>
 
-Créer un fichier run-04.js pour: 
-* Renvoyer le logo Google: 
+Create a run-04.js file for:
+* Resend Google logo:
 
 https://www.google.fr/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png 
 
-en réponse à un appel GET sur /google
-* Récupérer l’image en https et la streamer vers la réponse
+In response to a GET call on /google
+* Get the image in https and stream it to the response
 
 <br>
 
-Résultat attendu:
+Expected result:
 
 ```bash
 $ node run.js
@@ -23,7 +23,7 @@ $ node run.js
 
 ##==##
 <!-- .slide: class="exercice" -->
-# Serveur HTTP : Solution avec les streams
+# HTTP server (using streams)
 
 ## Solution
 
@@ -36,7 +36,7 @@ const https = require('https');
 const url = require('url');
 
 const server = http.createServer((req, res) => {
- if (req.url = '/google) {
+ if (req.url = '/google') {
    const logo = 
       'https://www.google.fr/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png';
 
@@ -46,9 +46,9 @@ const server = http.createServer((req, res) => {
    });
  } else if (req.url === '/404') {
    res.statusCode = 404;
-   res.end('Pas trouvé !')
+   res.end('Not found !')
  } else {
-   res.end(`Kikou ! Tu as fait un ${req.method} sur ${req.url} !`);
+   res.end(`Kikou ! you have a ${req.method} on ${req.url} !`);
  }
 });
 
@@ -57,7 +57,7 @@ server.listen(9000);
 
 ##==##
 <!-- .slide: class="exercice" -->
-# Serveur HTTP : Solution avec les streams
+# HTTP server (using streams)
 
 ## Solution
 
@@ -70,16 +70,16 @@ const http = require('http');
 const https = require('https');
 
 const server = http.createServer((req, res) => {
- if (req.url = '/google) {
+ if (req.url = '/google') {
    const logo = 
       'https://www.google.fr/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png';
 
    https.get(logo, logoResponse => logoResponse.pipe(res));
  } else if (req.url === '/404') {
    res.statusCode = 404;
-   res.end('Pas trouvé !')
+   res.end('Not found !')
  } else {
-   res.end(`Kikou ! Tu as fait un ${req.method} sur ${req.url} !`);
+  res.end(`Kikou ! you have a ${req.method} on ${req.url} !`);
  }
 });
 

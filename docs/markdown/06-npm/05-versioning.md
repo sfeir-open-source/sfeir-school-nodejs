@@ -1,11 +1,11 @@
 # npm : versioning
 
-* Selon npm on commence à : 1.0.0
-* Bugfix et autres changements mineurs: **Patch** release, on augmente le dernier nombre 1.0.1
-    * Il est considéré non cassant d’upgrader ou downgrader le Patch
-* Nouvelles features non cassantes : **Minor** release, on augmente le nombre du milieu 1.1.0
-    * Il est considéré non cassant d’upgrader la Minor, mais potentiellement cassant de downgrader !
-* Changements qui cassent la compatibilité: **Major** release, on augmente le premier nombre 2.0.0
-* npm version : utilise la CLI de npm pour incrémenter la version. Crée un commit si le module est dans un repo git
+* According to npm we start at : 1.0.0
+* Bugfix and other minor changes: **Patch** release, we increase the last number 1.0.1
+    * It is considered non-breaking to upgrade or downgrade the Patch
+* New non-breaking features: **Minor** release, we increase the number of the middle 1.1.0
+    * It is considered non-breaking to upgrade the Minor, but potentially breaking to downgrade!
+* Changes that break compatibility: **Major** release, we increase the first number 2.0.0
+* npm version: use the npm CLI to increment the version. Create a commit if the module is in a git repo
 
 https://docs.npmjs.com/getting-started/semantic-versioning

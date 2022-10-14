@@ -1,10 +1,14 @@
 <!-- .slide: class="exercice" -->
-# Installer les dépendances
+# Install dependencies
 ## Exercice
 
 <br>
 
-Installer les dépendances de la journée d’exercice en exécutant : 
+Install the practice day dependencies by running:
+
+```bash
+$ cd excercices
+```
 
 ```bash
 $ npm install

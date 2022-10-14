@@ -1,8 +1,8 @@
 <!-- .slide: class="with-code" -->
-# Les API: require('cluster')
+# API: require('cluster')
 
-* Pour profiter des architectures multi-coeur, `cluster` facilite la création de processus enfants.
-* Utilise child_process.fork
+* To take advantage of multi-core architectures, `cluster` makes it easy to create child processes.
+* Use child_process.fork
 
 ```javascript
 import cluster from 'cluster';

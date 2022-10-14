@@ -1,10 +1,10 @@
-# Les API: globales 1/3
+# global API 1/3
 
 <br>
 
 <ul>
-    <li>Pas besoin de require !</li>
-    <li class="fragment">timers: vous connaissez déjà presque tout !
+    <li>no need to require!</li>
+    <li class="fragment">timers: you already know almost everything!
         <ul>
             <li><code>setTimeout()</code></li>
             <li><code>setInterval()</code></li>
@@ -30,30 +30,30 @@ chalk, progress
 
 ##==##
 
-# Les API: globales 2/3
+# global API 2/3
 
 <br>
 
 process:
 <ul>
-    <li class="fragment" data-fragment-index="1"><code>process.argv</code> : pour les arguments de la ligne de commande</li>
-    <li class="fragment"><code>process.chdir(directory)</code> : pour changer le répertoire de travail</li>
-    <li class="fragment"><code>process.cwd()</code> : pour récupérer le répertoire courant</li>
-    <li class="fragment"><code>process.env</code> : object contenant les variables d’environnement</li>
-    <li class="fragment"><code>process.exit(code)</code> : pour terminer le processus dès que possible</li>
+    <li class="fragment" data-fragment-index="1"><code>process.argv</code> : for command line arguments</li>
+    <li class="fragment"><code>process.chdir(directory)</code> : to change the working directory</li>
+    <li class="fragment"><code>process.cwd()</code> : to get the current directory</li>
+    <li class="fragment"><code>process.env</code> : object containing environment variables</li>
+    <li class="fragment"><code>process.exit(code)</code> : to complete the process as soon as possible</li>
 </ul>
 
 ##==##
 
-# Les API: globales 3/3
+# global API 3/3
 
 <br>
 
-Variables globales: où sont rattachées les API dont on vient de parler, avec en bonus:
+Global variables: where are attached the APIs we just talked about, with a bonus:
 <ul>
-    <li class="fragment"><code>global</code> : l’objet global (équivalent de window dans le navigateur)</li>
-    <li class="fragment"><code>__dirname</code> : le chemin du répertoire contenant le fichier courant</li>
-    <li class="fragment"><code>__filename</code> : le nom du fichier courant</li>
-    <li class="fragment"><code>exports</code> : raccourci vers module.exports</li>
-    <li class="fragment"><code>require</code> : raccourci vers module.require</li>
+    <li class="fragment"><code>global</code> : the global object (equivalent to window in the browser)</li>
+    <li class="fragment"><code>__dirname</code> : the path of the directory containing the current file</li>
+    <li class="fragment"><code>__filename</code> : the name of the current file</li>
+    <li class="fragment"><code>exports</code> : shortcut to module.exports</li>
+    <li class="fragment"><code>require</code> : shortcut to module.require</li>
 </ul>

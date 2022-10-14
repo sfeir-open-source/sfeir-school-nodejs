@@ -1,20 +1,20 @@
 <!-- .slide: class="with-code" -->
 
-# La commande node
+# Node command
 
-* Afficher la ligne de commande
+* Show the manual of node
 
 ```bash
  node --help
 ```
 
-* Exécuter un script
+* Execute a script
 
 ```bash
  node app.js
 ```
 
-* Evaluer une expression
+* Evaluate an expression
 
 ```bash
  node --eval "console.log('hello')"

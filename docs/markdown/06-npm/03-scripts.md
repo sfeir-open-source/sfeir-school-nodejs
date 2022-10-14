@@ -1,19 +1,19 @@
-# npm : les scripts
+# npm : scripts
 
-* Propriété **scripts** dans le fichier package.json
-* On peut exécuter chaque script avec `npm run [nom du script]`
-* Certains noms de scripts sont traités à part: **start**, **test**…
-    * Pas besoin de `npm run` pour exécuter ces scripts: `npm` suffit.
-    * Avec un cycle: **pre**start, **post**start
-    * `npm test` traite les erreurs avec un autre niveau de verbosité, idéal pour les tests
-    * NB: preinstall, install, postinstall (pour les compilations) peuvent être exploités comme une faille de sécurité
-* Chaque script peut exécuter les binaires des modules installés comme s’il étaient dans le PATH :  ./node_modules/mocha/bin/mocha -> mocha
-* On peut les orchestrer avec [npm-run-all](https://www.npmjs.com/package/npm-run-all)
+* Property **scripts** in the file package.json
+* You can run each script with `npm run [nom du script]`
+* Some script names are treated separately: **start**, **test**…
+    * Not need `npm run` to run this scripts: `npm` is enough.
+    * With cycle: **pre**start, **post**start
+    * `npm test` handles errors with another level of verbosity, ideal for testing
+    * NB: preinstall, install, postinstall (for builds) can be exploited as a security hole
+* Each script can run binaries of installed modules as if they were in the PATH:  ./node_modules/mocha/bin/mocha -> mocha
+* We can orchestrate them with [npm-run-all](https://www.npmjs.com/package/npm-run-all)
 
 ##--##
 
 <!-- .slide: class="with-code" -->
-# npm : les scripts
+# npm : scripts
 
 
 ```json

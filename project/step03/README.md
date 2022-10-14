@@ -2,21 +2,22 @@
 
 ## Step 3
 
-Des tests !
+Tests !
 
-On va utiliser 2 modules qu'on va installer sous les `devDependencies`:
+We will use 2 modules that we will install under the `devDependencies`:
 
-- [jest](https://facebook.github.io/jest/), un framework de tests.
-- [supertest](https://github.com/visionmedia/supertest), pour tester simplement des requêtes à une API.
+- [jest](https://facebook.github.io/jest/), a test framework
+- [supertest](https://github.com/visionmedia/supertest), to simply test requests to an API.
 
-Et un peu de refactoring:
 
-- Faire un module "lib/app.js" avec toute l'application sauf le `app.listen(...)`.
-- Faire un "index.js" qui va appeler notre module et faire le `app.listen(...)`.
-- Changer les scripts dans le package.json.
+And a bit of refactoring:
 
-Et enfin:
+- Make a "lib/app.js" module with the whole application except the `app.listen(...)`.
+- Make an "index.js" which will call our module and do the `app.listen(...)`.
+- Change scripts in package.json.
 
-- Créer un test qui va faire un `GET` sur `/` et vérifier que le `statusCode` est `200` et que le `body` est `[]`.
-- Modifier le script npm "test" pour lui affecter la commande "jest".
-- Lancer les tests avec `npm test`.
+And finally:
+
+- Create a test that will do a `GET` on `/` and verify that the `statusCode` is `200` and that the `body` is `[]`.
+- Modify the "test" npm script to assign the "jest" command to it.
+- Run the tests with `npm test`.

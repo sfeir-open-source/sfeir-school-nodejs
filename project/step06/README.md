@@ -2,6 +2,6 @@
 
 ## Step 6
 
-Les tests sont cassés !
+The tests are broken!
 
-- On va utiliser un adapteur in-memory de PouchDB [pouchdb-adapter-memory](https://pouchdb.com/api.html#create_database)
+- We will use an in-memory adapter from PouchDB [pouchdb-adapter-memory](https://pouchdb.com/api.html#create_database)

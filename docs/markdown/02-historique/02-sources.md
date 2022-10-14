@@ -1,8 +1,8 @@
 <!-- .slide: -->
-# Node.JS, c’est où ?
+# Node.JS, where is it ?
 
-* Le site de la OpenJS Foundation: https://nodejs.org
-* Le blog: https://nodejs.org/en/blog
-* Google Groups pour la sécurité: https://groups.google.com/group/nodejs-sec
-* Le code: https://github.com/nodejs/node
+* Site OpenJS Foundation: https://nodejs.org
+* Blog: https://nodejs.org/en/blog
+* Google Groups security: https://groups.google.com/group/nodejs-sec
+* Code: https://github.com/nodejs/node
 * npm: https://www.npmjs.com/

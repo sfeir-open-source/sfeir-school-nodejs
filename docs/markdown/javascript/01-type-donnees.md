@@ -1,13 +1,19 @@
 <!-- .slide:-->
 
-# Type de données
+# Data type
 
-- typage faible et dynamique
-- des données primitives :
+- weak and dynamic typing
+- Primitive data :
     * null
     * undefined
     * number: 1, 1.4, -1e4, NaN
     * string: 'str', "str", `` `template str ${value}` ``
     * boolean: true, false
-    * symbol (nouveauté ES2015)
-- pour le reste tout est objet.
+    * symbol (new in ES2015): let sym = Symbol('toto');
+- For the rest, all is an object
+
+Notes:
+JavaScript is a weakly typed language. It has a notion of types, but it's relaxed about them, and can treat values somewhat arbitrary.
+Statically typed languages check the types and look for type errors during compile time.
+Dynamically typed languages check the types and look for type errors during runtime.
+

@@ -2,9 +2,9 @@
 
 ## Step 4
 
-On code tous pareil dans une équipe !
+We all code the same in a team!
 
-- On va utiliser [prettier](https://prettier.io/) (on peut aussi [l'intégrer avec ESLint](https://prettier.io/docs/en/eslint.html)).
-- On installe prettier en `devDependencies`.
-- On ajoute un script: `"lint": "prettier --write lib/**/*.js index.js"`.
-- Lancer avec `npm run lint`.
+- We will use [prettier](https://prettier.io/) (we can also [integrate it with ESLint](https://prettier.io/docs/en/eslint.html)).
+- We install prettier in `devDependencies`.
+- We add a script: `"lint": "prettier --write lib/**/*.js index.js"`.
+- Run with `npm run lint`.

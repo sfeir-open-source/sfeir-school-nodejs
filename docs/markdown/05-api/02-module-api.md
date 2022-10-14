@@ -1,12 +1,12 @@
-# Les API: module
+# API: module
 
-* L’objet module représente le module courant.
-* Les modules sont cachés
-    * les clefs du cache sont les path des modules
-    * Attention à npm !
+* The module object represents the current module.
+* Modules are hidden
+  * the cache keys are the module paths
+  * Watch out for npm!
 * module:
-    * module.require: permet de charger un module. Il est synchrone ! (alias: require)
-    * module.exports: contient ce que l'on veut exposer dans le module (alias: exports)
+  * module.require: allows to load a module. It is synchronous! (alias: require)
+  * module.exports: contains what we want to expose in the module (alias: exports)
 
 ```bash
 require(X) from module at path Y

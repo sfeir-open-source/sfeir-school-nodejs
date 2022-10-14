@@ -2,7 +2,7 @@
 
 # Async/Await
 
-- Utiliser des promesses dans un style d'écriture synchrone
+- Use promises in synchronous writing style
 
 ##==##
 
@@ -10,7 +10,7 @@
 
 # Async/Await
 
-- Avant la fonction async, le problème de l'asynchronicité
+- Before the async function, the problem of asynchronicity
 
 ```javascript
 function getData() {
@@ -35,7 +35,7 @@ function main() {
 
 # Async/Await
 
-- Une écriture simplifiée pour une lisibilité accrue
+- Simplified writing for increased readability
 
 ```javascript
 function logData() {
@@ -43,7 +43,7 @@ function logData() {
     console.log(result);
   });
 }
-// ES2015 | On utilise une promesse
+// ES2015 | We use a promise
 ```
 
 
@@ -53,5 +53,5 @@ async function logData() {
     console.log(result);
 } 
 
-// ES2017 | On utilise async/await
+// ES2017 | We use async/await
 ```

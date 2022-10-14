@@ -1,3 +1,3 @@
 <!-- .slide: class="transition" -->
 
-# La commande node
+# Node command

@@ -1,10 +1,10 @@
-# C’est parti !
+# Let's go !
 
-* Vous avez toujours le repo git ?
-    * `git clone https://github.com/sfeir-open-source/sfeir-school-nodejs`
-* On démarre avec le step 1:
-    * Les steps sont dans le répertoire project, un dossier par step (step01 à step12).
-    * À chaque étape, le README.md est mis à jour avec ce qu’il y a à faire.
-    * J’ai oublié quelque chose d’important dans la doc pour le step 01… À votre avis ?
-* Bloqué ?
-    * La solution se trouve au répertoire suivant (step02 pour la solution de step01).
+* Do you still have the git repo?
+    * `git clone git@github.com:Sfeir/sfeir-school-nodejs.git`
+* We start with step 1:
+    * The steps are in the project directory, one folder per step (step01 à step12).
+    * At each step, the README.md is updated with what to do.
+    * I forgot something important in the doc for step 01… In your opinion?
+* Blocked ?
+    * The solution is in the following directory (step02 for the solution of step01).

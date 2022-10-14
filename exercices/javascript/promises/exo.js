@@ -1,35 +1,35 @@
 function exercise1Fn () {
   let exercise1 = new Promise(() => {
-    /* votre solution ici */
+    /* your solution here */
   });
 
-  return exercise1./* votre solution ici */
+  return exercise1./* your solution here */
 }
 
 function exercise2Fn () {
   let exercise2 = new Promise(() => {
-    /* votre solution ici */
+    /* your solution here */
   });
 
-  return exercise2./* votre solution ici */
+  return exercise2./* your solution here */
 }
 
 function exercise3Fn () {
   let exercise3 = Promise.resolve(1);
 
   function plusFive(value) {
-    /* votre solution ici */
+    /* your solution here */
   }
 
   function multiplyByTwo(value) {
-    /* votre solution ici */
+    /* your solution here */
   }
 
   function minusFour(value) {
-    /* votre solution ici */
+    /* your solution here */
   }
 
-  return exercise3./* votre solution ici */;
+  return exercise3./* your solution here */;
 }
 
 module.exports = {exercise1Fn, exercise2Fn, exercise3Fn};

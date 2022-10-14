@@ -1,11 +1,11 @@
-# Sous le capot : thread(s?)
+# What inside: thread(s?)
 
-* Design single-thread, contrairement à d’autres plateformes/langages (Java, Go…)
-* Node est optimisé pour l’I/O en faisant des appels nons-bloquants (système de fichiers, appels HTTP, web sockets…)
-* Possibilité d’utiliser plusieurs threads si besoin, mais généralement peu adapté à des opérations coûteuses en CPU
+* Design single-thread, unlike other platforms/languages (Java, Go…)
+* Node is optimized for I/O by making non-blocking calls (file system, HTTP calls, web-socket…)
+* if needed, we can use multiple threads but generally poorly suited for CPU-intensive operations
 
 ##==##
 
-# Sous le capot
+# What inside
 
 ![full-width](./assets/images/nodejs-system.svg)
