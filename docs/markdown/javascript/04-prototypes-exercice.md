@@ -2,7 +2,7 @@
 
 # Classes
 
-## Exercice
+## Lab
 
 In /exercices/javascript/classes
 

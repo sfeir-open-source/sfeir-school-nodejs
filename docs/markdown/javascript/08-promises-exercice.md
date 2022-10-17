@@ -2,7 +2,7 @@
 
 # Promises
 
-## Exercice
+## Lab
 
 In exercices/javascript/promises
 

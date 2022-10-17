@@ -4,12 +4,12 @@
   "description": "Sfeir School NodeJS with revealJS",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass ./scss/slides.scss -o ./css/ --source-map=true --watch=\"scss\" --recursive=\"scss\"",
-    "sass-once": "node-sass ./scss/slides.scss -o ./css/ --source-map=true ",
+    "sass": "sass ./scss/slides.scss:./css/slides.css --source-map --watch",
+    "sass-once": "sass ./scss/slides.scss:./css/slides.css --source-map",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "serve": "live-server --port=4242 --open=\"./index.html\" --watch=\"markdown/\"",
+    "serve": "live-server --port=4242 --open=\"./index.html\" --watch=\"markdown,scripts/\"",
     "start": "parallelshell \"npm run serve\" \"npm run sass\"",
-    "prepare": "snowpack"
+    "prepare": "node ./scripts/dont-touch/prepare-script.js"
   },
   "repository": {
     "type": "git",
@@ -22,28 +22,17 @@
   "author": "jefbinomed",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/sfeir-open-source/sfeir-school-template/issues"
+    "url": "https://github.com/sfeir-open-source/sfeir-school-nodejs/issues"
   },
-  "homepage": "https://github.com/sfeir-open-source/sfeir-school-template",
+  "homepage": "https://github.com/sfeir-open-source/sfeir-school-nodejs",
   "dependencies": {
-    "chokidar-cli": "^1.2.2",
-    "cpx": "^1.5.0",
-    "highlight.js": "^9.15.6",
-    "lit-html": "^1.1.2",
-    "live-server": "^1.2.1",
-    "node-sass": "^6.0.1",
-    "parallelshell": "3.0.1",
-    "reveal.js": "^4.1.0",
-    "sfeir-school-theme": "../../sfeir-school-theme",
-    "snowpack": "^1.6.0"
+    "sfeir-school-theme": "^3.0.0-rc-2"
   },
-  "snowpack": {
-    "webDependencies": [
-      "reveal.js/dist/*.esm.js",
-      "reveal.js/plugin/**/*.esm.js",
-      "sfeir-school-theme/dist/**/*",
-      "lit-html",
-      "highlight.js/styles/**/*"
-    ]
+  "devDependencies": {
+    "chokidar-cli": "^3.0.0",
+    "live-server": "^1.2.1",
+    "sass": "^1.51.0",
+    "parallelshell": "3.0.1",
+    "shelljs": "^0.8.5"
   }
 }

@@ -1,6 +1,8 @@
 <!-- .slide: class="exercice" -->
+
 # Install dependencies
-## Exercice
+
+## Lab
 
 <br>
 

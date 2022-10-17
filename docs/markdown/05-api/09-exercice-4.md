@@ -1,14 +1,14 @@
 <!-- .slide: class="exercice" -->
+
 # Serveur HTTP. Exercice 1
 
-## Exercice
-
-<br>
+## Lab
 
 Create a run-01.js file that:
-* Create an http server
-* Listening on port 9001
-* Responds 'coucou.js' for all requests
+
+- Create an http server
+- Listening on port 9001
+- Responds 'coucou.js' for all requests
 
 Protip: use https://github.com/jkbrzt/httpie !
 
@@ -29,35 +29,36 @@ coucou.js
 ```
 
 ##==##
+
 <!-- .slide: class="exercice" -->
+
 # Serveur HTTP. Exercice 1 : Solution
 
-## Solution
-
-<br>
+## Soluce
 
 run-01.js
 
 ```javascript
-const http = require('http');
+const http = require("http");
 
 const server = http.createServer((req, res) => {
- res.end('coucou.js');
+  res.end("coucou.js");
 });
 
 server.listen(9000);
 ```
 
 ##==##
+
 <!-- .slide: class="exercice" -->
+
 # Serveur HTTP. Exercice 2
 
-## Exercice
-
-<br>
+## Lab
 
 Create a run-02.js file for:
-* Display a text that includes the method and the url called
+
+- Display a text that includes the method and the url called
 
 expected result:
 
@@ -66,7 +67,7 @@ $ node run-02.js
 ```
 
 ```bash
-$ http POST localhost:9000/pouet                                                            
+$ http POST localhost:9000/pouet
 HTTP/1.1 200 OK
 Connection: keep-alive
 Content-Length: 39
@@ -76,34 +77,36 @@ Kikou ! Tu as fait un POST sur /pouet !
 ```
 
 ##==##
+
 <!-- .slide: class="exercice" -->
+
 # Serveur HTTP. Exercice 2 : Solution
 
-## Solution
-
-<br>
+## Soluce
 
 run-02.js
+
 ```javascript
-const http = require('http');
+const http = require("http");
 
 const server = http.createServer((req, res) => {
- res.end(`Kikou ! you have done a ${req.method} on ${req.url} !`);
+  res.end(`Kikou ! you have done a ${req.method} on ${req.url} !`);
 });
 
 server.listen(9000);
 ```
 
 ##==##
+
 <!-- .slide: class="exercice" -->
+
 # Serveur HTTP. Exercice 3
 
-## Exercice
-
-<br>
+## Lab
 
 Create a run-03.js file for:
-* Return a 404 when calling the url /404
+
+- Return a 404 when calling the url /404
 
 expected result:
 
@@ -112,7 +115,7 @@ $ node run-03.js
 ```
 
 ```bash
-$ http POST localhost:9000/404  
+$ http POST localhost:9000/404
 HTTP/1.1 404 Not Found
 Connection: keep-alive
 Content-Length: 13
@@ -122,24 +125,25 @@ Pas trouvé !
 ```
 
 ##==##
+
 <!-- .slide: class="exercice" -->
+
 # Serveur HTTP. Exercice 3 : Solution
 
-## Solution
-
-<br>
+## Soluce
 
 run-03.js
+
 ```javascript
-const http = require('http');
+const http = require("http");
 
 const server = http.createServer((req, res) => {
- if (req.url === '/404') {
-   res.statusCode = 404;
-   res.end('not found !')
- } else {
-   res.end(`Kikou ! you have a ${req.method} on ${req.url} !`);
- }
+  if (req.url === "/404") {
+    res.statusCode = 404;
+    res.end("not found !");
+  } else {
+    res.end(`Kikou ! you have a ${req.method} on ${req.url} !`);
+  }
 });
 
 server.listen(9000);

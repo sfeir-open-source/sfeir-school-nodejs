@@ -1,7 +1,8 @@
 <!-- .slide: class="exercice" -->
+
 # Events
 
-## Exercice
+## Lab
 
 <br>
 
@@ -20,34 +21,37 @@ Got a pong!
 ```
 
 ##==##
+
 <!-- .slide: class="exercice" -->
+
 # Les évènements : Solution
 
-## Solution
+## Soluce
 
 <br>
 
 run.js
+
 ```javascript
-const EventEmitter = require('events');
+const EventEmitter = require("events");
 
 const Thingie = new EventEmitter();
 
-Thingie.on('ping', () => {
- console.log('Got a ping!');
+Thingie.on("ping", () => {
+  console.log("Got a ping!");
 
- setTimeout(() => {
-   Thingie.emit('pong');
- }, 1000);
+  setTimeout(() => {
+    Thingie.emit("pong");
+  }, 1000);
 });
 
-Thingie.on('pong', () => {
- console.log('Got a pong!');
+Thingie.on("pong", () => {
+  console.log("Got a pong!");
 
- setTimeout(() => {
-   Thingie.emit('ping');
- }, 1000);
+  setTimeout(() => {
+    Thingie.emit("ping");
+  }, 1000);
 });
 
-Thingie.emit('ping');
+Thingie.emit("ping");
 ```
