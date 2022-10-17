@@ -11,8 +11,8 @@ https://en.wikipedia.org/wiki/Node.js
 <!-- .element: class="credits" -->
 
 Notes:
-- Javascript 25ans, node 12 ans
-- NodeJs Foundation and Open JS Foundation has merged together on March 2019
+- Javascript 25 years, node 12 years
+- NodeJs Foundation and OpenJS Foundation has merged together on March 2019
 - ryan dahl JSConf 2009 : https://www.youtube.com/watch?v=ztspvPYybIY&t=484s&ab_channel=stri8ted
 
 ##==##
@@ -37,8 +37,8 @@ Notes:
 |2022-10-18|Node.js v19 planned|
 
 Notes:
-2009: Présentation du projet à la JSConf
-2014: Fork à cause des problème de gouvernance Joyent. io.js à jour avec V8
+2009: Presentation of the project at the JSConf
+2014: Fork due to Joyent governance issues. io.js updated with V8
 2015: Node.js foundation as a Linux Foundation (open source) / Node Security Platform
 
 ##==##

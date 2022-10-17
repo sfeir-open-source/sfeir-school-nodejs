@@ -28,16 +28,54 @@
   </div>
   <div class="column">
 
-* `timers` : execute callbacks setTimeout/setInterval
-* `I/O callbacks` : executes all callbacks except close, timers et setImmediate
-* `idle, prepare`: internal
+* `timers` : execute callbacks setTimeout() and setInterval()
+* `I/O callbacks` : executes I/O callbacks deferred to the next loop iteration. except close, timers et setImmediate
+* `idle, prepare`: only used internally
 * `poll`: retrieving or waiting for new events I/O
-* `check`: execute setImmediate callbacks
-* `close callbacks` : xxx.on(‘close’, …)
+* `check`: execute setImmediate() callbacks
+* `close callbacks` : some close callbacks like xxx.on(‘close’, …)
 * `nextTickQueue`: outside event-loop and immediately after the current operation
 
 </div>
 </div>
+
+##--##
+<!-- .slide: class="with-code" -->
+# What inside: blocking the event loop 
+
+```javascript
+let obj = { a: 1 };
+let niter = 20;
+
+let before, str, pos, res, took;
+
+for (let i = 0; i < niter; i++) {
+  obj = { obj1: obj, obj2: obj }; // Doubles in size each iter
+}
+
+start_time = process.hrtime();
+str = JSON.stringify(obj);
+took = process.hrtime(start_time);
+console.log('JSON.stringify took ' + took);
+
+start_time = process.hrtime();
+pos = str.indexOf('nomatch');
+took = process.hrtime(start_time);
+console.log('Pure indexof took ' + took);
+
+start_time = process.hrtime();
+res = JSON.parse(str);
+took = process.hrtime(start_time);
+console.log('JSON.parse took ' + took);
+
+```
+
+Notes:
+- Demo: block the event loop
+- JSON.parse and JSON.stringify are other potentially expensive operations. These two methods have a complexity of O(n) where n is the length of your JSON object., for large n they can take surprisingly long.
+- If a thread is taking a long time to execute a callback (Event Loop) or a task (Worker), it’s called “blocked”. While a thread is blocked working on behalf of one client, it cannot handle requests from any other clients.
+
+
 ##==##
 
 # The event loop and the timers
@@ -54,11 +92,10 @@ The callbacks of `process.nextTick` is executed at the end of the current cycle 
 https://nodejs.org/en/docs/guides/event-loop-timers-and-nexttick
 <!-- .element: class="credits" -->
 
-Notes:
-- Démo : bloquer l'event loop
-- setTimeout : prochain cycle. on place du code en file d'attente
-- setTimeout et setImmediate : on ne sait pas qui arrive en premier (demo)
-- process.nextTick asap : prioritaire, ou besoin d'éxécuté du code avant prochain cyle (cleanup)
+Notes: 
+- setTimeout: next cycle. on the place of the queued code
+- setTimeout and setImmediate: we don't know which comes first (demo)
+- process.nextTick asap: priority, or need to execute code before next cycle (cleanup)
 
 ##--##
 <!-- .slide: class="with-code" -->

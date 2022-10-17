@@ -19,8 +19,9 @@ console.log(2);
 * Some functions of the node API have a blocking version, they are indicated by “Sync” at the end of the function name
 
 ##==##
-<!-- .slide: class="full-center" -->
+
 
 # What inside : V8 + node API + LIBUV
 
 ![w-1000](./assets/images/v8_node_api_libuv.svg)
+<!-- .slide: class="full-center" -->
