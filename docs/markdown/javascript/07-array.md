@@ -4,7 +4,8 @@
 
 ```javascript
 var numbers = [ 1, 2, 3 ];
-// Check if an array includes a value var hasOne = numbers.indexOf(1) !== -1;
+// Check if an array includes a value 
+var hasOne = numbers.indexOf(1) !== -1;
 // Transform an array into an array of a single value
 var listOfTens = numbers.map(() => 10);
 

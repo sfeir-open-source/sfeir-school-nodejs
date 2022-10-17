@@ -9,10 +9,10 @@ describe('Exercice 1', () => {
         stubConsoleLog = jest.spyOn(console, 'log').mockReturnThis();
     })
 
-    it('Créez un ficher "run.js"', () => {
-        assert(fs.existsSync(path.join(__dirname, 'run.js')), 'Le fichier "run.js" est manquant');
+    it('Create a file "run.js"', () => {
+        assert(fs.existsSync(path.join(__dirname, 'run.js')), 'The file "run.js" is missing');
     });
-    it('Exécuter "run.js" doit afficher du texte', () => {
+    it('Running "run.js" should display some text', () => {
         let error = null;
         try {
             require('./run.js');

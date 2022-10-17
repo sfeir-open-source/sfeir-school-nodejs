@@ -25,7 +25,7 @@ Notes:
 ![h-800](./assets/images/es_encapsulation_eng.png)
 
 Notes:
-- Ecmascript est le standard, JS est une implémentation de ES. Unity est part exemple aussi une autre implémentation de Ecmascript via Uniscript
+- Ecmascript is the standard, JS is an ES implementation. Unity is for example also another implementation of Ecmascript via Uniscript
 - TC39 : group of javascript developer https://tc39.es/
 
 

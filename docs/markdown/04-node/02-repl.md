@@ -7,7 +7,7 @@
 
 ##--##
 
-# Quelques commandes
+# Some commands
 
 * .help
 * .editor
@@ -18,5 +18,5 @@
 * `<tab>`
 
 Notes:
-- Faire une démo
-- explorer le globals
+- Make a demo
+- explore the globals

@@ -82,6 +82,9 @@ const displayJohn = emily.display.bind(john);
 displayJohn();
 ```
 
+Notes: 
+
+
 ##--##
 
 <!-- .slide: class="with-code" -->
@@ -93,11 +96,12 @@ displayJohn();
 
 ```javascript
 function Personne() {
-    this.age = 0;
+  this.age = 0;
 
-    setInterval(() => {
-        this.age++;
-    }, 10000);
+  setInterval(() => {
+    this.age++;
+    console.log(this.age);
+  }, 1000);
 }
 
 var p = new Personne();

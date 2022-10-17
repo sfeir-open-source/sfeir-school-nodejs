@@ -71,9 +71,8 @@ It's a "way" to handle asynchronous processing with a single API using callbacks
 ![h-700 center](./assets/images/Promises_00.png) <!-- .element: class="fragment" -->
 
 Notes:
-explication de l'event loop
-
-Présent depuis ES2015
+explanation of the event loop
+Present since ES2015
 
 ##==##
 
@@ -83,12 +82,12 @@ Présent depuis ES2015
 
 ```javascript
 let p = new Promise(function(resolve, reject) {
-   setTimeout(function() {
-      resolve('ok');
-   });
+  setTimeout(function() {
+    resolve('ok');
+  }, 1000);
 });
 
-p.then(value => ...);
+p.then(value => console.log(value));
 ```
 
 ![center h-500](./assets/images/Promises_01.png) <!-- .element: class="fragment" -->

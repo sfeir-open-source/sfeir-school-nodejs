@@ -27,7 +27,7 @@ Object.defineProperty(o2, 'g', {
 ```javascript
 const newO = Object.assign(target, o1, o2 );
 
-// seuls a, b et Symbol('h') sont copiés
+// only a, b and Symbol('h') are copied
 
 target.a;                 // 1
 target.b;                 // 2
