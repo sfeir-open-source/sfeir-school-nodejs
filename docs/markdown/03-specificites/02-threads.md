@@ -1,10 +1,23 @@
+
 # What inside: thread(s?)
 
 * Design single-thread, unlike other platforms/languages (Java, Go…)
 * Node is optimized for I/O by making non-blocking calls (file system, HTTP calls, web-socket…)
 * if needed, we can use multiple threads but generally poorly suited for CPU-intensive operations
 
+![h-600](./assets/images/kitchen_example.PNG)
+ <!-- .element: class="center" -->
+
+Notes:
+https://www.youtube.com/watch?v=jOupHNvDIq8 for the kitchen example
+- The server is taking order from table 1, it give it to kitchen. 
+- He needs to wait that the kitchen finish the dish. 
+- He will take the order of the table 2.
+- When the dish is finish from kitchen, he will give it to table 1 and table 2
+
+
 ##==##
+
 
 # What inside
 
