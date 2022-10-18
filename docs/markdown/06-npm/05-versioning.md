@@ -9,3 +9,4 @@
 * npm version: use the npm CLI to increment the version. Create a commit if the module is in a git repo
 
 https://docs.npmjs.com/getting-started/semantic-versioning
+<!-- .element: class="credits" -->

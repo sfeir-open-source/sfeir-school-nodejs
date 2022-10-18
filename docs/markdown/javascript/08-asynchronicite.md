@@ -261,8 +261,6 @@ Promise.resolve(Promise.resolve('toto')).then(value => console.log(value)) // 't
 <div class="fragment" data-fragment-index="1">
 Promise API
 
-<br/>
-
 Wait for multiple promises and merge them into one
 
 ```javascript
@@ -274,8 +272,6 @@ Promise.all([Promise.resolve(4), Promise.resolve('toto')])
 // [4, 'toto']
 ```
 </div>
-
-<br/>
 
 <div class="fragment" data-fragment-index="2">
 Wait for several promises, first come => first served
@@ -297,10 +293,6 @@ Promise.race([Promise.resolve(4), Promise.resolve('toto')])
 # Promises
 
 "Ok ok ok, I want to create a promise, how do I do it?"
-
-
-<br/>
-<br/>
 
 ```javascript
 function asyncFn(callback) {

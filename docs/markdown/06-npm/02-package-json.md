@@ -20,3 +20,4 @@ Init with `npm init`
 Value by default `npm init -y`
 
 https://docs.npmjs.com/files/package.json
+<!-- .element: class="credits" -->

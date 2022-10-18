@@ -11,3 +11,14 @@ Create a **Cat** class with a constructor taking a **name** as a parameter. It n
 Create a **MainCoon** class that extends the **Cat** class with a constructor taking a **name** and a **color**. Override the play method and call the parent's **play** (with a console.log of your choice). Add a **sleep** method (with a console.log of your choice).
 
 Test your code by opening a nodejs console. Import your code into the console (easy if you have followed everything ;) ) then build your objects.
+
+
+##==##
+
+<!-- .slide: class="exercice" -->
+
+# Classes : Solution
+
+## Lab
+
+<b>/exercices/javascript/classes-solution</b>

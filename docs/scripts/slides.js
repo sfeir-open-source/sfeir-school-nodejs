@@ -10,7 +10,11 @@ function schoolSlides() {
 }
 
 function instituteSlides() {
-  return ["00-institute/00-TITLE.md", "speakers/speaker-geoffrey.md"];
+  return [
+    "00-institute/00-TITLE.md",
+    "speakers/speaker-theo.md",
+    "speakers/speaker-victor.md"
+  ];
 }
 
 function introSlides() {
@@ -41,7 +45,7 @@ function specificitesSlides() {
 }
 
 function installationSlides() {
-  return ["04-installation/00-TITLE.md", "04-installation/01-install.md"];
+  return ["04-installation/00-TITLE.md", "04-installation/01-install.md", "04-installation/02-environment-setup.md"];
 }
 
 function nodeSlides() {
@@ -197,4 +201,4 @@ function institute() {
 //   return formation();
 // }
 
-SfeirThemeInitializer.init(formation);
+SfeirThemeInitializer.init(institute);

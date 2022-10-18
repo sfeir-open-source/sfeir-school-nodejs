@@ -14,23 +14,23 @@ describe('Exercice 2', () => {
         stubConsoleLog = jest.spyOn(console, 'log').mockReturnThis();
     })
 
-    it('Créez un ficher "hello.js"', () => {
-        assert(fs.existsSync(path.join(__dirname, 'hello.js')), 'Le fichier "hello.js" est manquant');
+    it('Create a file "hello.js"', () => {
+        assert(fs.existsSync(path.join(__dirname, 'hello.js')), 'The file "hello.js" is missing');
     });
-    it('Le fichier "hello.js" doit exporter une fonction', () => {
+    it('The file "hello.js" must export a function', () => {
         const hello = require('./hello.js');
-        assert(getType(hello) === 'Function', '"module.exports" n\'exporte pas une fonction');
+        assert(getType(hello) === 'Function', '"module.exports" do not export a function');
     });
-    it('La fonction exportée par "hello.js" doit emettre sur la console : "Hello, {nom}!"', () => {
+    it('The function export by "hello.js" muse show a console : "Hello, {nom}!"', () => {
         const string = 'testString'
         const hello = require('./hello.js');
         hello(string);
         expect(stubConsoleLog).toHaveBeenCalledWith('Hello, testString!');
     });
-    it('Créez un ficher "run.js"', () => {
-        assert(fs.existsSync(path.join(__dirname, 'run.js')), 'Le fichier "run.js" est manquant');
+    it('Create a file "run.js"', () => {
+        assert(fs.existsSync(path.join(__dirname, 'run.js')), 'The file "run.js" is missing');
     });
-    it('"run.js" doit exécuter la fonction exportée par "hello.js" avec l\'argument "Sfeir"', () => {
+    it('"run.js" must execute a function exported by "hello.js" with argument "Sfeir"', () => {
         const mockHello = jest.fn()
         jest.mock('./hello', () => mockHello);
         require('./run.js');

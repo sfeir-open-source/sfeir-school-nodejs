@@ -1,3 +1,4 @@
+<!-- .slide: class="with-code" -->
 # npm : dependencies
 
 * [dependencies](https://docs.npmjs.com/files/package.json#dependencies) : necessary to operate the package or application
@@ -26,3 +27,4 @@ Install by version :
 ```
 
 https://docs.npmjs.com/files/package.json
+<!-- .element: class="credits" -->

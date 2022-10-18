@@ -1,5 +1,5 @@
 <!-- .slide: class="transition" -->
 
-# C’est tout pour aujourd’hui !
+# That's all for today !
 
-### Bon-courage-pour-demain.js
+### good-luck-for-tomorrow.js

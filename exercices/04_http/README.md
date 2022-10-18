@@ -12,6 +12,22 @@ Tips:
 
 - Use `http.createServer`
 
+expected result:
+
+```bash
+$ node run-01.js
+```
+
+```bash
+$ http localhost:9000
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Length: 9
+Date: Tue, 14 Jun 2016 19:49:44 GMT
+
+coucou.js
+```
+
 ## Exercice 2
 
 Create a run-02.js file for:

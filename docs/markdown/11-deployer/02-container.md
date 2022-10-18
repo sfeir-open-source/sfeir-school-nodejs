@@ -1,9 +1,18 @@
+# Containerization
+
+* Install docker-desktop
+* Windows installation [link](https://docs.docker.com/desktop/install/windows-install/)
+* Mac installation [link](https://docs.docker.com/desktop/install/mac-install/)
+
+##--##
+
 <!-- .slide: class="with-code" -->
 # Containerization
 
-* Build a Docker image with a file`Dockerfile`
+* Build a Docker image with a file `Dockerfile`
 
 ```
+# use an image node 14 latest version
 FROM node:14
 
 # Create app directory
@@ -22,6 +31,9 @@ COPY . .
 EXPOSE 8080
 CMD [ "node", "server.js" ]
 ```
+
+Notes:
+explain the file Dockerfile
 
 ##--##
 

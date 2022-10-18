@@ -43,31 +43,17 @@
 <!-- .slide: class="with-code" -->
 # What inside: blocking the event loop 
 
+* Long operation can block the event loop
+
 ```javascript
-let obj = { a: 1 };
-let niter = 20;
-
-let before, str, pos, res, took;
-
-for (let i = 0; i < niter; i++) {
-  obj = { obj1: obj, obj2: obj }; // Doubles in size each iter
-}
+const crypto = require('crypto');
 
 start_time = process.hrtime();
-str = JSON.stringify(obj);
+const salt = crypto.randomBytes(128).toString('base64');
+const hash = crypto.pbkdf2Sync('myPassword', salt, 10000, 512, 'sha512');
 took = process.hrtime(start_time);
-console.log('JSON.stringify took ' + took);
-
-start_time = process.hrtime();
-pos = str.indexOf('nomatch');
-took = process.hrtime(start_time);
-console.log('Pure indexof took ' + took);
-
-start_time = process.hrtime();
-res = JSON.parse(str);
-took = process.hrtime(start_time);
-console.log('JSON.parse took ' + took);
-
+console.log('crypto took ' + took + ' seconds');
+console.log(hash);
 ```
 
 Notes:
@@ -80,13 +66,13 @@ Notes:
 
 # The event loop and the timers
 
-* setTimeout/setInterval
-* setImmediate
-* process.nextTick
+* setTimeout()/setInterval()
+* setImmediate()
+* process.nextTick()
 
 
-The callbacks of `setTimeout` and  `setImmediate` are executed at the next cycle of the event loop.
-The callbacks of `process.nextTick` is executed at the end of the current cycle of the event loop.
+The callbacks of `setTimeout()` and  `setImmediate()` are executed at the next cycle of the event loop.
+The callbacks of `process.nextTick()` is executed at the end of the current cycle of the event loop.
 
 
 https://nodejs.org/en/docs/guides/event-loop-timers-and-nexttick

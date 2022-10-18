@@ -1,7 +1,7 @@
 # npm : scripts
 
 * Property **scripts** in the file package.json
-* You can run each script with `npm run [nom du script]`
+* You can run each script with `npm run [script name]`
 * Some script names are treated separately: **start**, **test**…
     * Not need `npm run` to run this scripts: `npm` is enough.
     * With cycle: **pre**start, **post**start

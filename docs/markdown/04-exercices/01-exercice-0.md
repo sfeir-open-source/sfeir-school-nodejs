@@ -4,8 +4,6 @@
 
 ## Lab
 
-<br>
-
 Install the practice day dependencies by running:
 
 ```bash

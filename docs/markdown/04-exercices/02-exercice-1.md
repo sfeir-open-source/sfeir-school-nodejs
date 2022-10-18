@@ -4,7 +4,7 @@
 
 ## Lab
 
-<br>
+<b>exercices/01_hello</b>
 
 1. Complete the file `run.js`, the script must write “Hello, World!”, in the folder `01_hello`
 2. Launch with
@@ -26,11 +26,11 @@ Montrer le test automatisé. Introduire le TDD
 
 <!-- .slide: class="exercice" -->
 
-# Solution
+# Create a script : Solution
 
-## Soluce
+## Lab
 
-<br>
+<b>exercices/01_hello-solution</b>
 
 run.js
 

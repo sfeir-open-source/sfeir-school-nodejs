@@ -4,8 +4,7 @@
 
 ## Lab
 
-<br>
-In exercices/03_fs
+<b>exercices/03_fs</b>
 
 Create a run.js file that
 
@@ -28,11 +27,9 @@ Hello, Sfeir!
 
 # File system : Solution
 
-## Soluce
+## Lab
 
-<br>
-
-run.js
+<b>exercices/03_fs-solution/run.js</b>
 
 ```javascript
 const fs = require("fs");
@@ -64,12 +61,11 @@ fs.mkdir(folder, function (err) {
 
 # File system : Solution
 
-## Soluce
+## Lab
 
 With async/await
-<br>
 
-run.js
+<b>exercices/03_fs-solution/run-promises.js</b>
 
 ```javascript
 const { promises } = require("fs");

@@ -4,7 +4,7 @@
 
 ## Lab
 
-<br>
+<b>exercices/06_fs_stream</b>
 
 Create a run.js file that
 
@@ -21,15 +21,15 @@ $ cat jtutu/coucou.txt
 Hello, Sfeir!
 ```
 
-##--##
+##==##
 
 <!-- .slide: class="exercice" -->
 
-# file system (using streams)
+# file system (using streams) : Solution
 
-## Soluce
+## Lab
 
-run.js
+<b>exercices/06_fs_stream-solution/run.js</b>
 
 ```javascript
 const fs = require("fs");

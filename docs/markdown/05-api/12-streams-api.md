@@ -13,7 +13,7 @@ https://nodejs.org/api/stream.html
 
 ##--##
 
-# Les API: require('stream')
+# API: require('stream')
 
 <!-- .slide: class="with-code" -->
 

@@ -12,11 +12,11 @@ describe('Event emitter', () => {
     stubConsoleLog.mockRestore();
   });
 
-  it('Créez un ficher "run.js"', () => {
+  it('Create a file"run.js"', () => {
     expect(fs.existsSync(path.join(__dirname, 'run.js'))).toBeTruthy();
   });
 
-  it("Le programme affiche 'Got a ping!' puis 'Got a pong' une seconde plus tard", done => {
+  it("The program displays 'Got a ping!' then 'Got a pong' a second later", done => {
     require('./run.js')
     setTimeout(() => {
       expect(stubConsoleLog).toHaveBeenNthCalledWith(1, 'Got a ping!');

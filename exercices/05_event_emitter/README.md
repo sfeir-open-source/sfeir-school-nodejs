@@ -5,6 +5,16 @@ When receiving "pong", display "Got a pong!" and return a "ping" event after one
 Create a new run.js file for:
 * Ping pong with EventEmitter and setTimeout!
 
+expected result:
+
+```bash
+$ node run.js
+Got a ping!
+Got a pong!
+Got a ping!
+Got a pong!
+```
+
 
 ## test
 

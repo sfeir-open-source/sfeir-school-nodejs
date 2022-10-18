@@ -2,7 +2,7 @@
 
 We are going to do a little project to manage Sfeir Schools!
 
-We will need [Node.js 16](https://nodejs.org/en/).
+We will need [Node.js 14](https://nodejs.org/en/).
 
 ## Step 1
 

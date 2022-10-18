@@ -1,7 +1,7 @@
 Create a run.js file that
-* Displays the path to the cuckoo.txt file
+* Displays the path to the coucou.txt file
 * Create a jtutu folder
-* Copy the contents of the cuckoo.txt file into a file of the same name under the jtutu directory
+* Copy the contents of the coucou.txt file into a file of the same name under the jtutu directory
 
 ---
 

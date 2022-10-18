@@ -1,16 +1,14 @@
 <!-- .slide: class="exercice" -->
 
-# HTTP server (using streams)
+# HTTP server (streams)
 
 ## Lab
 
-<br>
+<b>exercices/07_http_stream</b>
 
 Create a run-04.js file for:
 
-- Resend Google logo:
-
-https://www.google.fr/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png
+- Resend Google logo: [image link](https://www.google.fr/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png)
 
 In response to a GET call on /google
 
@@ -26,15 +24,13 @@ $ node run.js
 
 ##==##
 
-<!-- .slide: class="exercice" -->
+<!-- .slide: class="exercice with-code" -->
 
-# HTTP server (using streams)
+# HTTP server (streams) : Solution
 
-## Soluce
+## Lab
 
-<br>
-
-run-04.js
+<b>exercices/07_http_stream-solution/run-04.js</b>
 
 ```javascript
 const http = require("http");
@@ -43,17 +39,7 @@ const url = require("url");
 
 const server = http.createServer((req, res) => {
   if ((req.url = "/google")) {
-    const logo =
-      "https://www.google.fr/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png";
-
-    https.get(logo, (res2) => {
-      res2.on("data", (chunk) => {
-        res.write(chunk);
-      });
-      res2.on("end", () => {
-        res.end();
-      });
-    });
+    // ... see the complete code in the solution file
   } else if (req.url === "/404") {
     res.statusCode = 404;
     res.end("Not found !");
@@ -67,15 +53,13 @@ server.listen(9000);
 
 ##==##
 
-<!-- .slide: class="exercice" -->
+<!-- .slide: class="exercice with-code" -->
 
-# HTTP server (using streams)
+# HTTP server (streams) : Solution
 
-## Soluce
+## Lab
 
-<br>
-
-run-04.js
+<b>exercices/07_http_stream-solution/run-04b.js</b>
 
 ```javascript
 const http = require("http");
@@ -85,7 +69,6 @@ const server = http.createServer((req, res) => {
   if ((req.url = "/google")) {
     const logo =
       "https://www.google.fr/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png";
-
     https.get(logo, (logoResponse) => logoResponse.pipe(res));
   } else if (req.url === "/404") {
     res.statusCode = 404;
@@ -94,6 +77,5 @@ const server = http.createServer((req, res) => {
     res.end(`Kikou ! you have a ${req.method} on ${req.url} !`);
   }
 });
-
 server.listen(9000);
 ```

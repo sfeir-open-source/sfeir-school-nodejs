@@ -1,10 +1,10 @@
 <!-- .slide: class="exercice" -->
 
-# Les modules
+# Modules
 
 ## Lab
 
-In exercices/02_module
+<b>exercices/02_module</b>
 
 1. Create a hello.js file that exports a function with a name argument
 2. Create a run.js file that imports the hello.js module and calls the function passing 'Sfeir' as an argument.
@@ -22,9 +22,9 @@ Hello, Sfeir!
 
 # Modules : Solution
 
-## Soluce
+## Lab
 
-<br>
+<b>exercices/02_module-solution</b>
 
 hello.js
 

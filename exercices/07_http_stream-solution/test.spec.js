@@ -4,11 +4,11 @@ const request = require('supertest');
 
 describe('Http', () => {
 
-  it('Créez un ficher "run-04.js"', () => {
+  it('Create a file "run-04.js"', () => {
     expect(fs.existsSync(path.join(__dirname, 'run-04.js'))).toBeTruthy();
   });
 
-  it('Le serveur doit retourner le logo google quand on appelle l\'url "/google"', async () => {
+  it('The server must return the logo of google when call the url "/google"', async () => {
     const server = require('./run-04.js');
     const response = await request('http://localhost:9000').get('/google');
     expect(response.status).toBe(200);

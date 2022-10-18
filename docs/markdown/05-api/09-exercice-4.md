@@ -1,8 +1,10 @@
 <!-- .slide: class="exercice" -->
 
-# Serveur HTTP. Exercice 1
+# HTTP server. Exercice 1
 
 ## Lab
+
+<b>exercices/04_http</b>
 
 Create a run-01.js file that:
 
@@ -10,33 +12,17 @@ Create a run-01.js file that:
 - Listening on port 9001
 - Responds 'coucou.js' for all requests
 
-Protip: use https://github.com/jkbrzt/httpie !
-
-expected result:
-
-```bash
-$ node run-01.js
-```
-
-```bash
-$ http localhost:9000
-HTTP/1.1 200 OK
-Connection: keep-alive
-Content-Length: 9
-Date: Tue, 14 Jun 2016 19:49:44 GMT
-
-coucou.js
-```
+Protip: use [httpie](https://github.com/jkbrzt/httpie) or [Postman](https://www.postman.com/)
 
 ##==##
 
 <!-- .slide: class="exercice" -->
 
-# Serveur HTTP. Exercice 1 : Solution
+# HTTP server. Exercice 1 : Solution
 
-## Soluce
+## Lab
 
-run-01.js
+<b>exercices/04_http-solution/run-01.js</b>
 
 ```javascript
 const http = require("http");
@@ -52,9 +38,11 @@ server.listen(9000);
 
 <!-- .slide: class="exercice" -->
 
-# Serveur HTTP. Exercice 2
+# HTTP server. Exercice 2
 
 ## Lab
+
+<b>exercices/04_http</b>
 
 Create a run-02.js file for:
 
@@ -80,11 +68,11 @@ Kikou ! Tu as fait un POST sur /pouet !
 
 <!-- .slide: class="exercice" -->
 
-# Serveur HTTP. Exercice 2 : Solution
+# HTTP server. Exercice 2 : Solution
 
-## Soluce
+## Lab
 
-run-02.js
+<b>exercices/04_http-solution/run-02.js</b>
 
 ```javascript
 const http = require("http");
@@ -100,9 +88,11 @@ server.listen(9000);
 
 <!-- .slide: class="exercice" -->
 
-# Serveur HTTP. Exercice 3
+# HTTP server. Exercice 3
 
 ## Lab
+
+<b>exercices/04_http</b>
 
 Create a run-03.js file for:
 
@@ -128,11 +118,11 @@ Pas trouvé !
 
 <!-- .slide: class="exercice" -->
 
-# Serveur HTTP. Exercice 3 : Solution
+# HTTP server. Exercice 3 : Solution
 
-## Soluce
+## Lab
 
-run-03.js
+<b>exercices/04_http-solution/run-03.js</b>
 
 ```javascript
 const http = require("http");
