@@ -38,4 +38,4 @@ Démarre une application Node.js en mode cluster
 Surveille une application Node.js et la redémarre si elle bloque
 
 * `npm install -g forever`
-* `npm start server.js`
+* `forever start server.js`
