@@ -38,4 +38,4 @@ Starts a Node.js application in cluster mode
 Monitors a Node.js application and restarts it if it crashes
 
 * `npm install -g forever`
-* `npm start server.js`
+* `forever start server.js`
