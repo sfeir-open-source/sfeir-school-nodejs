@@ -1,7 +1,7 @@
 # npm : configuration
 
 * .npmrc file
-    * [save-prefix](https://docs.npmjs.com/misc/config#save-prefix):  ^, ~ or '' for dependencies version in package.json
+    * [save-prefix](https://docs.npmjs.com/misc/config#save-prefix):  <b>^</b>, <b>~</b> or <b>''</b> for dependencies version in package.json
     * [proxy](https://docs.npmjs.com/misc/config#proxy) et [https-proxy](https://docs.npmjs.com/misc/config#https-proxy): allows you to configure a proxy
 * `npm config list` (ou ls): to list the elements of the .npmrc
 * `npm config list -l` (ou ls): to list all config items
@@ -9,6 +9,11 @@
 https://docs.npmjs.com/misc/config
 <!-- .element: class="credits" -->
 
+Notes:
+add in file save-prefix=~
+add in file for proxy
+proxy=http://<username>:<pass>@proxyhost:<port>
+https-proxy=http://<uname>:<pass>@proxyhost:<port>
 
 ##--##
 

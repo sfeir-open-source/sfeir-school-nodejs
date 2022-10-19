@@ -7,5 +7,5 @@
 
 * `npx npm-check`
 * `npx cowsay Hello`
-* `npx node@10 -v` pour utiliser une version spécifique du package
-* `npx @vue/cli create my-vue-app` pratique pour les CLI sans devoir les installer en global
+* `npx node@10 -v` to use a specific version of node
+* `npx @vue/cli create my-vue-app` convenient for CLIs without having to install them globally

@@ -7,5 +7,6 @@
 * yarn is an alternative
 
 Notes:
+Like maven for java, or requirements.txt file on python wich is the module manager
 https://www.npmtrends.com/
 https://snyk.io/blog/npm-passes-the-1-millionth-package-milestone-what-can-we-learn/

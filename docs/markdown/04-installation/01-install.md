@@ -4,12 +4,12 @@
 
 
 * Not recommended with a package manager (apt-get, Brew, Chocolatey)
-* Not recommended installing from the website Node.js because it's required admin right (`sudo`)
-* Recommended with <b>Node Version Manager</b>
+* Installing from the website [Node.js](https://nodejs.org/en/download/), but it's required admin right (`sudo`)
+* <b>Node Version Manager</b> Recommended with you have project with different version
 
 
 Notes:
-- package manager = retard de version et requiert sudo
+- package manager = retard de version et require sudo
 
 ##--##
 

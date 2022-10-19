@@ -19,7 +19,7 @@ Application case :
   * error middleware: `function (err, req, res, next)` called if an error is reported by a previous middleware
 <br>
 
-* `next` : function allowing the chaining of middleware. We call the following middleware with`next()`, and potentially the next error middleware with `next(err)`
+* `next` : function allowing the chaining of middleware. We call the following middleware with `next()`, and potentially the next error middleware with `next(err)`
 
 ##==##
 <!-- .slide: class="full-center" -->

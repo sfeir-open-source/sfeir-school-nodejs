@@ -6,7 +6,15 @@
 * New non-breaking features: **Minor** release, we increase the number of the middle 1.1.0
     * It is considered non-breaking to upgrade the Minor, but potentially breaking to downgrade!
 * Changes that break compatibility: **Major** release, we increase the first number 2.0.0
-* npm version: use the npm CLI to increment the version. Create a commit if the module is in a git repo
+* <b>npm version</b>: use the npm CLI to increment the version. Create a commit if the module is in a git repo
 
 https://docs.npmjs.com/getting-started/semantic-versioning
 <!-- .element: class="credits" -->
+
+Notes:
+launch the version npm to demonstrate, npm version  | major | minor | patch
+add scripts
+* "patch": "npm version patch"
+* "minor": "npm version minor"
+* "major": "npm version major"
+

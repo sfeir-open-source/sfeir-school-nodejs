@@ -10,6 +10,10 @@
 * Each script can run binaries of installed modules as if they were in the PATH:  ./node_modules/mocha/bin/mocha -> mocha
 * We can orchestrate them with [npm-run-all](https://www.npmjs.com/package/npm-run-all)
 
+Notes:
+do demonstration from a npm init and add a jest test and launch script
+https://jestjs.io/docs/getting-started
+
 ##--##
 
 <!-- .slide: class="with-code" -->

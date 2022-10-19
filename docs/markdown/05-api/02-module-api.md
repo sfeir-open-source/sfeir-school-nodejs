@@ -29,22 +29,31 @@ Notes:
 
 ##--##
 
-# Les API: module
+# API: module
 
 * CommonJS (CJS)
-    * Utilise `require()` et `module.exports`
-    * CJS est le mode par défaut
-    * Extension .js ou .cjs
-    * Import synchrone
-* import ES6 (MJS) (stable depuis v13.2.0)
-    * Utilise `import` et `export`
-    * Extension .mjs ("type": "module" dans package.json)
-    * Import asynchrone
+    * Use `require()` and `module.exports`
+    * CJS is the default mode
+    * Extension .js or .cjs
+    * Import synchronous
+* import ES6 (MJS) (stable since v13.2.0)
+    * Use `import` and `export`
+    * .mjs extension ("type": "module" in package.json)
+    * Import asynchronous
+
+
+Notes:
+.MJS file
+
+- mjs an extension for EcmaScript modules
+- An MJS file is a source code file containing an ES Module (ECMAScript Module) for use with a Node.js application.
+- MJS files are written in JavaScript, and may also use the .JS extension outside of the Node.js context.
+- ES Modules allow web and application developers to organize code into smaller reusable components.
 
 ##--##
 <!-- .element: class="with-code" -->
 
-# Les API: module
+# API: module
 
 ```javascript
 // @filename: util.cjs

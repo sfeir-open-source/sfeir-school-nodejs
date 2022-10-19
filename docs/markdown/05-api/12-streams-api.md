@@ -68,7 +68,7 @@ server.listen(3000)
 <!-- .slide: -->
 
 # API: require('stream')
-## Les types de streams
+## Types of streams
 
 * Readable
   * Reading stream 
