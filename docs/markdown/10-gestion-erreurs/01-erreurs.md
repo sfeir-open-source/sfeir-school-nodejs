@@ -1,4 +1,39 @@
 <!-- .slide: class="with-code" -->
+# Operational Errors
+
+<b>Operational errors</b> represent runtime problems.
+
+* failed to connect to server
+* failed to resolve hostname
+* invalid user input
+* request timeout
+* server returned a 500 response
+* socket hang-up
+* system is out of memory
+
+Notes:
+Explain with example
+
+##==##
+
+<!-- .slide: class="with-code" -->
+# Programmer Errors
+
+<b>Programmer errors</b> are what we call bugs
+
+* called an asynchronous function without a callback
+* did not resolve a promise
+* did not catch a rejected promise
+* passed a string where an object was expected
+* passed an object where a string was expected
+* passed incorrect parameters in a function
+
+Notes:
+Explain with example
+
+##==##
+
+<!-- .slide: class="with-code" -->
 # Exceptions
 
 An exception is raised with `throw`.
