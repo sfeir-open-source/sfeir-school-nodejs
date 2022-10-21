@@ -15,7 +15,7 @@ console.log(2);
 ```
 
 * Asynchronous functions are non-blocking
-* They are “resolved” at a later time and we can provide a callback to execute
+* They are “resolved” at a later time and we can provide a callback to execute code after
 * Some functions of the node API have a blocking version, they are indicated by “Sync” at the end of the function name
 
 ##==##
