@@ -1,12 +1,9 @@
+<!-- .slide: class="with-code" -->
+# What's inside: thread(s?)
 
-# What inside: thread(s?)
-
-* Design single-thread, unlike other platforms/languages (Java, Go…)
+* Node application uses “Single Threaded Event Loop Model”, unlike other platforms/languages (Java, Go…)
 * Node is optimized for I/O by making non-blocking calls (file system, HTTP calls, web-socket…)
 * if needed, we can use multiple threads but generally poorly suited for CPU-intensive operations
-
-![h-600](./assets/images/kitchen_example.PNG)
- <!-- .element: class="center" -->
 
 Notes:
 https://www.youtube.com/watch?v=jOupHNvDIq8 for the kitchen example
@@ -18,8 +15,8 @@ https://www.youtube.com/watch?v=jOupHNvDIq8 for the kitchen example
 
 ##==##
 
-
-# What inside
+<!-- .slide: class="with-code" -->
+# What's inside
 
 ![full-width](./assets/images/nodejs-system.svg)
 

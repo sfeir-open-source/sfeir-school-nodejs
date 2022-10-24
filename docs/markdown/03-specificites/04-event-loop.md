@@ -1,5 +1,5 @@
 <!-- .slide: class="with-code" -->
-# What inside: event loop
+# What's inside: event loop
 
 <div class="row">
   <div class="column">
@@ -41,7 +41,7 @@
 
 ##--##
 <!-- .slide: class="with-code" -->
-# What inside: blocking the event loop 
+# What's inside: blocking the event loop 
 
 * Long operation can block the event loop
 
@@ -71,7 +71,7 @@ Notes:
 * process.nextTick()
 
 
-The callbacks of `setTimeout()` and  `setImmediate()` are executed at the next cycle of the event loop.
+The callbacks of `setTimeout()` and  `setImmediate()` are executed at the next cycle of the event loop.   
 The callbacks of `process.nextTick()` is executed at the end of the current cycle of the event loop.
 
 

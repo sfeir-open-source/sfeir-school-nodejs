@@ -1,6 +1,6 @@
 <!-- .slide: class="flex-row" -->
 
-# What inside
+# What's inside
 
 <br><br>
 

@@ -2,12 +2,14 @@
 
 <!-- .slide: class="with-code" -->
 ```javascript
+const fs = require('fs');
+
 // 1
 console.log(1);
 
 // 3
 fs.readFile('/path/to/file', function callback() {
-    console.log(3);
+  console.log(3);
 });
 
 // 2
@@ -21,7 +23,7 @@ console.log(2);
 ##==##
 
 
-# What inside : V8 + node API + LIBUV
+# What's inside : V8 + node API + LIBUV
 
 ![w-1000](./assets/images/v8_node_api_libuv.svg)
 <!-- .slide: class="full-center" -->
