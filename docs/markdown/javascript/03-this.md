@@ -71,7 +71,7 @@ john.display()
 emily.display()
 ```
 
-* each function has the `call`, `apply` and `bind` methods to change the execution context
+* Each function has the `call`, `apply` and `bind` methods to change the execution context
 
 ```javascript
 const john = { name: "John", display: function () { console.log(this.name) } }

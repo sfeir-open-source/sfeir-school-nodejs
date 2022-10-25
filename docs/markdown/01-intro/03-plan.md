@@ -3,7 +3,7 @@
 ## Plan
 
 * Presentation and history of Node.js
-* What inside
+* What's inside
 * JavaScript language
 * The API
 * npm and modules

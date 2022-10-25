@@ -1,7 +1,7 @@
 <!-- .slide: class="with-code" -->
 # What's inside: thread(s?)
 
-* Node application uses “Single Threaded Event Loop Model”, unlike other platforms/languages (Java, Go…)
+* Node application uses the <b>“Single Threaded Event Loop Model”</b>, unlike other platforms/languages (Java, Go…)
 * Node is optimized for I/O by making non-blocking calls (file system, HTTP calls, web-socket…)
 * if needed, we can use multiple threads but generally poorly suited for CPU-intensive operations
 

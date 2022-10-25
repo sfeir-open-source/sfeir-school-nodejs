@@ -2,7 +2,7 @@
 
 # Data type
 
-- weak and dynamic typing
+- Weak and dynamic typing
 - Primitive data :
     * **null**
     * **undefined**

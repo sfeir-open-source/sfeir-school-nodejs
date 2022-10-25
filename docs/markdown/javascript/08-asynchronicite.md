@@ -56,9 +56,9 @@ a(cb1);
 # The callback hell
 
 There are then several problems :
-- functions that receive callbacks cannot be trusted (multiple callback calls, no call, etc.)
-- the order of execution is difficult to follow
-- you can't just handle errors that happen in a, b, c, d, or e.
+- Functions that receive callbacks cannot be trusted (multiple callback calls, no call, etc.)
+- The order of execution is difficult to follow
+- You can't just handle errors that happen in a, b, c, d, or e.
 
 ##==##
 
