@@ -110,13 +110,15 @@ Array.from(function* () {
 # Spread Operator
 
 ```javascript
-var array = [ "Abc", true, 3 ];
-fn.apply(undefined, [ 1, 2 ].concat(array));
+const array = [ "Abc", true, 3 ];
+const newArray = [ 1, 2 ].concat(array);
+console.log(newArray);
 ```
 <!-- .element: class="fragment" -->
 
 ```javascript
 const array = [ "Abc", true, 7 ];
-fn(1, 2, ...array)
+const newArray = [1, 2, ...array]
+console.log(newArray);
 ```
 <!-- .element: class="fragment" -->

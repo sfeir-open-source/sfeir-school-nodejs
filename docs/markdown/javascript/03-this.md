@@ -25,7 +25,7 @@ fnStrict()
 # This
 
  * `this` refers to an instance `new`.
- * The constructor Personne() defined `this` like himself.
+ * The constructor Person() defined `this` like himself.
 
 ```javascript
 function Person(name) {
@@ -95,7 +95,7 @@ Notes:
  * if `this` is in a lambda, `this` references the context of the non-lambda parent function.
 
 ```javascript
-function Personne() {
+function Person() {
   this.age = 0;
 
   setInterval(() => {
@@ -104,5 +104,5 @@ function Personne() {
   }, 1000);
 }
 
-var p = new Personne();
+const p = new Person();
 ```

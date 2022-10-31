@@ -59,9 +59,9 @@ $ http POST localhost:9000/pouet
 HTTP/1.1 200 OK
 Connection: keep-alive
 Content-Length: 39
-Date: Tue, 14 Jun 2016 19:56:29 GMT
+Date: Tue, 14 Jun 2022 19:56:29 GMT
 
-Kikou ! Tu as fait un POST sur /pouet !
+Kikou !you have done a POST on /pouet !
 ```
 
 ##==##
@@ -109,9 +109,9 @@ $ http POST localhost:9000/404
 HTTP/1.1 404 Not Found
 Connection: keep-alive
 Content-Length: 13
-Date: Tue, 14 Jun 2016 19:58:12 GMT
+Date: Tue, 14 Jun 2022 19:58:12 GMT
 
-Pas trouvé !
+Not Found !
 ```
 
 ##==##

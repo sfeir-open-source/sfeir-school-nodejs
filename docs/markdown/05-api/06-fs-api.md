@@ -5,7 +5,7 @@
 * `fs.mkdir()`, `fs.rmdir()`
 * `fs.read…()`, `fs.write…()`
 
-Most functions have a Synchronous alternative!
+Most functions have a Synchronous alternative! (avoid it)
 
 Promises since Node.js 10: `fs.promises.readFile()`, `fs.promises.open()`, etc.
 
