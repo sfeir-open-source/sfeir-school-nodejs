@@ -1,21 +1,51 @@
 {
-  "name": "sfeir-school-theme",
-  "version": "3.0.0-rc-4",
-  "description": "Sfeir School Theme for RevealJS",
-  "main": "./sfeir-school-theme.mjs",
-  "exports": "./sfeir-school-theme.mjs",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sfeir-open-source/sfeir-school-theme.git"
+  "_args": [
+    [
+      "sfeir-school-theme@3.0.0-rc-4",
+      "C:\\formation\\sfeir\\sfeir-school-nodejs\\docs"
+    ]
+  ],
+  "_from": "sfeir-school-theme@3.0.0-rc-4",
+  "_id": "sfeir-school-theme@3.0.0-rc-4",
+  "_inBundle": false,
+  "_integrity": "sha512-+wKPqDeRH220pDryzwhGMPVdE1i2ha/Q8qzJnDtMXbhIYdciHb0mEiUm3YViPuRfPMDo5Ruq/vOLZ00qPjWpCQ==",
+  "_location": "/sfeir-school-theme",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "sfeir-school-theme@3.0.0-rc-4",
+    "name": "sfeir-school-theme",
+    "escapedName": "sfeir-school-theme",
+    "rawSpec": "3.0.0-rc-4",
+    "saveSpec": null,
+    "fetchSpec": "3.0.0-rc-4"
   },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/sfeir-school-theme/-/sfeir-school-theme-3.0.0-rc-4.tgz",
+  "_spec": "3.0.0-rc-4",
+  "_where": "C:\\formation\\sfeir\\sfeir-school-nodejs\\docs",
+  "author": {
+    "name": "jefbinomed"
+  },
+  "bugs": {
+    "url": "https://github.com/sfeir-open-source/sfeir-school-theme/issues"
+  },
+  "description": "Sfeir School Theme for RevealJS",
+  "exports": "./sfeir-school-theme.mjs",
+  "homepage": "https://github.com/sfeir-open-source/sfeir-school-theme#readme",
   "keywords": [
     "css",
     "sfeir"
   ],
-  "author": "jefbinomed",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/sfeir-open-source/sfeir-school-theme/issues"
+  "main": "./sfeir-school-theme.mjs",
+  "name": "sfeir-school-theme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sfeir-open-source/sfeir-school-theme.git"
   },
-  "homepage": "https://github.com/sfeir-open-source/sfeir-school-theme#readme"
+  "version": "3.0.0-rc-4"
 }
