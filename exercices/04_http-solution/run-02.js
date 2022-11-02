@@ -1,7 +1,7 @@
 const http = require('http');
 
 const server = http.createServer((req, res) => {
-  res.end(`Kikou ! Tu as fait un ${req.method} sur ${req.url} !`);
+  res.end(`Kikou ! you have done a ${req.method} on ${req.url} !`);
 });
 
 server.listen(9001);

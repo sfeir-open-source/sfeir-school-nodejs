@@ -25,7 +25,7 @@ In order for the file to be exportable, it must contain:
 ```js
   // importFile.js
   module.exports = function() {
-    // Code à exporter
+    // code to export
   };
 ```
 

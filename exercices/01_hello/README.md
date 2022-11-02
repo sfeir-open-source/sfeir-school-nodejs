@@ -1,18 +1,16 @@
-Écrivez un programme qui dit « Hello, World » dans la console (stdout).
+Write a program which say « Hello, World » in the console (stdout).
 
 ---
 
-## CONSEILS
+## Tips
 
-Pour faire un programme Node.js, créez un nouveau fichier avec l’extension
-`.js`, par exemple `run.js`, et tapez-y du JavaScript ! Exécutez-le
-ensuite à l’aide de la commande `node`, par exemple :
+Execute with command `node`, for example:
 
 ```sh
 node run.js
 ```
 
-Vous pouvez écrire sur la console de la même façon que dans un navigateur :
+You can write in the console
 
 ```javascript
 console.log("text");

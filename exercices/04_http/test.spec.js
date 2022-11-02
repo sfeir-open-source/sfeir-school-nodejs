@@ -24,7 +24,7 @@ describe('Http', () => {
     const server = require('./run-02.js');
     const response = await request('http://localhost:9001').get('/');
     expect(response.status).toBe(200);
-    expect(response.text).toBe('Kikou ! Tu as fait un GET sur / !');
+    expect(response.text).toBe('Kikou ! you have done a GET on / !');
     server.close();
   });
 

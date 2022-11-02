@@ -4,11 +4,11 @@ const request = require('supertest');
 
 describe('Http', () => {
 
-  it('Créez un ficher "run-01.js"', () => {
+  it('Create a file "run-01.js"', () => {
     expect(fs.existsSync(path.join(__dirname, 'run-01.js'))).toBeTruthy();
   });
 
-  it('Exécuter "run-01.js" doit démarrer un serveur qui écoute sur le port 9001', async () => {
+  it('Execute "run-01.js" a server must start in port 9001', async () => {
     const server = require('./run-01.js');
     const response = await request('http://localhost:9001').get('/');
     expect(response.status).toBe(200);
@@ -16,23 +16,23 @@ describe('Http', () => {
     server.close();
   });
 
-  it('Créez un ficher "run-02.js"', () => {
+  it('Create a file "run-02.js"', () => {
     expect(fs.existsSync(path.join(__dirname, 'run-02.js'))).toBeTruthy();
   });
 
-  it('Le serveur doit retourner la méthode et le contenu de chaque requête qu\'il reçoit', async () => {
+  it('The server must return the method and content of each request it receives', async () => {
     const server = require('./run-02.js');
     const response = await request('http://localhost:9001').get('/');
     expect(response.status).toBe(200);
-    expect(response.text).toBe('Kikou ! Tu as fait un GET sur / !');
+    expect(response.text).toBe('Kikou ! you have done a GET on / !');
     server.close();
   });
 
-  it('Créez un ficher "run-03.js"', () => {
+  it('Create a file "run-03.js"', () => {
     expect(fs.existsSync(path.join(__dirname, 'run-03.js'))).toBeTruthy();
   });
 
-  it('Le serveur doit retourner "404" quand on appelle l\'url "/404"', async () => {
+  it('The server must return "404" when we call "/404" url', async () => {
     const server = require('./run-03.js');
     const response = await request('http://localhost:9001').get('/404');
     expect(response.status).toBe(404);
