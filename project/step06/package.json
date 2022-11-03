@@ -15,6 +15,7 @@
   "dependencies": {
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
+    "nodemon": "^2.0.20",
     "pouchdb": "^7.2.2",
     "pouchdb-find": "^7.2.2",
     "uuid": "^8.3.2"
