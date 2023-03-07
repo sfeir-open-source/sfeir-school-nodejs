@@ -47,3 +47,4 @@ globalConfig.json
 .vscode
 schoolsdb
 *-solution
+*.pem
