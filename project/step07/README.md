@@ -33,7 +33,7 @@ Commençons par créer une stratégie avec [passport-local](https://github.com/j
 - Configurer les méthodes `serializeUser` et `deserializeUser` pour passport.
 - Ajouter le middleware global `passport.initialize()` à express.
 - Ajouter le middleware pour la route d'authentification pour la `/login`.
-- Protéger la route pour créer une Sfeir School avec un middleware qui vérifie qu'un utilisateur est connecté ([hint](https://github.com/jaredhanson/passport/blob/882d65e69d5b56c6b88dd0248891af9e0d80244b/lib/http/request.js#L83))
+- Protéger la route pour créer une Sfeir School avec un middleware qui vérifie qu'un utilisateur est connecté ([hint](https://github.com/jaredhanson/passport/blob/882d65e69d5b56c6b88dd0248891af9e0d80244b/lib/http/request.js#L83)).
   
 Au cas où: [un peu de doc](https://github.com/jwalton/passport-api-docs) en plus.
 
@@ -54,5 +54,5 @@ On aura aussi besoin de [`passport.session()`](https://github.com/jwalton/passpo
 
 ### Variable d'environnement
 
-- Créer une variable d'environnement `SALT` pour `scrypt`
+- Créer une variable d'environnement `SALT` pour `scrypt`.
 - Pour assurer la compatibilité entre systèmes d'exploitations, on utilise [cross-env](https://www.npmjs.com/package/cross-env).

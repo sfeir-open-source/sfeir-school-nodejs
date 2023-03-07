@@ -17,4 +17,4 @@ Pour aller plus loin:
 - Un petit peu de [docker compose](https://docs.docker.com/compose/compose-file/) pour tout brancher facilement.
 - Mettre un système de retry pour attendre que la DB soit bien démarrée !
 - Attention au `process.exit(1)` qui peut faire des blagues (expérience vécue ^^).
-- On run avec `docker-compose up` 
+- On run avec `docker-compose up`
