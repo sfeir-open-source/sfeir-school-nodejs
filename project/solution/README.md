@@ -14,8 +14,8 @@
 
 ## Avec docker-compose
 
-- On build avec `docker-compose build` 
-- On run avec `docker-compose up` 
+- On build avec `docker-compose build`
+- On run avec `docker-compose up`
 
 ## Si vous utilisez CouchDB
-- [Page admin](http://localhost:5984/_utils/)
+- [Page admin](http://localhost:5984/_utils/).
