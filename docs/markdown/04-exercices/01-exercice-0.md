@@ -1,6 +1,6 @@
-<!-- .slide: class="exercice" -->
+<!-- .slide: class="exercice with-code" -->
 # Installer les dépendances
-## Exercice
+## Lab
 
 <br>
 

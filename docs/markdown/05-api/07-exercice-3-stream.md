@@ -1,7 +1,7 @@
 <!-- .slide: class="exercice" -->
 # Le système de fichier (avec les streams)
 
-## Exercice
+## Lab
 
 <br>
 
@@ -23,7 +23,7 @@ Hello, Sfeir!
 <!-- .slide: class="exercice" -->
 # Le système de fichier : Solution avec streams
 
-## Solution
+### Soluce
 
 run.js
 

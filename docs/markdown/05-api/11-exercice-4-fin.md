@@ -1,7 +1,7 @@
 <!-- .slide: class="exercice" -->
 # Serveur HTTP (avec les streams)
 
-## Exercice
+## Lab
 
 <br>
 
@@ -25,7 +25,7 @@ $ node run.js
 <!-- .slide: class="exercice" -->
 # Serveur HTTP : Solution avec les streams
 
-## Solution
+### Soluce
 
 <br>
 
@@ -59,7 +59,7 @@ server.listen(9000);
 <!-- .slide: class="exercice" -->
 # Serveur HTTP : Solution avec les streams
 
-## Solution
+### Soluce
 
 <br>
 

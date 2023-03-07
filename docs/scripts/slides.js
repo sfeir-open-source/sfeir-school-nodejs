@@ -1,6 +1,8 @@
+import { SfeirThemeInitializer } from "../web_modules/sfeir-school-theme/sfeir-school-theme.mjs";
+
 function schoolSlides() {
   return [
-    '00-school/00-TITLE.md', 
+    '00-school/00-TITLE.md',
     'speakers/speaker-geoffrey.md',
     'speakers/speaker-yohann.md',
     'speakers/speaker-celia.md',
@@ -9,7 +11,7 @@ function schoolSlides() {
 
 function instituteSlides() {
   return [
-    '00-institute/00-TITLE.md', 
+    '00-institute/00-TITLE.md',
     'speakers/speaker-geoffrey.md'
   ];
 }
@@ -91,7 +93,7 @@ function apiSlides() {
     '05-api/02-module-api.md',
     '05-api/03-exercice-2.md', // exercice module
     '05-api/04-global-api.md',
-    '05-api/05-path-api.md', 
+    '05-api/05-path-api.md',
     '05-api/06-fs-api.md',
     '05-api/07-exercice-3.md', // exercice fichier
     '05-api/10-url-api.md',
@@ -166,7 +168,7 @@ function expressSlides() {
   ];
 }
 
-function formation() {
+function sfeirSchoolInitiation() {
   return [
     ...schoolSlides(),
     ...introSlides(),
@@ -183,7 +185,7 @@ function formation() {
   });
 }
 
-function institute() {
+function sfeirInstitute() {
   return [
     ...instituteSlides(),
     ...introSlides(),
@@ -204,11 +206,12 @@ function institute() {
   });
 }
 
-// export function usedSlides() {
-//   return formation();
-// }
 
-export function usedSlides() {
-  return institute();
-}
+const trainingMode = document
+  .querySelector(".reveal .slides")
+  .getAttribute("data-theme-slides");
 
+
+trainingMode === "institue"
+  ? SfeirThemeInitializer.init(sfeirInstitute)
+  : SfeirThemeInitializer.init(sfeirSchoolInitiation);

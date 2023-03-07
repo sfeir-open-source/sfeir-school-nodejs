@@ -1,7 +1,7 @@
 <!-- .slide: class="exercice" -->
 # Serveur HTTP. Exercice 1
 
-## Exercice
+## Lab
 
 <br>
 
@@ -32,7 +32,7 @@ coucou.js
 <!-- .slide: class="exercice" -->
 # Serveur HTTP. Exercice 1 : Solution
 
-## Solution
+### Soluce
 
 <br>
 
@@ -52,7 +52,7 @@ server.listen(9000);
 <!-- .slide: class="exercice" -->
 # Serveur HTTP. Exercice 2
 
-## Exercice
+## Lab
 
 <br>
 
@@ -79,7 +79,7 @@ Kikou ! Tu as fait un POST sur /pouet !
 <!-- .slide: class="exercice" -->
 # Serveur HTTP. Exercice 2 : Solution
 
-## Solution
+### Soluce
 
 <br>
 
@@ -98,7 +98,7 @@ server.listen(9000);
 <!-- .slide: class="exercice" -->
 # Serveur HTTP. Exercice 3
 
-## Exercice
+## Lab
 
 <br>
 
@@ -125,7 +125,7 @@ Pas trouvé !
 <!-- .slide: class="exercice" -->
 # Serveur HTTP. Exercice 3 : Solution
 
-## Solution
+### Soluce
 
 <br>
 

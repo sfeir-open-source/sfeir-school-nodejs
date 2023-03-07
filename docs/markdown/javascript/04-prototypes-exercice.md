@@ -2,7 +2,7 @@
 
 # Classes
 
-## Exercice
+## Lab
 
 Créer une classe **Cat** avec un constructeur prenant en paramètre un **name**. Elle a besoin d'une méthode **meow** (avec un console.log de votre choix) et d'une méthode **play** (avec un console.log de votre choix).
 

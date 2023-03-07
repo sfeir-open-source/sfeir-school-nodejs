@@ -1,7 +1,7 @@
 <!-- .slide: class="exercice" -->
 # Les modules
 
-## Exercice
+## Lab
 
 <br>
 
@@ -21,7 +21,7 @@ Hello, Sfeir!
 <!-- .slide: class="exercice" -->
 # Les modules : Solution
 
-## Solution
+### Soluce
 
 <br>
 

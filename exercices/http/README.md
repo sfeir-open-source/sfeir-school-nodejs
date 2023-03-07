@@ -2,7 +2,7 @@ L'objectif de ces exercices est de créer un serveur qui écoute le port 9001, l
 
 ---
 
-## Exercice 1
+## Lab 1
 
 Créer un fichier `run-01.js` qui renvoie «coucou.js» pour toutes les requêtes.
 
@@ -10,11 +10,11 @@ Tips:
 
 - Utiliser `http.createServer`
 
-## Exercice 2
+## Lab 2
 
 Créer un fichier `run-02.js` pour renvoyer la méthode et la requête que l'utilisateur a envoyées.
 
-## Exercice 3
+## Lab 3
 
 Créer un fichier `run-03.js` pour renvoyer un status 404 quand on appelle l'url `/404`
 

@@ -1,7 +1,7 @@
 <!-- .slide: class="exercice" -->
 # Les évènements
 
-## Exercice
+## Lab
 
 <br>
 
@@ -22,7 +22,7 @@ Got a pong!
 <!-- .slide: class="exercice" -->
 # Les évènements : Solution
 
-## Solution
+### Soluce
 
 <br>
 

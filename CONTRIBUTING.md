@@ -41,7 +41,7 @@ Nous avons aussi les éléments supplémentaires suivants:
 
 ## Organisation du dépôt
 
-### Exercices
+### Labs
 
 Ils sont dans le répertoire [exercices sur la branche master](https://github.com/Sfeir/sfeir-school-nodejs/tree/master/exercices).
 

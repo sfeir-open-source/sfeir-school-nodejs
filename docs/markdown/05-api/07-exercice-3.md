@@ -1,7 +1,7 @@
 <!-- .slide: class="exercice" -->
 # Le système de fichier
 
-## Exercice
+## Lab
 
 <br>
 
@@ -22,7 +22,7 @@ Hello, Sfeir!
 <!-- .slide: class="exercice" -->
 # Le système de fichier : Solution
 
-## Solution
+### Soluce
 
 <br>
 
@@ -55,7 +55,7 @@ fs.mkdir(folder, function(err) {
 <!-- .slide: class="exercice" -->
 # Le système de fichier : Solution
 
-## Solution
+### Soluce
 
 Avec async/await
 <br>

@@ -2,7 +2,7 @@
 
 # Fn JS
 
-## Exercice
+## Lab
 
 &nbsp;
 
