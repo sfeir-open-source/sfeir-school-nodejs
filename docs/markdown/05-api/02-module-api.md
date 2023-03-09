@@ -20,4 +20,48 @@ require(X) from module at path Y
 4. THROW "not found"
 ```
 
-https://nodejs.org/dist/latest-v6.x/docs/api/modules.html
+https://nodejs.org/docs/latest/api/modules.html
+<!-- .element: class="credits" -->
+
+Notes:
+- npm : packages global
+- recherche recursive
+
+##--##
+
+# Les API: module
+
+* CommonJS (CJS)
+    * Utilise `require()` et `module.exports`
+    * CJS est le mode par défaut
+    * Extension .js ou .cjs
+    * Import synchrone
+* import ES6 (MJS) (stable depuis v13.2.0)
+    * Utilise `import` et `export`
+    * Extension .mjs ("type": "module" dans package.json)
+    * Import asynchrone
+
+##--##
+<!-- .element: class="with-code" -->
+
+# Les API: module
+
+```javascript
+// @filename: util.cjs
+module.exports.sum = (x, y) => x + y;
+// @filename: main.cjs
+const {sum} = require('./util.cjs');
+console.log(sum(3, 5));
+```
+
+```javascript
+// @filename: util.mjs
+export const sum = (x, y) => x + y;
+// @filename: main.mjs
+import {sum} from './util.mjs'
+console.log(sum(3, 5));
+```
+
+https://nodejs.org/api/modules.html |
+https://nodejs.org/api/esm.html
+<!-- .element: class="credits" -->

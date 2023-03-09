@@ -5,5 +5,7 @@
 
 <br>
 
+* `npx npm-check`
 * `npx cowsay Hello`
-* `npx ndb` (Improved debugger for Node.js via Chrome DevTools)
+* `npx node@10 -v` pour utiliser une version spécifique du package
+* `npx @vue/cli create my-vue-app` pratique pour les CLI sans devoir les installer en global

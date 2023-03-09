@@ -58,7 +58,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"title\": \"Sfeir School NodeJS\",\n  \"trainer\": \"Siegfried Ehret\",\n  \"attendees\": 42\n}",
+					"raw": "{\n  \"title\": \"Sfeir School NodeJS\",\n  \"trainer\": \"Geoffrey Brunois\",\n  \"attendees\": 42\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -94,7 +94,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"title\": \"Sfeir School NodeJS\",\n  \"trainer\": \"Siegfried Ehret\",\n  \"attendees\": 42\n}",
+					"raw": "{\n  \"title\": \"Sfeir School NodeJS\",\n  \"trainer\": \"Geoffrey Brunois\",\n  \"attendees\": 42\n}",
 					"options": {
 						"raw": {
 							"language": "json"

@@ -1,5 +1,5 @@
 const express = require("express");
-const uuidv1 = require("uuid/v1");
+const { v1: uuidv1 } = require("uuid");
 const log = require("../logger")();
 
 function ensureAuthenticated(req, res, next) {
@@ -11,11 +11,11 @@ function ensureAuthenticated(req, res, next) {
 const doGet = db => (req, res) => {
   db.find({ selector: { type: "school" } })
     .then(function(results) {
-      log.info({ results }, "Found schools");
+      log.info("Found schools", results);
       res.send(results.docs);
     })
     .catch(err => {
-      log.error({ err }, "Failed to find schools");
+      log.error("Failed to find schools", err);
       res.sendStatus(500);
     });
 };
@@ -26,11 +26,11 @@ const doPost = db => (req, res) => {
   school._id = uuidv1();
   db.put(school)
     .then(() => {
-      log.info({ school }, "Save successful");
+      log.info("Save successful", school);
       res.sendStatus(201);
     })
     .catch(err => {
-      log.error({ err, school }, "Failed to insert school");
+      log.error("Failed to insert school", err, school);
       res.sendStatus(500);
     });
 };

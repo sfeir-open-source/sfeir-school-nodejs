@@ -17,7 +17,7 @@ Et côté code:
 
 # PouchDB
 
-- Pour inserer un document dans la base, on utilise la méthode `put`. Le document doit contenir un identifiant `_id` et un `type`.
-- Pour générer des `_id` uniques, on peut utiliser le package `uuid`.
+- Pour inserer un document dans la base, on utilise la méthode `put`. Le document doit contenir un identifiant `_id` et un `type`
+- Pour générer des `_id` uniques, on peut utiliser le package [uuid](https://www.npmjs.com/package/uuid)
 
 

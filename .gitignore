@@ -48,3 +48,5 @@ globalConfig.json
 schoolsdb
 *-solution
 *.pem
+*.file
+TODO.md

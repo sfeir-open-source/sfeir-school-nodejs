@@ -1,39 +1,26 @@
-const path = require("path");
-
-const bunyan = require("bunyan");
-
-let log;
-
-const init = () => {
-  const logPath = path.resolve(__dirname, "../../schools.log");
-
-  const env = process.env.NODE_ENV || "production";
-  const level =
-    bunyan.levelFromName[process.env.LOG_LEVEL] ||
-    (env === "production" ? "warn" : "info");
-
-  log = bunyan.createLogger({
-    name: "Schools",
-    streams: [
-      {
-        level,
-        stream: process.stdout
-      },
-      {
-        level,
-        type: "rotating-file",
-        path: logPath,
-        period: "1d", // daily rotation
-        count: 3 // keep 3 back copies
-      }
-    ]
-  });
-
-  log.debug("Logger initialized");
-
-  return log;
-};
-
-const getLogger = () => (log ? log : init());
-
-module.exports = getLogger;
+const winston = require("winston");
+const logger = winston.createLogger({
+  level: process.env.LOG_LEVEL || 'debug',
+  format: winston.format.json(),
+  transports: [
+    //
+    // - Write to all logs with level `info` and below to `combined.log`
+    // - Write all logs error (and below) to `error.log`.
+    //
+    new winston.transports.File({
+      filename: "error.log",
+      level: "error"
+    }),
+    new winston.transports.File({
+      filename: "combined.log"
+    })
+  ]
+});
+if (process.env.NODE_ENV !== "production") {
+  logger.add(
+    new winston.transports.Console({
+      format: winston.format.simple()
+    })
+  );
+}
+module.exports = () => logger;

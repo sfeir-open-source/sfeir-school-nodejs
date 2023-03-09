@@ -1,7 +1,7 @@
 const { scrypt } = require("crypto");
 const express = require("express");
 const passport = require("passport");
-const uuidv1 = require("uuid/v1");
+const { v1: uuidv1 } = require("uuid");
 const log = require("../logger")();
 
 const { SALT } = process.env;
@@ -15,7 +15,7 @@ const doRegister = db => (req, res) => {
 
   scrypt(password, SALT, 64, (err, derivedKey) => {
     if (err) {
-      log.error({ err }, "Failed to generate password");
+      log.error("Failed to hash password", err);
       res.sendStatus(500);
     } else {
       db.put({
@@ -28,7 +28,7 @@ const doRegister = db => (req, res) => {
           res.sendStatus(201);
         })
         .catch(err => {
-          log.error({ err }, "Failed to save user");
+          log.error("Failed to save user", err);
           res.sendStatus(500);
         });
     }

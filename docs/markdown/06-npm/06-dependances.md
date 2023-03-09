@@ -14,6 +14,7 @@ Installés par version :
         "boo" : "2.0.1", 
         "qux" : "<1.0.0 || >=2.3.1 <2.4.5 || >=2.5.2 <3.0.0", 
         "asd" : "http://asdf.com/asdf.tar.gz", 
+        "dgy" : "^2.0.1", 
         "til" : "~1.2", 
         "elf" : "~1.2.3", 
         "two" : "2.x", 

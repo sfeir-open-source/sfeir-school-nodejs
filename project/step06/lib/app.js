@@ -1,6 +1,6 @@
 const express = require("express");
 const bodyParser = require("body-parser");
-const uuidv1 = require("uuid/v1");
+const { v41: uuidv1 } = require("uuid");
 const app = express();
 
 app.use(bodyParser.urlencoded({ extended: false }));
