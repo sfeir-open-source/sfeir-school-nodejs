@@ -1,7 +1,7 @@
 <!-- .slide: class="exercice" -->
 # Les modules
 
-## Exercice
+## Lab
 
 <br>
 
@@ -18,22 +18,22 @@ Hello, Sfeir!
 ```
 
 ##==##
-<!-- .slide: class="exercice" -->
+<!-- .slide: class="exercice with-code" -->
 # Les modules : Solution
 
-## Solution
+## Lab
 
 <br>
 
 hello.js
-```javascript
+```javascript []
 module.exports = function(nom) {
  console.log(`Hello, ${nom}!`);
 };
 ```
 
 run.js
-```javascript
+```javascript []
 const hello = require('./hello.js');
 hello('Sfeir');
 ```

@@ -1,9 +1,7 @@
 <!-- .slide: class="exercice" -->
 # Serveur HTTP. Exercice 1
 
-## Exercice
-
-<br>
+## Lab
 
 Créer un fichier run-01.js qui:
 * Crée un serveur http
@@ -29,16 +27,14 @@ coucou.js
 ```
 
 ##==##
-<!-- .slide: class="exercice" -->
+<!-- .slide: class="exercice with-code" -->
 # Serveur HTTP. Exercice 1 : Solution
 
-## Solution
-
-<br>
+## Lab
 
 run-01.js
 
-```javascript
+```javascript []
 const http = require('http');
 
 const server = http.createServer((req, res) => {
@@ -52,9 +48,7 @@ server.listen(9000);
 <!-- .slide: class="exercice" -->
 # Serveur HTTP. Exercice 2
 
-## Exercice
-
-<br>
+## Lab
 
 Créer un fichier run-02.js pour:
 * Afficher un texte qui reprend la méthode et l’url appelée
@@ -76,15 +70,13 @@ Kikou ! Tu as fait un POST sur /pouet !
 ```
 
 ##==##
-<!-- .slide: class="exercice" -->
+<!-- .slide: class="exercice with-code" -->
 # Serveur HTTP. Exercice 2 : Solution
 
-## Solution
-
-<br>
+## Lab
 
 run-02.js
-```javascript
+```javascript []
 const http = require('http');
 
 const server = http.createServer((req, res) => {
@@ -98,9 +90,7 @@ server.listen(9000);
 <!-- .slide: class="exercice" -->
 # Serveur HTTP. Exercice 3
 
-## Exercice
-
-<br>
+## Lab
 
 Créer un fichier run-03.js pour:
 * Renvoyer une 404 quand on appelle l’url /404
@@ -122,15 +112,14 @@ Pas trouvé !
 ```
 
 ##==##
-<!-- .slide: class="exercice" -->
+<!-- .slide: class="exercice with-code" -->
 # Serveur HTTP. Exercice 3 : Solution
 
-## Solution
+## Lab
 
-<br>
 
 run-03.js
-```javascript
+```javascript []
 const http = require('http');
 
 const server = http.createServer((req, res) => {

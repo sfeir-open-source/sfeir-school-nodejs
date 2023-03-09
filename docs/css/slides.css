@@ -1,98 +1,31 @@
-/* double .slides is a little specificity hack */
-.reveal .slides.slides section.sfeir-basic-slide.present.exercice.smaller-font p {
-  font-size: 1.05em; }
-
-/**
-  - modify the top of icon to avoid the icon be just below the name of the speaker
-**/
-.reveal .slides section[data-background].speaker-slide img[alt*=badge] {
-  top: 800px; }
-
-/**
-  - add a new class to display code correctly when there is a lot of code on the diapo
-**/
-.reveal .slides section.with-code pre.medium-code:not(.literal) code {
-  font-size: 1.1em;
-  line-height: 2em; }
-
-/** 
- - add custom css class, available on section slide
-**/
-.reveal .slides section .dark-pink {
-  color: #880e4f; }
-
-.reveal .slides section .center {
-  text-align: center; }
-
-.reveal .slides section .big-text {
-  font-size: 3em; }
-
-.reveal .slides section .bold {
-  font-weight: 600; }
-
-.reveal .slides section .circle {
-  height: 300px;
-  width: 300px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  border: 1px solid  #499D4A; }
-
-.reveal .slides section .important {
-  color: #880e4f; }
-
-.reveal .slides section .thanks {
-  color: #dcdee0; }
-
-.reveal .slides section .justify-content-row {
-  display: flex;
-  flex-direction: row;
-  justify-content: center; }
-
-.reveal .slides section.sfeir-basic-slide .center-big {
-  text-align: center;
-  font-size: 2.5em;
-  color: black; }
-
-.reveal .slides section.sfeir-basic-slide h1.center-big {
-  font-size: 3em; }
-
-.reveal .slides section.with-code pre.big-code:not(.literal), .reveal .slides section.with-code-dark pre.big-code:not(.literal) {
-  position: relative;
-  top: 0; }
-
-.reveal .slides section img[alt*='full-width-screen'] {
-  width: 100%;
-  max-width: 100%;
-  max-height: 100%; }
-
-.reveal .slides section img[alt*='bottom'] {
-  position: absolute;
-  bottom: 0;
-  left: 0; }
-
-.reveal .slides section.with-code pre code {
-  max-height: 700px; }
-
-/* Workaround to solve two column layout */
-.row {
+.reveal .slides section .row {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 100%; }
-
-.column {
+  width: 100%;
+}
+.reveal .slides section .column {
   display: flex;
   flex-direction: column;
   flex-basis: 100%;
   flex: 1;
-  height: 100%; }
+  height: 100%;
+}
+.reveal .slides section .column:first-child {
+  margin-right: 30px;
+}
+.reveal .slides section.sfeir-basic-slide.present.exercice:not(.sfeir-specific-slide):not(.stack):not([class*=transition]) h1 {
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+.reveal .slides section.sfeir-basic-slide.present.exercice:not(.sfeir-specific-slide):not(.stack):not([class*=transition]).smaller-font p {
+  font-size: 1em;
+}
 
-.column:first-child {
-  margin-right: 30px; }
-
-.reveal .slides section[data-background].speaker-slide h3.icon-linkedin:before {
-  content: '\f0E1'; }
+/* shadow issue with pdf */
+html.print-pdf .reveal pre {
+  box-shadow: none;
+  border: solid 2px #ddd;
+}
 
 /*# sourceMappingURL=slides.css.map */

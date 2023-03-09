@@ -1,9 +1,7 @@
 <!-- .slide: class="exercice" -->
 # Les évènements
 
-## Exercice
-
-<br>
+## Lab
 
 Créer un nouveau fichier run.js pour: 
 * Faire un ping pong avec EventEmitter et des setTimeout !
@@ -19,22 +17,17 @@ Got a pong!
 ```
 
 ##==##
-<!-- .slide: class="exercice" -->
+<!-- .slide: class="exercice with-code max-height" -->
 # Les évènements : Solution
 
-## Solution
+## Lab
 
-<br>
-
-run.js
-```javascript
+```javascript []
 const EventEmitter = require('events');
-
 const Thingie = new EventEmitter();
 
 Thingie.on('ping', () => {
  console.log('Got a ping!');
-
  setTimeout(() => {
    Thingie.emit('pong');
  }, 1000);
@@ -42,7 +35,6 @@ Thingie.on('ping', () => {
 
 Thingie.on('pong', () => {
  console.log('Got a pong!');
-
  setTimeout(() => {
    Thingie.emit('ping');
  }, 1000);

@@ -1,7 +1,7 @@
-<!-- .slide: class="exercice" -->
+<!-- .slide: class="exercice with-code" -->
 # Créer un script
 
-## Exercice
+## Lab
 
 <br>
 
@@ -19,8 +19,9 @@ Notes:
 Montrer le test automatisé. Introduire le TDD
 
 ##==##
-<!-- .slide: class="exercice" -->
-# Solution
+
+<!-- .slide: class="exercice with-code " -->
+## Lab
 
 ## Solution
 
@@ -32,6 +33,7 @@ console.log('Hello, World!');
 ```
 
 ##==##
+
 # Protip
 
 * [nodemon](https://nodemon.io/)

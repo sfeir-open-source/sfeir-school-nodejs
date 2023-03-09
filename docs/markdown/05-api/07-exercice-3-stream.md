@@ -1,9 +1,7 @@
 <!-- .slide: class="exercice" -->
 # Le système de fichier (avec les streams)
 
-## Exercice
-
-<br>
+## Lab
 
 Créer un fichier run.js qui
 * Affiche le path vers le fichier coucou.txt
@@ -20,14 +18,14 @@ Hello, Sfeir!
 
 ##--##
 
-<!-- .slide: class="exercice" -->
+<!-- .slide: class="exercice with-code" -->
 # Le système de fichier : Solution avec streams
 
-## Solution
+## Lab
 
 run.js
 
-```javascript
+```javascript []
 const fs = require('fs');
 fs.mkdir('jtutu', function(err) {
   if (err) throw err;

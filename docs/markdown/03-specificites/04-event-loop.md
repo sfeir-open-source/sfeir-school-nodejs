@@ -1,8 +1,5 @@
-<!-- .slide: class="with-code" -->
-# Sous le capot : event loop
-
-<div class="row">
-  <div class="column">
+<!-- .slide: class="two-column max-height with-code" -->
+# Sous le capot : l'event loop
 
   ```bash
      ┌───────────────────────────┐
@@ -24,9 +21,9 @@
   └──┤      close callbacks      │
      └───────────────────────────┘
   ```
+##--##
 
-  </div>
-  <div class="column">
+#
 
 * `timers` : exécute les callbacks setTimeout/setInterval
 * `I/O callbacks` : exécute tous les callbacks sauf close, timers et setImmediate
@@ -34,10 +31,10 @@
 * `poll`: récupération ou attente de nouveaux événements I/O
 * `check`: exécute les callback setImmediate
 * `close callbacks` : xxx.on(‘close’, …)
+
 * `nextTickQueue`: hors event-loop et immédiatement après l’opération en cours
 
-</div>
-</div>
+
 ##==##
 
 # L'event loop et les timers
@@ -70,6 +67,7 @@ setTimeout(() => {
   console.log('timeout');
 }, 0);
 ```
+
 ```javascript
 setImmediate(() => {
   console.log('immediately executing immediate');

@@ -14,7 +14,7 @@
 
 ##--##
 
-<!-- .slide: class="with-code" -->
+<!-- .slide: class="with-code max-height" -->
 
 # Les API: require(‘url’)
 

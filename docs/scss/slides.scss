@@ -1,140 +1,44 @@
 @import 'colors.scss';
 
-// .reveal .slides.slides section.sfeir-basic-slide.present.exercice [id=exercice] {
-//   visibility: hidden;
-// }
-// .reveal .slides.slides section.sfeir-basic-slide.present.exercice h2[id=solution] {
-//   visibility: hidden;
-// }
-// .reveal .slides.slides section.sfeir-basic-slide.present.exercice h2[id=solution-1] {
-//   visibility: hidden;
-// }
-
-/* double .slides is a little specificity hack */
-.reveal .slides.slides section.sfeir-basic-slide.present.exercice.smaller-font p {
-  font-size: 1.05em;
-}
-
-/**
-  - modify the top of icon to avoid the icon be just below the name of the speaker
-**/
-.reveal .slides section[data-background].speaker-slide img[alt*=badge] {
-  top: 800px
-}
-
-/**
-  - add a new class to display code correctly when there is a lot of code on the diapo
-**/
-.reveal .slides section.with-code pre.medium-code:not(.literal) code {
-  font-size: 1.1em;
-  line-height: 2em;
-}
-
-/** 
- - add custom css class, available on section slide
-**/
-
-
 .reveal .slides section {
-  .dark-pink { color: $dark-pink }
-  .center { text-align: center }
-  .big-text {
-    font-size: 3em;
-  }
-
-  .bold {
-    font-weight: 600;
-  }
-
-  .circle {
-    height: 300px;
-    width: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    border:1px solid  #499D4A; 
-  }
-
-  .important {
-    color: $dark-pink;
-  }
-
-  .thanks {
-    color: $light-grey;
-  }
-
-  .justify-content-row {
+  .row {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-  }
-
-  &.sfeir-basic-slide {
-    .center-big {
-      text-align: center;
-      font-size: 2.5em;
-      color: black;
-    }
-  
-    h1.center-big {
-      font-size: 3em;
-    }
-  }
-
-  &.with-code,
-  &.with-code-dark {
-    pre.big-code:not(.literal) {
-      position: relative;
-      top: 0;
-    }
-  }
-
-  img[alt*='full-width-screen'] {
+    flex-wrap: wrap;
     width: 100%;
-    max-width: 100%;
-    max-height: 100%;
   }
 
-  img[alt*='bottom'] {
-    position: absolute;
-    bottom: 0;
-    left: 0;
+  .column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    height: 100%;
   }
-}
 
-.reveal .slides section.with-code{
-   
-  pre {
+  .column:first-child {
+    margin-right: 30px;
+  }
 
-      code {
-          max-height: 700px;
+  &.sfeir-basic-slide.present.exercice {
+
+    &:not(.sfeir-specific-slide):not(.stack):not([class*=transition]) {
+      h1 {
+        margin-top: 10px;
+        margin-bottom: 50px;
       }
+
+      &.smaller-font p {
+        font-size: 1.0em;
+      }
+    }
   }
 }
 
-/* Workaround to solve two column layout */
-
-.row {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-}
-
-.column {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  flex: 1;
-  height: 100%;
-}
-.column:first-child {
-  margin-right: 30px;
-}
-
-.reveal .slides section[data-background].speaker-slide{
-  h3.icon-linkedin:before{
-    content: '\f0E1';
+/* shadow issue with pdf */
+html.print-pdf {
+  .reveal pre {
+    box-shadow: none;
+    border: solid 2px #ddd
   }
 }
