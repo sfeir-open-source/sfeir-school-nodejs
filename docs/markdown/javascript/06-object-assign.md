@@ -20,6 +20,9 @@ Object.defineProperty(o2, 'g', {
     value: 8,
     enumerable: true
 });
+
+
+
 ```
 </div>
 <div class="column">

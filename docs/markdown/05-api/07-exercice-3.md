@@ -3,7 +3,6 @@
 
 ## Lab
 
-<br>
 
 Créer un fichier run.js qui
 * Affiche le path vers le fichier coucou.txt
@@ -19,15 +18,12 @@ Hello, Sfeir!
 ```
 
 ##==##
-<!-- .slide: class="exercice" -->
+<!-- .slide: class="exercice with-code" -->
 # Le système de fichier : Solution
 
-### Soluce
+## Lab
 
-<br>
-
-run.js
-```javascript
+```javascript []
 const fs = require('fs');
 const path = require('path');
 
@@ -52,16 +48,16 @@ fs.mkdir(folder, function(err) {
 ```
 
 ##==##
-<!-- .slide: class="exercice" -->
+<!-- .slide: class="exercice with-code" -->
 # Le système de fichier : Solution
 
-### Soluce
+## Lab
 
-Avec async/await
-<br>
+### Avec async/await
 
-run.js
-```javascript
+<br />
+
+```javascript []
 const { promises } = require('fs');
 const path = require('path');
 const { mkdir, readFile, writeFile } = promises

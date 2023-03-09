@@ -21,7 +21,7 @@ Hello, Sfeir!
 <!-- .slide: class="exercice" -->
 # Les modules : Solution
 
-### Soluce
+## Lab
 
 <br>
 

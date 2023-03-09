@@ -21,9 +21,9 @@ Montrer le test automatisé. Introduire le TDD
 ##==##
 
 <!-- .slide: class="exercice with-code " -->
-## Soluce
+## Lab
 
-## Soluce
+## Solution
 
 <br>
 

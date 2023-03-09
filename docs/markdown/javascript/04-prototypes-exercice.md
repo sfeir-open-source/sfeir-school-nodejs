@@ -1,4 +1,4 @@
-<!-- .slide: class="exercice"-->
+<!-- .slide: class="exercice smaller-font"-->
 
 # Classes
 

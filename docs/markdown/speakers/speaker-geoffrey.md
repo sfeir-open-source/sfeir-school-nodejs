@@ -14,7 +14,5 @@
 ### brunois.g@sfeir.com
 <!-- .element: class="icon-email icon-second" -->
 
-### geoffrey-brunois
-<!-- .element: class="icon-linkedin icon-third" -->
 
 ![badge second-badge](./assets/images/speaker/OpenJS_JSNAD.svg)
