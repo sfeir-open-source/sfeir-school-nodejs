@@ -112,7 +112,7 @@ Pas trouvé !
 ```
 
 ##==##
-<!-- .slide: class="exercice" -->
+<!-- .slide: class="exercice with-code" -->
 # Serveur HTTP. Exercice 3 : Solution
 
 ## Lab

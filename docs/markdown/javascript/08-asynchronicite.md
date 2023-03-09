@@ -322,8 +322,7 @@ asyncFn(function callback(err, value) {
 
 <!-- .slide: class="with-code" -->
 
-<br/>
-<br/>
+# Promises
 
 ```javascript
 function asyncFn() {

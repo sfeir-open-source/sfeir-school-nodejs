@@ -18,7 +18,7 @@ Hello, Sfeir!
 ```
 
 ##==##
-<!-- .slide: class="exercice" -->
+<!-- .slide: class="exercice with-code" -->
 # Les modules : Solution
 
 ## Lab
@@ -26,14 +26,14 @@ Hello, Sfeir!
 <br>
 
 hello.js
-```javascript
+```javascript []
 module.exports = function(nom) {
  console.log(`Hello, ${nom}!`);
 };
 ```
 
 run.js
-```javascript
+```javascript []
 const hello = require('./hello.js');
 hello('Sfeir');
 ```

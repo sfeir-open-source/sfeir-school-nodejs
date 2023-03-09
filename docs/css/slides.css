@@ -18,8 +18,8 @@
   margin-top: 10px;
   margin-bottom: 50px;
 }
-.reveal .slides section.sfeir-basic-slide.present.exercice.smaller-font p {
-  font-size: 0.8em;
+.reveal .slides section.sfeir-basic-slide.present.exercice:not(.sfeir-specific-slide):not(.stack):not([class*=transition]).smaller-font p {
+  font-size: 1em;
 }
 
 /* shadow issue with pdf */
