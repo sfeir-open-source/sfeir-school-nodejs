@@ -193,7 +193,8 @@ a()
 
 ![h-400 center](./assets/images/Promises_03.png)
 
-<p class="text-center">https://bevacqua.github.io/promisees</p>
+https://bevacqua.github.io/promisees
+<!-- .element: class="credits" -->
 
 ##==##
 
@@ -321,8 +322,7 @@ asyncFn(function callback(err, value) {
 
 <!-- .slide: class="with-code" -->
 
-<br/>
-<br/>
+# Promises
 
 ```javascript
 function asyncFn() {

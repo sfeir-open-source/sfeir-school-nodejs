@@ -2,7 +2,7 @@
 
 # Promises
 
-## Exercice
+## Lab
 
 Dans la fonction **exercise1Fn**, compléter la création de la promise afin de
 la **résoudre** avec la valeur "I love promise" au bout de 500ms. (Utiliser setTimeout).
