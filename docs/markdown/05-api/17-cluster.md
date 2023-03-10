@@ -5,10 +5,10 @@
 * Utilise child_process.fork
 
 ```javascript
-import cluster from 'cluster';
-import http from 'http';
-import { cpus } from 'os';
-import process from 'process';
+const cluster = require('cluster');
+const http = require('http');
+const { cpus } = require('os');
+const process = require('process');
 
 const numCPUs = cpus().length;
 
