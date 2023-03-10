@@ -54,5 +54,5 @@ Les sessions utilisateur sont gérées par le middleware [express-session](https
 
 ### Variable d'environnement
 
-- Créer une variable d'environnement `SALT` pour `scrypt`
+- Créer une variable d'environnement `SALT` pour `scrypt`.
 - Pour assurer la compatibilité entre systèmes d'exploitations, on utilise [cross-env](https://www.npmjs.com/package/cross-env).

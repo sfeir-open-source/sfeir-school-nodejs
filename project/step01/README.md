@@ -12,4 +12,4 @@ On aura besoin de [Node.js 14](https://nodejs.org/en/).
 - Créer un script `dev` dans package.json pour lancer le programe avec `nodemon`.
 - Tester avec [httpie](https://httpie.org/): `http http://localhost:3000/` ou avec [Postman](https://www.postman.com/).
 
-Pour les utilisateurs de Postman, vous pouvez importer la collection de requête [Sfeir school NodeJS.postman_collection.json](../../resources/Sfeir school NodeJS.postman_collection.json)
+Pour les utilisateurs de Postman, vous pouvez importer la collection de requête [Sfeir school NodeJS.postman_collection.json](../../resources/Sfeir school NodeJS.postman_collection.json).

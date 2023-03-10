@@ -1,4 +1,4 @@
-Écrivez un programme `run.js` qui utilise les modules `fs` et `path` pour rechercher et afficher dans la console le chemin vers le fichier `coucou.txt`, créer un dossier `jtutu` et y copier le fichier `coucou.txt`
+Écrivez un programme `run.js` qui utilise les modules `fs` et `path` pour rechercher et afficher dans la console le chemin vers le fichier `coucou.txt`, créer un dossier `jtutu` et y copier le fichier `coucou.txt`.
 
 ---
 
@@ -22,4 +22,4 @@ Les accès au système de fichier peuvent être synchrones ou asynchrones.
   });
 ```
 
-Utiliser les api asynchrones peut être déroutant, les callback imbriqués peuvent rendre le projet complexe, voir provoquer le redouté [callback hell](http://callbackhell.com/)
+Utiliser les api asynchrones peut être déroutant, les callback imbriqués peuvent rendre le projet complexe, voir provoquer le redouté [callback hell](http://callbackhell.com/).
