@@ -1,10 +1,22 @@
-<!-- .slide: class="with-code" -->
+<!-- .slide: -->
 
 # Les API: require(‘url’)
 
-* url.format(): créer une url (string) à partir d’un objet
-* url.parse(): créer un objet à partir d’une url (string)
-* url.resolve(): comme path.resolve()
+* `URL`: parse et construit un objet `URL`.
+    * `const myURL = new URL('https://example.org?id=123')`
+* `URLSearchParams` : construire et manipuler la chaîne de requête de l'URL.
+    * `myURL.searchParams.get("id")`
+<br>
+<br>
+* `url.format()`: créer une url (string) à partir d’un objet (legacy API).
+* `url.parse()`: créer un objet à partir d’une url (legacy API).
+* `url.resolve()`: comme path.resolve() (legacy API).
+
+##--##
+
+<!-- .slide: class="with-code max-height" -->
+
+# Les API: require(‘url’)
 
 ```bash
 ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
@@ -27,4 +39,5 @@
 (All spaces in the "" line should be ignored. They are purely for formatting.)
 ```
 
-https://nodejs.org/dist/latest-v6.x/docs/api/url.html
+https://nodejs.org/api/url.html
+<!-- .element: class="credits" -->

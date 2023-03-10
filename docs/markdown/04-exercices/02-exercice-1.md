@@ -1,7 +1,7 @@
-<!-- .slide: class="exercice" -->
-# Exercice 1
+<!-- .slide: class="exercice with-code" -->
+# Créer un script
 
-## Exercice
+## Lab
 
 <br>
 
@@ -12,15 +12,16 @@ $ node run.js
 ```
 3. Lancer les tests avec
 ```bash
-$ npm test -- **/ex01.test.js
+$ npm test hello
 ```
 
 Notes:
 Montrer le test automatisé. Introduire le TDD
 
 ##==##
-<!-- .slide: class="exercice" -->
-# Exercice 1 : Solution
+
+<!-- .slide: class="exercice with-code " -->
+## Lab
 
 ## Solution
 
@@ -32,6 +33,7 @@ console.log('Hello, World!');
 ```
 
 ##==##
+
 # Protip
 
 * [nodemon](https://nodemon.io/)

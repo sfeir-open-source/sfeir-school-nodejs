@@ -1,9 +1,1 @@
-{
-	"version": 3,
-	"file": "slides.css",
-	"sources": [
-		"../scss/slides.scss"
-	],
-	"names": [],
-	"mappings": ""
-}
+{"version":3,"sourceRoot":"","sources":["../scss/slides.scss"],"names":[],"mappings":"AAGE;EACE;EACA;EACA;EACA;;AAGF;EACE;EACA;EACA;EACA;EACA;;AAGF;EACE;;AAME;EACE;EACA;;AAGF;EACE;;;AAMR;AAEE;EACE;EACA","file":"slides.css"}

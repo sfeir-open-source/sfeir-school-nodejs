@@ -1,9 +1,8 @@
+import { SfeirThemeInitializer } from "../web_modules/sfeir-school-theme/sfeir-school-theme.mjs";
+
 function schoolSlides() {
   return [
-    '00-school/00-TITLE.md', 
-    '00-school/speaker-geoffrey.md',
-    '00-school/speaker-yohann.md',
-    '00-school/speaker-celia.md',
+    '00-school/00-TITLE.md',
   ];
 }
 
@@ -30,6 +29,7 @@ function specificitesSlides() {
     '03-specificites/01-technos.md',
     '03-specificites/02-threads.md',
     '03-specificites/03-asynchronicite.md',
+    '03-specificites/04-event-loop.md',
   ];
 }
 
@@ -46,17 +46,19 @@ function apiSlides() {
     '05-api/00-TITLE.md',
     '05-api/01-exemples-api.md',
     '05-api/02-module-api.md',
-    '05-api/03-exercice-2.md',
+    '05-api/03-exercice-2.md', // exercice module
     '05-api/04-global-api.md',
     '05-api/05-path-api.md',
     '05-api/06-fs-api.md',
-    '05-api/07-exercice-3.md',
-    '05-api/08-http-api.md',
-    '05-api/09-exercice-4.md',
+    '05-api/07-exercice-3.md', // exercice fichier
     '05-api/10-url-api.md',
-    '05-api/11-exercice-4-fin.md',
+    '05-api/08-http-api.md',
+    '05-api/09-exercice-4.md', // simple http server
     '05-api/12-events-api.md',
-    '05-api/13-exercice-5.md',
+    '05-api/13-exercice-5.md',// exercice events
+    '05-api/12-streams-api.md',
+    '05-api/07-exercice-3-stream.md', // exercice fichier avec stream
+    '05-api/11-exercice-4-fin.md', // exercice http avec stream
     '05-api/14-child-process-api.md',
     '05-api/15-worker-threads.md',
     '05-api/16-repl.md',
@@ -119,6 +121,4 @@ function formation() {
   });
 }
 
-export function usedSlides() {
-  return formation();
-}
+SfeirThemeInitializer.init(formation);
