@@ -107,7 +107,6 @@ function apiSlides() {
     '05-api/11-exercice-4-fin.md', // exercice http avec stream
     '05-api/14-child-process-api.md',
     '05-api/15-worker-threads.md',
-    //'05-api/16-repl.md',
     '05-api/17-cluster.md'
   ];
 }
@@ -212,6 +211,6 @@ const trainingMode = document
   .getAttribute("data-theme-slides");
 
 
-trainingMode === "institue"
+trainingMode === "institute"
   ? SfeirThemeInitializer.init(sfeirInstitute)
   : SfeirThemeInitializer.init(sfeirSchoolInitiation);
