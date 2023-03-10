@@ -1,11 +1,10 @@
 <!-- .slide: class="exercice" -->
-# Exercice 3
+# Le système de fichier
 
-## Exercice
+## Lab
 
-<br>
 
-Créer un fichier run.js qui (en synchrone, en asynchrone, ou avec des streams !)
+Créer un fichier run.js qui
 * Affiche le path vers le fichier coucou.txt
 * Crée un dossier jtutu
 * Copie le contenu du fichier coucou.txt dans un fichier du même nom sous le répertoire jtutu
@@ -19,15 +18,12 @@ Hello, Sfeir!
 ```
 
 ##==##
-<!-- .slide: class="exercice" -->
-# Exercice 3 : Solution
+<!-- .slide: class="exercice with-code" -->
+# Le système de fichier : Solution
 
-## Solution
+## Lab
 
-<br>
-
-run.js
-```javascript
+```javascript []
 const fs = require('fs');
 const path = require('path');
 
@@ -52,33 +48,28 @@ fs.mkdir(folder, function(err) {
 ```
 
 ##==##
-<!-- .slide: class="exercice" -->
-# Exercice 3 : Solution avec streams
+<!-- .slide: class="exercice with-code" -->
+# Le système de fichier : Solution
 
-## Solution
+## Lab
 
-<br>
+### Avec async/await
 
-run.js
-```javascript
-const fs = require('fs');
+<br />
 
-const readStream = fs.createReadStream('./coucou.txt');
-fs.mkdir('jtutu', function(err) {
- if (err) throw err;
-   readStream.on('error', function (err) {
-     console.error('Please provide valid file :', err);
-   });
+```javascript []
+const { promises } = require('fs');
+const path = require('path');
+const { mkdir, readFile, writeFile } = promises
 
-   const writeStream = fs.createWriteStream('./jtutu/coucou.txt');
-   writeStream.on('pipe', function () {
-     console.log('Piping to dest');
-   });
-   writeStream.on('error', function (err) {
-     console.error('Cannot copy to given file :', err);
-   });
-   readStream.pipe(writeStream);
-});
+const options = { encoding: 'utf-8' };
+const fromPath = path.resolve(__dirname, 'coucou.txt');
+const folder = path.resolve(__dirname, 'jtutu');
+const toPath = path.resolve(folder, 'coucou.txt');
+
+(async () => {
+  await mkdir(folder);
+  const data = await readFile(fromPath, options);
+  await writeFile(toPath, data, options);
+})();
 ```
-
-https://nodejs.org/dist/latest-v6.x/docs/api/stream.html

@@ -1,19 +1,16 @@
 <!-- .slide: class="exercice" -->
-# Exercice 4-4
+# Serveur HTTP (avec les streams)
 
-## Exercice
-
-<br>
+## Lab
 
 Créer un fichier run-04.js pour: 
 * Renvoyer le logo Google: 
 
-https://www.google.fr/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png 
+<a style="font-size: 0.6em;" href="https://www.google.fr/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">https://www.google.fr/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png</a>
 
 en réponse à un appel GET sur /google
 * Récupérer l’image en https et la streamer vers la réponse
 
-<br>
 
 Résultat attendu:
 
@@ -22,24 +19,20 @@ $ node run.js
 ```
 
 ##==##
-<!-- .slide: class="exercice" -->
-# Exercice 4-4 : Solution
+<!-- .slide: class="exercice with-code max-height" -->
+# Serveur HTTP : Solution avec les streams
 
-## Solution
-
-<br>
+## Lab
 
 run-04.js
-```javascript
+```javascript []
 const http = require('http');
 const https = require('https');
 const url = require('url');
 
 const server = http.createServer((req, res) => {
  if (req.url = '/google) {
-   const logo = 
-      'https://www.google.fr/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png';
-
+   const logo = 'https://www.google.fr/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png';
    https.get(logo, (res2) => {
      res2.on('data', (chunk) => { res.write(chunk) });
      res2.on('end', () => { res.end() });
@@ -51,20 +44,17 @@ const server = http.createServer((req, res) => {
    res.end(`Kikou ! Tu as fait un ${req.method} sur ${req.url} !`);
  }
 });
-
 server.listen(9000);
 ```
 
 ##==##
-<!-- .slide: class="exercice" -->
-# Exercice 4-4 : Solution avec pipe
+<!-- .slide: class="exercice with-code max-height" -->
+# Serveur HTTP : Solution avec les streams
 
-## Solution
+## Lab
 
-<br>
-
-run-04.js
-```javascript
+run-04b.js
+```javascript []
 const http = require('http');
 const https = require('https');
 

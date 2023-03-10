@@ -15,4 +15,6 @@
     * util: avec plein d’outils pratiques
     * url, querystring…
 
-https://nodejs.org/en/docs/ 
+
+https://nodejs.org/en/docs/
+<!-- .element: class="credits" -->
