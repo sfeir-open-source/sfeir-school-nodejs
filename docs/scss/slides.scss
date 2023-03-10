@@ -41,30 +41,4 @@ html.print-pdf {
     box-shadow: none;
     border: solid 2px #ddd
   }
-
-  .column:first-child {
-    margin-right: 30px;
-  }
-
-  &.sfeir-basic-slide.present.exercice {
-
-    &:not(.sfeir-specific-slide):not(.stack):not([class*=transition]) {
-      h1 {
-        margin-top: 10px;
-        margin-bottom: 50px;
-      }
-
-      &.smaller-font p {
-        font-size: 1.0em;
-      }
-    }
-  }
-}
-
-/* shadow issue with pdf */
-html.print-pdf {
-  .reveal pre {
-    box-shadow: none;
-    border: solid 2px #ddd
-  }
 }
