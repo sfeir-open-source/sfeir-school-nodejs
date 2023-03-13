@@ -3,9 +3,6 @@ import { SfeirThemeInitializer } from "../web_modules/sfeir-school-theme/sfeir-s
 function schoolSlides() {
   return [
     '00-school/00-TITLE.md',
-    'speakers/speaker-geoffrey.md',
-    'speakers/speaker-yohann.md',
-    'speakers/speaker-celia.md',
   ];
 }
 
