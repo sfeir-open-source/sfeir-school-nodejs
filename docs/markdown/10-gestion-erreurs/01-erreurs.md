@@ -53,7 +53,7 @@ doSomething1()
 ```javascript
 doSomething1()
   .catch(function(error) { handleError(error); })
-  .then(function(value) { throw new Error("zut !"); }))
+  .then(function(value) { throw new Error("zut !"); })
   .catch(err => console.error(err))
 ```
 
