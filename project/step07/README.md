@@ -31,7 +31,7 @@ Commençons par créer une stratégie avec [passport-local](https://www.passport
 
 - Ajouter le middleware global `passport.initialize()` à express.
 - Ajouter le middleware `passport.authenticate("local")` pour la route d'authentification pour la `/login`.
-- Protéger la route pour créer une Sfeir School avec un middleware qui vérifie qu'un utilisateur est connecté ([hint](https://github.com/jaredhanson/passport/blob/882d65e69d5b56c6b88dd0248891af9e0d80244b/lib/http/request.js#L83))
+- Protéger la route pour créer une Sfeir School avec un middleware qui vérifie qu'un utilisateur est connecté ([hint](https://github.com/jaredhanson/passport/blob/882d65e69d5b56c6b88dd0248891af9e0d80244b/lib/http/request.js#L83)).
   
 Au cas où: [un peu de doc](https://github.com/jwalton/passport-api-docs) en plus.
 
