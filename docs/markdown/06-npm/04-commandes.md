@@ -8,6 +8,7 @@
     * `--save-dev` pour sauver le nom et la version dans les "devDependencies"
 * `npm uninstall <package(@version)>` pour supprimer un module (avec les mêmes options)
 * `npm run <nom du script>` pour lancer un script…
-* `npm link` et `npm unlink`
+* `npm link` et `npm unlink` pour le développement de module
 * `npm audit` pour lancer un audit de sécurité (npm@6)
+* `npm update <package(@version)>` pour mettre à jour un package
 * On peut ajouter `--verbose` pour avoir des logs !

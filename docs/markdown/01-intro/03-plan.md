@@ -2,7 +2,7 @@
 
 ## Plan
 
-* Présentation et historique
+* Présentation et historique de Node.js
 * Sous le capot
 * Les API
 * npm et les modules

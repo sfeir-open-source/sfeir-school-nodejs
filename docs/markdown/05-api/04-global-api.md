@@ -13,12 +13,20 @@
     </li>
     <li class="fragment">console :
         <ul>
-            <li><code>log()</code></li>
-            <li><code>error()</code></li>
+            <li><code>log()</code> (stout)</li>
+            <li><code>error()</code> (stderr)</li>
             <li><code>time() + timeEnd()</code></li>
+            <li><code>group() + groupEnd()</code></li>
+            <li><code>table()</code></li>
         </ul>
     </li>
 </ul>
+
+https://nodejs.org/api/console.html
+<!-- .element: class="credits" -->
+
+Notes:
+chalk, progress
 
 ##==##
 

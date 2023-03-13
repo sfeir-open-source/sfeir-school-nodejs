@@ -2,18 +2,37 @@
 
 A [SFEIR School](https://www.sfeir.com/formation/school/)
 
-![logo](https://www.sfeir.com/img/school/formations/Node%20200.png)
+<img src="https://nodejs.org/static/images/logos/nodejs-new-pantone-black.svg" width="250" />
 
 [Planning, trainers and other details](https://www.sfeir.com/formation/school/node-200/)
 
 # Slides
 
-You can view the slides [here](https://sfeir-open-source.github.io/sfeir-school-nodejs/#/).
+You can view the slides [here](https://sfeir-open-source.github.io/sfeir-school-nodejs/).
+
+You can launch the slide in local
+go to the folder docs
+```bash
+cd docs
+```
+
+install the dependencies
+```
+npm install
+```
+
+launch the slide server
+```
+npm run serve
+```
+your slide is available on http://127.0.0.1:4242
 
 # Installation
 
 ```bash
 git clone git@github.com:Sfeir/sfeir-school-nodejs.git
+or
+git clone https://github.com/sfeir-open-source/sfeir-school-nodejs.git
 ```
 
 # Training plan
@@ -24,13 +43,13 @@ Start:
 
 ```sh
 cd exercices
-npm i
+npm install
 ```
 
 Launch tests :
 
 ```sh
-npm test -- **/ex01.test.js
+npm test -- 01_hello/ex01.test.js
 ```
 
 - [exercice 1](./exercices/01_hello/README.md): «Hello, World !»
