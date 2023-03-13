@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "lint": "prettier --write lib/**/*.js index.js",
+    "format": "prettier --write lib/**/*.js index.js",
     "start": "cross-env SALT=kikou node index.js",
     "dev": "cross-env SALT=kikou nodemon index.js",
     "test": "cross-env SALT=kikou jest --detectOpenHandles"
