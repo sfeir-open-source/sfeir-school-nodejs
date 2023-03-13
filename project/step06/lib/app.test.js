@@ -7,16 +7,15 @@ describe("Sfeir Schools app", () => {
 
   // TODO : use beforeAll method to instance in-memory database instance
   
-  it("It should list Sfeir Schools", async done => {
+  it("It should list Sfeir Schools", async () => {
     const response = await request(app).get("/");
 
     expect(response.statusCode).toBe(200);
     expect(response.body).toEqual([]);
 
-    done();
   });
 
-  it("It should add a Sfeir School", async done => {
+  it("It should add a Sfeir School", async () => {
     const responsePost = await request(app)
       .post("/")
       .send({
@@ -33,7 +32,5 @@ describe("Sfeir Schools app", () => {
         title: "Sfeir School NodeJS"
       }
     ]);
-
-    done();
   });
 });

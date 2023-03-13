@@ -3,13 +3,12 @@ const PouchDB = require("pouchdb");
 PouchDB.plugin(require("pouchdb-find"));
 PouchDB.plugin(require("pouchdb-adapter-memory"));
 
-let db;
-let session;
-
 const appFunction = require("./app");
 
 describe("Sfeir Schools app", () => {
   let app;
+  let db;
+  let session;
 
   const fakeCredentials = {
     username: "test",
@@ -17,7 +16,7 @@ describe("Sfeir Schools app", () => {
   };
 
   beforeAll(async () => {
-    const db = new PouchDB("test", { adapter: "memory" });
+    db = new PouchDB("test", { adapter: "memory" });
 
     app = appFunction(db);
 
@@ -40,16 +39,15 @@ describe("Sfeir Schools app", () => {
     await db.destroy();
   });
 
-  it("It should list Sfeir Schools", async done => {
+  it("It should list Sfeir Schools", async () => {
     const response = await request(app).get("/schools");
 
     expect(response.statusCode).toBe(200);
     expect(response.body).toEqual([]);
 
-    done();
   });
 
-  it("It should add a Sfeir School", async done => {
+  it("It should add a Sfeir School", async () => {
     const responsePost = await request(app)
       .post("/schools")
       .set("Cookie", session)
@@ -66,6 +64,5 @@ describe("Sfeir Schools app", () => {
     expect(element.title).toBe("Sfeir School tartiflette");
     expect(element._id).toBeTruthy();
 
-    done();
   });
 });

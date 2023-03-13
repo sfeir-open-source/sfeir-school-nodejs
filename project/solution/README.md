@@ -3,7 +3,7 @@
 ## Pour essayer tout ça:
 
 - Installer les modules `npm install`.
-- Lancer avec `NODE_ENV=development npm run dev`.
+- Lancer avec `NODE_ENV=development npm start`.
 
 - Tester avec [httpie](https://httpie.org/):
 

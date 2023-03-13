@@ -8,7 +8,7 @@ Créer un fichier run-01.js qui:
 * Écoute sur le port 9000
 * Répond ‘coucou.js’ pour toutes les requêtes
 
-Protip: utiliser https://github.com/jkbrzt/httpie !
+Protip: utiliser [httpie](https://github.com/jkbrzt/httpie) or [Postman](https://www.postman.com/) !
 
 Résultat attendu:
 

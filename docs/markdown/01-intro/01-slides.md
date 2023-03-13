@@ -1,4 +1,4 @@
-# The slides
+# Les slides
 
 <br />
 

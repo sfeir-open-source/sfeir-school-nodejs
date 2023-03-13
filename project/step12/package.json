@@ -6,7 +6,7 @@
   "scripts": {
     "lint": "prettier --write lib/**/*.js index.js",
     "start": "cross-env SALT=kikou node index.js",
-    "dev": "cross-env SALT=kikou node index.js | bunyan",
+    "dev": "cross-env SALT=kikou nodemon index.js",
     "test": "cross-env SALT=kikou jest --detectOpenHandles"
   },
   "keywords": [],
@@ -14,23 +14,23 @@
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.3",
-    "bunyan": "^1.8.12",
-    "cross-env": "^5.2.0",
+    "cross-env": "^7.0.3",
     "express": "^4.16.3",
-    "express-session": "^1.15.6",
-    "helmet": "^3.13.0",
+    "express-session": "^1.17.2",
+    "helmet": "^4.6.0",
     "on-headers": "^1.0.1",
-    "passport": "^0.4.0",
+    "passport": "^0.5.0",
     "passport-local": "^1.0.0",
-    "pouchdb": "^7.1.1",
-    "pouchdb-find": "^7.1.1",
-    "uuid": "^3.3.3"
+    "pouchdb": "^7.2.2",
+    "pouchdb-find": "^7.2.2",
+    "uuid": "^8.3.2",
+    "winston": "^3.3.3"
   },
   "devDependencies": {
-    "jest": "^23.5.0",
-    "jest-environment-node": "^23.4.0",
-    "pouchdb-adapter-memory": "^7.1.1",
-    "prettier": "^1.14.2",
-    "supertest": "^3.3.0"
+    "jest": "^27.2.5",
+    "jest-environment-node": "^27.2.5",
+    "pouchdb-adapter-memory": "^7.2.2",
+    "prettier": "^2.4.1",
+    "supertest": "^6.1.6"
   }
 }
