@@ -1,21 +1,48 @@
 {
-  "name": "sfeir-school-theme",
-  "version": "3.0.0",
-  "description": "Sfeir School Theme for RevealJS",
-  "main": "./sfeir-school-theme.mjs",
-  "exports": "./sfeir-school-theme.mjs",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sfeir-open-source/sfeir-school-theme.git"
+  "_from": "sfeir-school-theme@3.0.0",
+  "_id": "sfeir-school-theme@3.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-1TsS4V9l2Nf074QvMngNQWceMXGfI6lTnOz2i71FLyS4Kr8gBAVUPSI7AXAHoNxRLG0jJ8ggtFD7BO1FFK3+GA==",
+  "_location": "/sfeir-school-theme",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "sfeir-school-theme@3.0.0",
+    "name": "sfeir-school-theme",
+    "escapedName": "sfeir-school-theme",
+    "rawSpec": "3.0.0",
+    "saveSpec": null,
+    "fetchSpec": "3.0.0"
   },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/sfeir-school-theme/-/sfeir-school-theme-3.0.0.tgz",
+  "_shasum": "292e310353c567eac3a17caca194e296c91d7b4c",
+  "_spec": "sfeir-school-theme@3.0.0",
+  "_where": "/Users/geoffreybrunois/dev/SFEIR/sfeir-school-nodejs/docs",
+  "author": {
+    "name": "jefbinomed"
+  },
+  "bugs": {
+    "url": "https://github.com/sfeir-open-source/sfeir-school-theme/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Sfeir School Theme for RevealJS",
+  "exports": "./sfeir-school-theme.mjs",
+  "homepage": "https://github.com/sfeir-open-source/sfeir-school-theme#readme",
   "keywords": [
     "css",
     "sfeir"
   ],
-  "author": "jefbinomed",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/sfeir-open-source/sfeir-school-theme/issues"
+  "main": "./sfeir-school-theme.mjs",
+  "name": "sfeir-school-theme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sfeir-open-source/sfeir-school-theme.git"
   },
-  "homepage": "https://github.com/sfeir-open-source/sfeir-school-theme#readme"
+  "version": "3.0.0"
 }
