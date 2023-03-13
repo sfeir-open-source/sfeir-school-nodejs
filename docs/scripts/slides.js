@@ -42,8 +42,9 @@ function specificitesSlides() {
 
 function installationSlides() {
   return [
-    '04-installation/00-TITLE.md',
-    '04-installation/01-install.md',
+    "04-installation/00-TITLE.md", 
+    "04-installation/01-install.md", 
+    "04-installation/02-environment-setup.md",
   ];
 }
 
