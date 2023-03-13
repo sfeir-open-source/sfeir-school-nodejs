@@ -11,6 +11,16 @@ services:
       COUCHDB_PASSWORD: plop
     networks:
       - api
+  initializer:
+    image: curlimages/curl
+    deploy:
+      restart_policy:
+        condition: on-failure
+    depends_on:
+      - couchdb
+    networks:
+      - api
+    command: ["sh","-c","sleep 15 && curl -u admin:plop -X PUT couchdb:5984/_users &&  curl -u admin:plop -X PUT couchdb:5984/test"]
   schools:
     build: .
     ports:
@@ -23,7 +33,7 @@ services:
       - SALT=kikoo plop
     depends_on:
       - couchdb
-      - couchdbsetup
+      - initializer
     networks:
       - api
 
