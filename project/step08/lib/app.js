@@ -2,13 +2,13 @@ const { scrypt } = require("crypto");
 const express = require("express");
 const bodyParser = require("body-parser");
 const passport = require("passport");
+const LocalStrategy = require("passport-local").Strategy;
+
 const session = require("express-session");
 const { v1: uuidv1 } = require("uuid");
+const User = require("./user");
+
 const app = express();
-
-const { SALT } = process.env;
-
-const getUserStrategy = require("./user");
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
@@ -17,16 +17,18 @@ app.use(
   session({
     secret: "SFEIR",
     resave: false,
-    saveUninitialized: true
+    saveUninitialized: true,
   })
 );
 app.use(passport.initialize());
 app.use(passport.session());
 
+// Serialize user into the session
 passport.serializeUser((user, done) => {
   done(null, user);
 });
 
+// Deserialize user from the session
 passport.deserializeUser((sessionUser, done) => {
   done(null, sessionUser);
 });
@@ -37,15 +39,17 @@ function ensureAuthenticated(req, res, next) {
   } else res.sendStatus(401);
 }
 // TODO : refactoring. Use express router and move routes in appropriate files
-module.exports = db => {
-  passport.use(getUserStrategy(db));
+module.exports = (db) => {
+  const user = User(db);
+
+  passport.use(new LocalStrategy(user.findUser));
 
   app.get("/", (req, res) => {
     db.find({ selector: { type: "school" } })
-      .then(function(results) {
+      .then(function (results) {
         res.send(results.docs);
       })
-      .catch(err => {
+      .catch((err) => {
         console.log("Failed to find schools", err);
         res.sendStatus(500);
       });
@@ -59,7 +63,7 @@ module.exports = db => {
       .then(() => {
         res.sendStatus(201);
       })
-      .catch(err => {
+      .catch((err) => {
         console.log("Failed to insert school", school, err);
         res.sendStatus(500);
       });
@@ -71,25 +75,11 @@ module.exports = db => {
 
   app.post("/register", (req, res) => {
     const { username, password } = req.body;
-
-    scrypt(password, SALT, 64, (err, derivedKey) => {
+    user.saveUser(username, password, function (err) {
       if (err) {
-        console.log("Failed to generate password", err);
         res.sendStatus(500);
       } else {
-        db.put({
-          username,
-          password: derivedKey.toString("hex"),
-          type: "user",
-          _id: uuidv1()
-        })
-          .then(() => {
-            res.sendStatus(201);
-          })
-          .catch(err => {
-            console.log("Failed to save user", err);
-            res.sendStatus(500);
-          });
+        res.sendStatus(201);
       }
     });
   });

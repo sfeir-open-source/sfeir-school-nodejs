@@ -4,11 +4,33 @@
 
 Refactoring !
 
-On va ranger un peu:
+On va ranger un peu en utilisant [`express.Router`](http://expressjs.com/en/guide/routing.html).
+
+Pour une structure de code modulaire, la logique doit être divisée dans des répertoires et des fichiers séparés.
+Les routes font appels aux controllers. Les controllers utilisent les services.
+
+```
+├───routes
+│   ├───users.js
+│   ├───schools.js
+├───controllers
+│   ├───users.js
+│   ├───schools.js
+├───services
+│   ├───users.js
+│   ├───schools.js
+```
+
+- Créer un dossier `routes` dans `lib` contenant les fichiers `schools.js` et `users.js`.
+- Créer un dossier `controllers` dans `lib` contenant les fichiers `schools.js` et `users.js`.
+- Créer un dossier `services` dans `lib` contenant les fichiers `schools.js` et `users.js`.
 
 - Renommer les routes liées aux utilisateurs en `/users/login` et `/users/register`.
 - Renommer les routes liées aux Sfeir Schools en `/schools`.
-- Tout ça en utilisant [`express.Router`](http://expressjs.com/en/guide/routing.html).
+- Déplacer le code d'accès à la base de données dans les services.
+- Déplacer les middlewares des routes dans les controllers.
+- La définition de la stratégie locale de passport peut aussi être déclarée dans un fichier séparé.
+
 
 On reprend les exemples du step précédent en corrigeant les routes:
 

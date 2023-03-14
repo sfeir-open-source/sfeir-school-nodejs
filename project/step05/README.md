@@ -4,6 +4,8 @@
 
 Persistence des données avec [PouchDB](https://pouchdb.com).
 
+[PouchDB](https://pouchdb.com) est une base de données NoSQL en JavaScript qui fonctionne aussi bien sur le navigateur que sur les serveurs. PouchDB est compatible avec CouchDB et peut-être utilisée pour synchroniser des données entre différentes instances de CouchDB.
+
 On va préparer une variable d'environnement :
 
 - `INITDB_DATABASE` avec la valeur `schoolsdb`.

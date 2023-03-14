@@ -8,7 +8,7 @@ const users = require("./routes/users");
 
 const app = express();
 
-const getUserStrategy = require("./auth/user");
+const localStrategy = require("./auth/local");
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
@@ -34,7 +34,7 @@ passport.deserializeUser((sessionUser, done) => {
 });
 
 module.exports = db => {
-  passport.use(getUserStrategy(db));
+  passport.use(localStrategy(db));
 
   app.use("/schools", schools(db));
   app.use("/users", users(db));

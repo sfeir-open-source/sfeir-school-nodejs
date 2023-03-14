@@ -9,7 +9,7 @@ const { INITDB_DATABASE = "schoolsdb", PORT = 3000 } = process.env;
 const db = new PouchDB(INITDB_DATABASE);
 // TODO : replace console.log
 db.info()
-  .then(info => console.log(info))
+  .then((info) => console.log(info))
   .then(
     app(db).listen(PORT, () => console.log(`App listening on port ${PORT}!`))
   );
