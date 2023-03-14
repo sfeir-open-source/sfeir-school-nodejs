@@ -13,25 +13,24 @@ describe("Sfeir Schools app", () => {
   const fakeCredentials = {
     username: "test",
     password: "test"
-  };
+  }
 
   beforeAll(async () => {
     db = new PouchDB("test", { adapter: "memory" });
-
     app = appFunction(db);
 
     await request(app)
-      .post("/users/register")
-      .send(fakeCredentials);
-    await request(app)
-      .post("/users/login")
+    .post("/users/register")
+    .send(fakeCredentials)
+    await request(app).post('/users/login')
       .send(fakeCredentials)
-      .then(function(res) {
-        const cookie = res.headers["set-cookie"][0]
-          .split(",")
-          .map(item => item.split(";")[0]);
-        session = cookie;
-        return session;
+      .then(function (res) {
+        const cookie = res
+        .headers['set-cookie'][0]
+        .split(',')
+        .map(item => item.split(';')[0])
+        session = cookie
+        return session
       });
   });
 
@@ -40,7 +39,8 @@ describe("Sfeir Schools app", () => {
   });
 
   it("It should list Sfeir Schools", async () => {
-    const response = await request(app).get("/schools");
+    const response = await request(app)
+    .get("/schools");
 
     expect(response.statusCode).toBe(200);
     expect(response.body).toEqual([]);
@@ -50,7 +50,7 @@ describe("Sfeir Schools app", () => {
   it("It should add a Sfeir School", async () => {
     const responsePost = await request(app)
       .post("/schools")
-      .set("Cookie", session)
+      .set('Cookie', session)
       .send({
         title: "Sfeir School tartiflette"
       });

@@ -1,6 +1,6 @@
 const winston = require("winston");
 const logger = winston.createLogger({
-  level: process.env.LOG_LEVEL || 'debug',
+  level: process.env.LOG_LEVEL || "debug",
   format: winston.format.json(),
   transports: [
     //
@@ -9,17 +9,17 @@ const logger = winston.createLogger({
     //
     new winston.transports.File({
       filename: "error.log",
-      level: "error"
+      level: "error",
     }),
     new winston.transports.File({
-      filename: "combined.log"
-    })
-  ]
+      filename: "combined.log",
+    }),
+  ],
 });
 if (process.env.NODE_ENV !== "production") {
   logger.add(
     new winston.transports.Console({
-      format: winston.format.simple()
+      format: winston.format.simple(),
     })
   );
 }

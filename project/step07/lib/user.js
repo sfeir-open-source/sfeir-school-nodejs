@@ -1,9 +1,19 @@
-// TODO Step 2 
-// Create here the passport-local strategy. The strategy retrieves a user from the database.
-// Remember that the password is not stored in clear in the database.
+const service = (db) => {
+  function findUser(username, password, callback) {
+    // TODO retrieve a user from the database
+  }
 
-// const LocalStrategy = require("passport-local").Strategy;
-// function findUser() {
-///    ...
-//}
-// module.exports = db => new LocalStrategy(findUser(db));
+  function saveUser(username, password, callback) {
+    // TODO save a user in the database
+    // crypto.scrypt('password', 'salt', 64, (err, derivedKey) => {
+    //   if (err) throw err;
+    //      console.log(derivedKey.toString('hex'));  // '3745e48...08d59ae'
+    // });
+  }
+  return {
+    findUser,
+    saveUser,
+  };
+};
+
+module.exports = service;

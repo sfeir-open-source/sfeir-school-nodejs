@@ -6,28 +6,29 @@ const app = express();
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-module.exports = db => {
+module.exports = (db) => {
+
   app.get("/", (req, res) => {
     db.find({ selector: { type: "school" } })
-      .then(function(results) {
+      .then(function (results) {
         res.send(results.docs);
       })
-      .catch(err => {
+      .catch((err) => {
         console.log("Failed to find schools", err);
         res.sendStatus(500);
       });
   });
 
   app.post("/", (req, res) => {
+
     const school = req.body;
     school.type = "school";
     school._id = uuidv1();
-
     db.put(school)
-      .then(() => {
+      .then(function () {
         res.sendStatus(201);
       })
-      .catch(err => {
+      .catch(function (err) {
         console.log("Failed to insert school", school, err);
         res.sendStatus(500);
       });
