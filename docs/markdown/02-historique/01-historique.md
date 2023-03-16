@@ -31,8 +31,8 @@ Notes:
 |2015-09|Node.js v0.12 + io.js v3.3 = Node.js v4 (LTS)|
 |...|...|
 |2019|Node.js foundation fusionne avec JS foundation : OpenJS Foundation|
-|2020-10-27|Node.js v14 (LTS)|
 |2021-10-26|Node.js v16 (LTS)|
+|2022-10-25|Node.js v18 (LTS)|
 
 Notes:
 2009: Présentation du projet à la JSConf
@@ -49,7 +49,7 @@ Notes:
 <img class="full-height center" src="./assets/images/release-schedule.svg">
 </div>
 
-https://nodejs.org/en/about/releases/
+https://nodejs.dev/en/about/releases/
 <!-- .element: class="credits" -->
 
 Notes:
