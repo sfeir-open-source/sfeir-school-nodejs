@@ -35,7 +35,7 @@
 * `nextTickQueue`: hors event-loop et immédiatement après l’opération en cours
 
 
-##--##
+##==##
 <!-- .slide: class="with-code" -->
 # Sous le capot: blocage de l'event loop 
 
@@ -57,6 +57,8 @@ Notes:
 - JSON.parse and JSON.stringify are other potentially expensive operations. These two methods have a complexity of O(n) where n is the length of your JSON object., for large n they can take surprisingly long.
 - If a thread is taking a long time to execute a callback (Event Loop) or a task (Worker), it’s called “blocked”. While a thread is blocked working on behalf of one client, it cannot handle requests from any other clients.
 
+##==##
+<!-- .slide: class="with-code" -->
 
 # L'event loop et les timers
 
