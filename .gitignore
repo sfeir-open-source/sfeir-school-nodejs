@@ -45,7 +45,7 @@ jspm_packages
 03_fs/jtutu
 globalConfig.json
 .vscode
-schoolsdb
+schoolsdb*/
 *-solution
 *.pem
 *.file
