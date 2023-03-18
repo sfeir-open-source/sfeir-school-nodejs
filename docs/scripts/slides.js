@@ -98,6 +98,7 @@ function apiSlides() {
     '05-api/08-net-api.md',
     '05-api/08-http-api.md',
     '05-api/09-exercice-4.md', // simple http server
+    '05-api/08-http2-api.md',
     '05-api/12-events-api.md',
     '05-api/13-exercice-5.md',// exercice events
     '05-api/12-streams-api.md',
