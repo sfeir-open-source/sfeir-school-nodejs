@@ -60,7 +60,8 @@ npm test -- hello/test.spec.js
 - [Step 04](./project/step04/README.md): teams
 - [Step 05](./project/step05/README.md): persistance
 - [Step 06](./project/step06/README.md): tests
-- [Step 07](./project/step07/README.md): authentication
+- [Step 07-1](./project/step07-part01/README.md): authentication
+- [Step 07-2](./project/step07-part02/README.md): authentication
 - [Step 08](./project/step08/README.md): refactoring
 - [Step 09](./project/step09/README.md): logs
 - [Step 10](./project/step10/README.md): middlewares
